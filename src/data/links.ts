@@ -1,5 +1,3 @@
-import { version } from "process";
-
 export const links = [
   { id: 1, nombre: "Inicio", enlace: "/", submenus: [] },
   {

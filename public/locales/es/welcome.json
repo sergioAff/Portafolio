@@ -1,5 +1,10 @@
 {
   "Hola": "Hola",
-  "soy": "Soy",
-  "profesion": "Un programador Frontend"
+  "Soy": "Soy",
+  "profesion": "Un programador Frontend",
+  "Contáctame": "Contact me",
+  "Inicio": "Inicio",
+  "Sobre mi": "Sobre mi",
+  "Experiencia": "Experiencia",
+  "Proyectos": "Proyectos"
 }
