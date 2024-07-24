@@ -2,16 +2,24 @@
 
 import { useState } from "react";
 import { clsx } from "clsx";
+import { useTranslation } from "react-i18next";
+import i18n from "@/config/i18next.config";
 
 export default function Languaje() {
-  const [Language, setLanguage] = useState(true);
+  const [Language, setLanguage] = useState("es");
+  const [open, setOpen] = useState(false);
 
-  function onChange() {
-    setLanguage(!Language);
+  function onChangeLanguage(idioma: string) {
+    setLanguage(idioma);
+    i18n.changeLanguage(idioma);
+  }
+
+  function onChangeOpen() {
+    setOpen(!open);
   }
 
   return (
-    <span onClick={onChange} className=" relative">
+    <span onClick={onChangeOpen} className=" relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -29,15 +37,24 @@ export default function Languaje() {
 
       <ul
         className={clsx(
-          "ring-2 ring-orange-secondary absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-2 mt-4 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out",
-          { "opacity-0": Language }
+          "ring-2 ring-orange-secondary absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-5 mt-4 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out",
+          { "opacity-0": open }
         )}
       >
         <li>
-          <button className=" hover:text-orange-500">Español</button>
+          <button
+            onClick={() => onChangeLanguage("es")}
+            className=" hover:text-orange-500"
+          >
+            Español
+          </button>
         </li>
         <li>
-          <button lang="en" className=" hover:text-orange-500">
+          <button
+            onClick={() => onChangeLanguage("en")}
+            lang="en"
+            className=" hover:text-orange-500"
+          >
             English
           </button>
         </li>
