@@ -1,7 +1,10 @@
+"use client";
+import { useTranslation } from "react-i18next";
 import { Links } from "./Links";
 import { contactos } from "@/data/contactos";
 
 export function Footer() {
+  const { t } = useTranslation(["footer"]);
   const currentYear = new Date().getFullYear();
   return (
     <footer className="relative mt-5 text-gray-700  flex flex-col w-full py-2">
@@ -22,7 +25,7 @@ export function Footer() {
         </nav>
         <ul className="md:justify-center md:items-center md:h-16 h-6 md:w-[50dvw] flex justify-start items-start">
           <li className="font-semibold text-sm sm:text-lg flex md:flex-col z-10">
-            Diseño y desarrollo por
+            {t("autor")}
             <div className="ml-2 inline-block hover:scale-110 duration-75">
               <Links
                 direccion="https://linkedin.com/in/sergio-adrian-fernández"
@@ -36,7 +39,7 @@ export function Footer() {
       </div>
       <div className="mt-5 md:mx-[10dvw] lg:mx-[20dvw] mx-10 cursor-default border-t-2 border-orange-900 items-center flex justify-center text-center">
         <h3 className="font-semibold text-sm sm:text-lg">
-          &copy; {currentYear} S@ff. Todos los derechos reservados
+          &copy; {currentYear} S@ff. {t("derechos")}
         </h3>
       </div>
       <div className="animate-fadeBottom absolute w-full h-screen bottom-0 pointer-events-auto z-1 ">

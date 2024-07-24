@@ -50,6 +50,23 @@
   scrollbar-width: none;
 }
 
+.loader {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 4px solid #222;
+  border-top: 4px solid #ffb68d;
+  -webkit-animation: 1s loader linear infinite;
+  animation: 1s loader linear infinite;
+}
+
+@keyframes loader {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;

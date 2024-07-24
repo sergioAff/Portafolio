@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 interface Age {
   years: number;
@@ -53,6 +54,7 @@ export const AgeCalculator: React.FC = () => {
   const birthDate = useMemo(() => new Date(2002, 1, 9), []);
   const [age, setAge] = useState<Age>(calculateAge(birthDate));
   const [visible, setVisible] = useState(false);
+  const { t } = useTranslation(["about"]);
 
   const arrow = (
     <svg
@@ -91,7 +93,7 @@ export const AgeCalculator: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        Tengo
+        {t("Tengo")}
       </motion.h2>
       <motion.div
         className="flex flex-col sm:flex-row justify-center items-center w-full"
@@ -101,11 +103,11 @@ export const AgeCalculator: React.FC = () => {
       >
         <p className="text-sm sm:text-lg overflow-hidden">
           <span className="font-semibold text-orange-500">{age.years}</span>{" "}
-          años con
+          {t("anos")}
         </p>
         <p className="px-1 text-sm sm:text-lg">
           <span className="font-semibold text-orange-500">{age.months}</span>{" "}
-          meses y
+          {t("meses")}
         </p>
         <AnimatePresence>
           {visible && (
@@ -120,19 +122,19 @@ export const AgeCalculator: React.FC = () => {
                 <span className="font-semibold text-orange-500">
                   {age.days}
                 </span>{" "}
-                días con
+                {t("dias")}
               </p>
               <p className="text-sm sm:text-lg px-1">
                 <span className="font-semibold text-orange-500">
                   {age.hours}
                 </span>{" "}
-                horas y
+                {t("horas")}
               </p>
               <p className="text-sm sm:text-lg px-1">
                 <span className="font-semibold text-orange-500">
                   {age.minutes}
                 </span>{" "}
-                minutos
+                {t("minutos")}
               </p>
             </motion.div>
           )}
