@@ -1,13 +1,15 @@
 "use client";
 import { CardExperience } from "@/components/experience/CardExperience";
-import { experiencias as dataExperiencias } from "../../data/experiencia";
+import { useExperience } from "../../data/experiencia";
 import { useState, useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import { Order } from "@/components/experience/Order";
 import { AnimatePresence, motion } from "framer-motion";
 
 export default function Page() {
-  const [experiencias, setExperiencias] = useState(dataExperiencias);
-  const [originalExperiencias] = useState(dataExperiencias);
+  const { t } = useTranslation(["experiencias"]);
+  const [experiencias, setExperiencias] = useState(useExperience());
+  const [originalExperiencias] = useState(useExperience());
   const [showDates, setShowDates] = useState(true);
   const [scrollPosition, setScrollPosition] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -34,17 +36,20 @@ export default function Page() {
   };
 
   const handleOrderChange = (order: "latest" | "oldest" | "normal") => {
+    let sortedExperiencias;
+
     if (order === "normal") {
       setExperiencias(originalExperiencias);
       setShowDates(false);
     } else {
-      const sortedExperiencias = [...experiencias].sort((a, b) => {
+      sortedExperiencias = [...originalExperiencias].sort((a, b) => {
         const dateA = a.fechas.fin instanceof Date ? a.fechas.fin : new Date();
         const dateB = b.fechas.fin instanceof Date ? b.fechas.fin : new Date();
         return order === "latest"
           ? dateB.getTime() - dateA.getTime()
           : dateA.getTime() - dateB.getTime();
       });
+
       setExperiencias(sortedExperiencias);
       setShowDates(true);
     }
@@ -95,7 +100,7 @@ export default function Page() {
           <Order onOrderChange={handleOrderChange} />
         </div>
         <div className="absolute inset-x-0 top-0 flex justify-center ml-5">
-          <h3 className="text-3xl z-1">Experiencia</h3>
+          <h3 className="text-3xl z-1">{t("Experiencia")}</h3>
         </div>
       </div>
       <div
@@ -103,24 +108,22 @@ export default function Page() {
         className="flex flex-col items-center sm:flex-row gap-20 py-3 sm:py-5 overflow-auto scrollbar-hide scroll-smooth"
       >
         <AnimatePresence>
-          {experiencias.map((experiencia) => {
+          {experiencias.map((item) => {
             const date =
-              experiencia.fechas.fin instanceof Date
-                ? experiencia.fechas.fin
-                : new Date();
+              item.fechas.fin instanceof Date ? item.fechas.fin : new Date();
             const month = getMonthName(date);
             const year = date.getFullYear();
 
             return (
-              <div key={experiencia.trabajo} className="">
+              <div key={item.trabajo} className="">
                 <CardExperience
-                  title={experiencia.trabajo}
-                  preview={experiencia.preview}
-                  imagen={experiencia.imagen}
-                  descripcion={experiencia.descripcion}
-                  lugar={experiencia.lugar}
-                  desde={experiencia.fechas.inicio}
-                  hasta={experiencia.fechas.fin}
+                  title={item.trabajo}
+                  preview={item.preview}
+                  imagen={item.imagen}
+                  descripcion={item.descripcion}
+                  lugar={item.lugar}
+                  desde={item.fechas.inicio}
+                  hasta={item.fechas.fin}
                   mes={showDates ? month : ""}
                   ano={showDates ? year : ""}
                 />

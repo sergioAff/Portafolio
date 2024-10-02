@@ -1,35 +1,37 @@
-export const links = [
-  { id: 1, nombre: "Inicio", enlace: "/", submenus: [] },
-  {
-    id: 2,
-    nombre: "Sobre mi",
-    enlace: "/about",
-    submenus: [
-      { nombreSubmenu: "Quien soy", enlaceSubmenu: "#" },
-      { nombreSubmenu: "Qué hago", enlaceSubmenu: "#" },
-      { nombreSubmenu: "Tecnologías", enlaceSubmenu: "#" },
-    ],
-  },
-  {
-    id: 3,
-    nombre: "Experiencia",
-    enlace: "/experiencia",
-    submenus: [
-      { nombreSubmenu: "Todo", enlaceSubmenu: "#" },
-      { nombreSubmenu: "Año", enlaceSubmenu: "#" },
-      { nombreSubmenu: "Categoría", enlaceSubmenu: "#" },
-      { nombreSubmenu: "Tecnología", enlaceSubmenu: "#" },
-    ],
-  },
-  {
-    id: 4,
-    nombre: "Proyectos",
-    enlace: "/proyectos",
-    submenus: [],
-  },
-];
+import { useTranslation } from "react-i18next";
 
-export const linkContact = {
-  nombre: "Contáctame",
-  enlace: "/contacts",
+interface Links {
+  id: number;
+  nombre: string;
+  enlace: string;
+}
+
+export const useLinks = (): Links[] => {
+  const { t } = useTranslation("links");
+  return [
+    { id: 1, nombre: t("1.nombre"), enlace: "/" },
+    {
+      id: 2,
+      nombre: t("2.nombre"),
+      enlace: "/about",
+    },
+    {
+      id: 3,
+      nombre: t("3.nombre"),
+      enlace: "/experiencia",
+    },
+    {
+      id: 4,
+      nombre: t("4.nombre"),
+      enlace: "/proyectos",
+    },
+  ];
+};
+
+export const useLinkContact = () => {
+  const { t } = useTranslation("links");
+  return {
+    nombre: t("5.nombre"),
+    enlace: "/contacts",
+  };
 };

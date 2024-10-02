@@ -9,7 +9,7 @@ export default function Logo() {
         title="Logo de S@ff"
         width={100}
         height={50}
-        src={"/Logos/B95FF7BB-54A6-45AC-BDD6-97A3C98B0CE32.svg"}
+        src={"/Logos/logo.png"}
       />
     </Link>
   );

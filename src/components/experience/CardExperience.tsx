@@ -3,7 +3,6 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { mostrarFechas } from "@/utils/mostrarFechas";
 import Image from "next/image";
 import { AnimateModal } from "@/components/AnimateModalExperience";
-import { motion } from "framer-motion";
 
 interface PropCardExperience {
   title: string;
@@ -29,14 +28,7 @@ export function CardExperience({
   ano,
 }: PropCardExperience) {
   return (
-    <motion.div
-      className="border border-orange-600 outline-none w-64 h-96 mx-5 transition-all duration-75 flex flex-col justify-around shadow-md shadow-orange-800 rounded-md"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      layout
-      transition={{ duration: 0.5 }}
-    >
+    <div className="border border-orange-600 outline-none w-64 h-96 mx-5 transition-all duration-75 flex flex-col justify-around shadow-md shadow-orange-800 rounded-md">
       <div className="flex flex-col p-2 justify-between items-center px-5">
         <div className="w-full border-b-2 border-orange-primary mx-5">
           <h3 className="text-md sm:text-xl font-semibold text-center pb-1">
@@ -75,6 +67,6 @@ export function CardExperience({
           />
         )}
       </div>
-    </motion.div>
+    </div>
   );
 }

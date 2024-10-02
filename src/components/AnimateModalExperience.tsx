@@ -2,6 +2,7 @@
 import { StaticImport } from "next/dist/shared/lib/get-img-props";
 import { useState } from "react";
 import { Modal } from "@/components/ModalExperience";
+import { useTranslation } from "react-i18next";
 
 export interface Info {
   title: string;
@@ -16,6 +17,7 @@ export interface Info {
 
 export const AnimateModal = ({ title, descripcion, lugar, duracion }: Info) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation(["experiencias"]);
 
   const handleSetIsOpen = (isOpen: boolean) => {
     setIsOpen(isOpen);
@@ -27,7 +29,7 @@ export const AnimateModal = ({ title, descripcion, lugar, duracion }: Info) => {
         onClick={() => setIsOpen(true)}
         className=" rounded-lg bg-orange-500 text-sm sm:text-lg hover:bg-orange-primary active:bg-orange-primary text-white py-1 w-full"
       >
-        Ver más
+        {t("Ver más")}
       </button>
       <Modal
         mostrar={isOpen}

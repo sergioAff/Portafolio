@@ -105,10 +105,12 @@ export const AgeCalculator: React.FC = () => {
           <span className="font-semibold text-orange-500">{age.years}</span>{" "}
           {t("anos")}
         </p>
-        <p className="px-1 text-sm sm:text-lg">
-          <span className="font-semibold text-orange-500">{age.months}</span>{" "}
-          {t("meses")}
-        </p>
+        {age.months > 0 && (
+          <p className="px-1 text-sm sm:text-lg">
+            <span className="font-semibold text-orange-500">{age.months}</span>{" "}
+            {t("meses")}
+          </p>
+        )}
         <AnimatePresence>
           {visible && (
             <motion.div
@@ -118,24 +120,31 @@ export const AgeCalculator: React.FC = () => {
               exit={{ height: 0, opacity: 0 }}
               transition={{ duration: 0.3 }}
             >
-              <p className="text-sm sm:text-lg px-1">
-                <span className="font-semibold text-orange-500">
-                  {age.days}
-                </span>{" "}
-                {t("dias")}
-              </p>
-              <p className="text-sm sm:text-lg px-1">
-                <span className="font-semibold text-orange-500">
-                  {age.hours}
-                </span>{" "}
-                {t("horas")}
-              </p>
-              <p className="text-sm sm:text-lg px-1">
-                <span className="font-semibold text-orange-500">
-                  {age.minutes}
-                </span>{" "}
-                {t("minutos")}
-              </p>
+              {" "}
+              {age.days > 0 && (
+                <p className="text-sm sm:text-lg px-1">
+                  <span className="font-semibold text-orange-500">
+                    {age.days}
+                  </span>{" "}
+                  {t("dias")}
+                </p>
+              )}
+              {age.hours > 0 && (
+                <p className="text-sm sm:text-lg px-1">
+                  <span className="font-semibold text-orange-500">
+                    {age.hours}
+                  </span>{" "}
+                  {t("horas")}
+                </p>
+              )}
+              {age.minutes > 0 && (
+                <p className="text-sm sm:text-lg px-1">
+                  <span className="font-semibold text-orange-500">
+                    {age.minutes}
+                  </span>{" "}
+                  {t("minutos")}
+                </p>
+              )}
             </motion.div>
           )}
         </AnimatePresence>

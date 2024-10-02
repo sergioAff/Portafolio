@@ -1,0 +1,13 @@
+{
+  "1": { "nombre": "Inicio", "enlace": "/" },
+  "2": {
+    "nombre": "Sobre mi"
+  },
+  "3": {
+    "nombre": "Experiencia"
+  },
+  "4": {
+    "nombre": "Proyectos"
+  },
+  "5": { "nombre": "Contactos" }
+}

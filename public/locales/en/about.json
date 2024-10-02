@@ -5,5 +5,29 @@
   "meses": "months and",
   "dias": "days with",
   "horas": "hours and",
-  "minutos": "minutes"
+  "minutos": "minutes",
+  "Ver más": "See more",
+
+  "about": {
+    "1": {
+      "title": "Who am I?",
+      "preview": "I am Sergio Adrian, a developer and student living in Montevideo, Uruguay...",
+      "descripcion": "My name is Sergio Adrian Fernández Figueredo, a developer and student from Cuba living in Montevideo, Uruguay. I am in my 4th year of the Computer Engineering career. I am 22 years old. I have been passionate about technology and programming from a young age, and I have worked on various personal and collaborative projects that have allowed me to acquire solid practical experience."
+    },
+    "2": {
+      "title": "My Skills",
+      "preview": "HTML, CSS, Tailwind, JavaScript, TypeScript, React, Next.js, Python, Django, PostgreSQL...",
+      "descripcion": "HTML, CSS, Tailwind, JavaScript, TypeScript, React, Next.js, Python, Django, PostgreSQL, SQLite, Git, GitHub, Docker... More coming soon."
+    },
+    "3": {
+      "title": "My Achievements",
+      "preview": "Graduated from IPVCE Carlos Roloff in Cienfuegos, Cuba, Award Exams during my studies...",
+      "descripcion": "Graduated from IPVCE Carlos Roloff in Cienfuegos, Cuba, Award Exams during my university studies. Satisfactory results in the projects I have led."
+    },
+    "4": {
+      "title": "Soft Skills",
+      "preview": "English (Intermediate), Spanish (Native), Problem-solving, Leadership, Teamwork...",
+      "descripcion": "English (Intermediate), Spanish (Native), Problem-solving, Leadership, Teamwork, Commitment, Self-improvement, Effective communication, Time management, Adaptability, Critical thinking, Creativity, Empathy, Stress management, Professional ethics."
+    }
+  }
 }

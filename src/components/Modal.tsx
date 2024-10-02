@@ -25,7 +25,7 @@ export const Modal = ({ title, descripcion, mostrar, setIsOpen }: Info) => {
             <div className="relative min-h-[50vh] border border-gray-700 shadow-lg bg-gradient-to-t from-orange-50 to-orange-100 p-6 rounded-lg w-[80vw] max-w-md z-40">
               <button
                 onClick={() => setIsOpen?.(false)}
-                className="absolute top-4 right-4 p-2 text-white bg-red-500 hover:bg-red-600 rounded-full focus:outline-none"
+                className="absolute top-3 right-3 p-1.5 hover:ring-2 transition-all duration-100 ease-in text-red-800 ring-red-900 font-bold rounded-full focus:outline-none"
                 aria-label="Close modal"
               >
                 <svg

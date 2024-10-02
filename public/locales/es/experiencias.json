@@ -1,0 +1,32 @@
+{
+  "Experiencia": "Experiencia",
+  "Ver más": "Ver más",
+  "experiencia": {
+    "1": {
+      "title": "Desarrollador Freelance",
+      "description": "Desarrollo de aplicaciones web utilizando JavaScript y React, creación de aplicaciones de escritorio con Python, y gestión de bases de datos en SQLite y PostgreSQL. Enfoque en ofrecer soluciones personalizadas que cumplan con los requisitos específicos de los clientes, asegurando alta calidad y cumplimiento de los plazos.",
+      "place": "Reomto",
+      "preview": "Desarrollo de aplicaciones web y de escritorio utilizando tecnologías modernas..."
+    },
+    "2": {
+      "title": "Programador SQL",
+      "description": "Responsable del desarrollo y gestión de bases de datos para la gestión eficiente de recursos materiales, humanos y logísticos en Empresa Eléctrica de Cienfuegos. Implementación de soluciones que optimizan el rendimiento y la seguridad de las bases de datos, contribuyendo a una mejor toma de decisiones organizacionales.",
+      "preview": "Desarrollo y gestión de bases de datos robustas y seguras..."
+    },
+    "3": {
+      "title": "Líder de Desarrollo",
+      "description": "Liderazgo de un proyecto centrado en el análisis de datos e identificación de indicadores clave para el sector turístico en Cuba. Coordinación de un equipo multidisciplinario para desarrollar herramientas analíticas que apoyen la toma de decisiones estratégicas.",
+      "preview": "Liderazgo en un proyecto que analiza datos e indicadores clave para el turismo..."
+    },
+    "4": {
+      "title": "Desarrollador Python Junior",
+      "description": "Desarrollo de software como Desarrollador Python Junior en Merchise Austrement, contribuyendo a la implementación de características utilizando las mejores prácticas de programación.",
+      "preview": "Desarrollo de software y colaboración en proyectos de Python..."
+    },
+    "5": {
+      "title": "Desarrollador Full Stack",
+      "description": "Creación y desarrollo de una aplicación web integral como Desarrollador Full Stack y liderazgo de proyecto en 'Clínica Fernández'. Implementación de soluciones tanto en el frontend como en el backend, asegurando funcionalidad y una experiencia de usuario óptima.",
+      "preview": "Creación y desarrollo de una aplicación web integral como Desarrollador Full Stack y..."
+    }
+  }
+}

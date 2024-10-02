@@ -5,5 +5,29 @@
   "meses": "meses y",
   "dias": "días con",
   "horas": "horas y",
-  "minutos": "minutos"
+  "minutos": "minutos",
+  "Ver más": "Ver más",
+
+  "about": {
+    "1": {
+      "title": "¿Quién soy?",
+      "preview": "Soy Sergio Adrián, un desarrollador y estudiante viviendo en Montevideo, Uruguay...",
+      "descripcion": "Me llamo Sergio Adrián Fernández Figueredo, un desarrollador y estudiante cubano viviendo en Montevideo, Uruguay. Estoy en el 4to año de la carrera de Ingeniería Informática. Tengo 22 años. Me apasiona la tecnología y la programación desde joven, y he trabajado en diversos proyectos personales y colaborativos que me han permitido adquirir una sólida experiencia práctica."
+    },
+    "2": {
+      "title": "Mis habilidades",
+      "preview": "HTML, CSS, Tailwind, JavaScript, TypeScript, React, Next.js, Python, Django, PostgreSQL...",
+      "descripcion": "HTML, CSS, Tailwind, JavaScript, TypeScript, React, Next.js, Python, Django, PostgreSQL, SQLite, Git, GitHub, Docker... Pronto vendrán más."
+    },
+    "3": {
+      "title": "Mis logros",
+      "preview": "Graduado en el IPVCE Carlos Roloff en Cienfuegos, Cuba, Exámenes de Premio durante mi carrera...",
+      "descripcion": "Graduado en el IPVCE Carlos Roloff en Cienfuegos, Cuba, Exámenes de Premio durante mi carrera universitaria. Resultados satisfactorios en los proyectos que he liderado."
+    },
+    "4": {
+      "title": "Habilidades Blandas",
+      "preview": "Inglés (Intermedio), Español (nativo), Resolución de problemas, Liderazgo, Trabajo en equipo...",
+      "descripcion": "Inglés (Intermedio), Español (nativo), Resolución de problemas, Liderazgo, Trabajo en equipo, Compromiso, Superación, Comunicación efectiva, Gestión del tiempo, Adaptabilidad, Pensamiento crítico, Creatividad, Empatía, Manejo del estrés, Ética profesional."
+    }
+  }
 }

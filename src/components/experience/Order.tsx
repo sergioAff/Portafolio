@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import clsx from "clsx";
 
 interface OrderProps {
@@ -7,6 +8,7 @@ interface OrderProps {
 }
 
 export const Order = ({ onOrderChange }: OrderProps) => {
+  const { t } = useTranslation(["oreder"]);
   const [open, setOpen] = useState(false);
 
   return (
@@ -35,6 +37,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
           "border rounded-lg px-1 py-1 ring-2 ring-orange-secondary flex sm:flex-row flex-col lg:gap-5 gap-1 items-center ",
           {
             invisible: !open,
+            visible: open,
           }
         )}
       >
@@ -43,7 +46,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
             onClick={() => onOrderChange("latest")}
             className="hover:text-orange-500"
           >
-            Recientes
+            {t("Recientes")}
           </button>
         </li>
         <li>
@@ -51,7 +54,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
             onClick={() => onOrderChange("oldest")}
             className="hover:text-orange-500"
           >
-            Antiguos
+            {t("Antiguos")}
           </button>
         </li>
         <li>
@@ -59,7 +62,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
             onClick={() => onOrderChange("normal")}
             className="hover:text-orange-500"
           >
-            Normal
+            {t("Normal")}
           </button>
         </li>
       </ul>

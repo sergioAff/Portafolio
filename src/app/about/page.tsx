@@ -1,17 +1,17 @@
 "use client";
-
 import { useState, useRef, useEffect } from "react";
 import { Card } from "@/components/about/Card";
-import { about } from "@/data/about";
+import { useAbout } from "@/data/about";
 import { AgeCalculator } from "@/components/about/edad";
 import { motion } from "framer-motion";
-import { useTranslation } from "react-i18next";
 import { Suspense } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Page() {
-  const { t } = useTranslation(["about"]);
   const [scrollPosition, setScrollPosition] = useState<number>(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const about = useAbout();
+  const { t } = useTranslation(["about"]);
 
   const handleScroll = (direction: "left" | "right") => {
     const container = containerRef.current;
@@ -50,7 +50,7 @@ export default function Page() {
   }, []);
 
   return (
-    <Suspense fallback>
+    <Suspense>
       <motion.div
         className="flex flex-col justify-between gap-5"
         initial={{ opacity: 0, y: 20 }}

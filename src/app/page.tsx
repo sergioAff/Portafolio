@@ -1,11 +1,13 @@
 "use client";
 import { useTranslation } from "react-i18next";
+// import { ThemeProvider } from "next-themes";
 
 export default function Page() {
   const { t } = useTranslation(["welcome"]);
 
   return (
-    <main className="flex items-center justify-center h-auto">
+    // <ThemeProvider attribute="class" enableSystem={true}>
+    <main className="flex items-center justify-center h-auto ">
       <div className="flex flex-col h-auto w-4/5 sm:w-3/5 lg:w-2/5 items-start justify-center p-10">
         <hgroup className="w-full ">
           <h1 className="text-6xl sm:text-8xl font-semibold text-gray-800 antialiased animate-fadeIn">
@@ -21,5 +23,6 @@ export default function Page() {
         </hgroup>
       </div>
     </main>
+    /* </ThemeProvider> */
   );
 }

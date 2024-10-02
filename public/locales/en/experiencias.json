@@ -1,0 +1,32 @@
+{
+  "Experiencia": "Experience",
+  "Ver más": "See more",
+  "experiencias": {
+    "1": {
+      "title": "Freelance Developer",
+      "description": "Development of web applications using JavaScript and React, creation of desktop applications with Python, and database management in SQLite and PostgreSQL. Focused on delivering customized solutions that meet clients' specific requirements, ensuring high quality and meeting deadlines.",
+      "place": "Reomte",
+      "preview": "Development of web and desktop applications using modern technologies..."
+    },
+    "2": {
+      "title": "SQL Programmer",
+      "description": "Responsible for developing and managing databases for efficient management of material, human, and logistical resources at Empresa Eléctrica de Cienfuegos. Implementation of solutions that optimize performance and security of databases, contributing to better organizational decision-making.",
+      "preview": "Development and management of robust and secure databases..."
+    },
+    "3": {
+      "title": "Development Leader",
+      "description": "Leadership of a project focused on data analysis and identification of key indicators for the tourism sector in Cuba. Coordination of a multidisciplinary team to develop analytical tools that support strategic decision-making.",
+      "preview": "Leadership in a project analyzing data and key indicators for tourism..."
+    },
+    "4": {
+      "title": "Junior Python Developer",
+      "description": "Software development as a Junior Python Developer at Merchise Austrement, contributing to the implementation of features using best programming practices.",
+      "preview": "Software development and collaboration on Python projects..."
+    },
+    "5": {
+      "title": "Full Stack Developer",
+      "description": "Creation and development of a comprehensive web application as a Full Stack Developer and project leadership at 'Clínica Fernández'. Implementation of solutions in both frontend and backend, ensuring functionality and optimal user experience.",
+      "preview": "Creation and development of a comprehensive web application as a Full Stack Developer and..."
+    }
+  }
+}

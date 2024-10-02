@@ -1,0 +1,13 @@
+{
+  "1": { "nombre": "Home" },
+  "2": {
+    "nombre": "About me"
+  },
+  "3": {
+    "nombre": "Experience"
+  },
+  "4": {
+    "nombre": "Projects"
+  },
+  "5": { "nombre": "Conctacts" }
+}

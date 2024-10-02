@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 import { clsx } from "clsx";
-import { useTranslation } from "react-i18next";
 import i18n from "@/config/i18next.config";
 
 export default function Languaje() {
@@ -19,7 +19,13 @@ export default function Languaje() {
   }
 
   return (
-    <span onClick={onChangeOpen} className=" relative">
+    <motion.div
+      onClick={onChangeOpen}
+      className=" relative"
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
@@ -37,14 +43,16 @@ export default function Languaje() {
 
       <ul
         className={clsx(
-          "ring-2 ring-orange-secondary absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-5 mt-4 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out",
-          { "opacity-0": open }
+          "ring-2 ring-orange-secondary absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-2 mt-4 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out",
+          { "opacity-0": !open, "opacity-100": open }
         )}
       >
         <li>
           <button
             onClick={() => onChangeLanguage("es")}
-            className=" hover:text-orange-500"
+            className={clsx("hover:text-orange-700", {
+              "text-orange-500 underline underline-offset-2": Language === "es",
+            })}
           >
             Español
           </button>
@@ -53,12 +61,14 @@ export default function Languaje() {
           <button
             onClick={() => onChangeLanguage("en")}
             lang="en"
-            className=" hover:text-orange-500"
+            className={clsx("hover:text-orange-700", {
+              "text-orange-500 underline underline-offset-2": Language === "en",
+            })}
           >
             English
           </button>
         </li>
       </ul>
-    </span>
+    </motion.div>
   );
 }

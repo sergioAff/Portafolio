@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export default function DarkMode() {
   const [DarkMode, setDarkMode] = useState(false);
@@ -10,7 +11,11 @@ export default function DarkMode() {
   }
 
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: -50 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <button hidden={DarkMode} onClick={onChange}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -43,6 +48,6 @@ export default function DarkMode() {
           />
         </svg>
       </button>
-    </>
+    </motion.div>
   );
 }
