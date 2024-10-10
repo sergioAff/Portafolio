@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
 import { SectionAbout } from "@/components/about/SectionAbout";
 import { TecnologiesSectionAbout } from "@/components/about/TecnologiesSectionAbout";
 import { HabilidadesSection } from "@/components/about/HabilidadesSectionAbout";
@@ -34,6 +35,7 @@ const up = (
 
 export default function Page() {
   const { t } = useTranslation(["about"]);
+  const [isOpenAll, setIsOpenAll] = useState<boolean>(false);
 
   return (
     <motion.div
@@ -44,6 +46,20 @@ export default function Page() {
       transition={{ duration: 0.2 }}
     >
       <div className="flex flex-col justify-center gap-3 mx-5 py-8 items-center sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%] ">
+        <div className="text-base font-semibold tracking-wide text-black flex gap-2 w-full">
+          <button
+            className=" rounded-lg bg-orange-500 px-2 py-1 shadow-md hover:bg-orange-600 text-white transition-all duration-200 ease-in-out"
+            onClick={() => setIsOpenAll(true)}
+          >
+            Desplegar
+          </button>
+          <button
+            className=" rounded-lg bg-orange-500 px-2 py-1 shadow-md hover:bg-orange-600 text-white transition-all duration-200 ease-in-out"
+            onClick={() => setIsOpenAll(false)}
+          >
+            Recoger
+          </button>
+        </div>
         <SectionAbout
           icon={<UserIcon />}
           text={t("personal.texto")}

@@ -32,7 +32,7 @@ export function SectionAbout({
         </div>
         <button
           className={clsx(
-            "ring-2 rounded-full p-0.5 ring-transparent hover:text-orange-700 hover:ring-orange-tertiary ring-offset-0 hover:ring-offset-2 transition-all ease-in-out duration-150",
+            "ring-2 rounded-full p-0.5 ring-transparent hover:text-orange-00 hover:ring-orange-tertiary ring-offset-0 hover:ring-offset-2 transition-all ease-in-out duration-150",
             { "rotate-0": isOpen, "rotate-180": !isOpen }
           )}
           onClick={() => setIsOpen(!isOpen)}
