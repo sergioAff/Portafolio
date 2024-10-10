@@ -1,33 +1,37 @@
 {
-  "Sobre mi": "Sobre mi",
-  "Tengo": "Tengo",
-  "anos": "años con",
-  "meses": "meses y",
-  "dias": "días con",
-  "horas": "horas y",
-  "minutos": "minutos",
-  "Ver más": "Ver más",
+  "personal": {
+    "titulo": "Información Personal",
+    "texto": "Soy Sergio Adrian Fernández Figueredo, un apasionado profesional de la tecnología originario de Cuba, actualmente residenciado en Montevideo, Uruguay. A mis 22 años, he cultivado una profunda fascinación por la programación desde una edad temprana. Mis intereses abarcan no solo la tecnología, sino también la fotografía, la salud, el deporte y los viajes. Mi curiosidad innata por el aprendizaje me impulsa a ser perfeccionista en las actividades que elijo realizar."
+  },
 
-  "about": {
-    "1": {
-      "title": "¿Quién soy?",
-      "preview": "Soy Sergio Adrián, un desarrollador y estudiante viviendo en Montevideo, Uruguay...",
-      "descripcion": "Me llamo Sergio Adrián Fernández Figueredo, un desarrollador y estudiante cubano viviendo en Montevideo, Uruguay. Estoy en el 4to año de la carrera de Ingeniería Informática. Tengo 22 años. Me apasiona la tecnología y la programación desde joven, y he trabajado en diversos proyectos personales y colaborativos que me han permitido adquirir una sólida experiencia práctica."
-    },
-    "2": {
-      "title": "Mis habilidades",
-      "preview": "HTML, CSS, Tailwind, JavaScript, TypeScript, React, Next.js, Python, Django, PostgreSQL...",
-      "descripcion": "HTML, CSS, Tailwind, JavaScript, TypeScript, React, Next.js, Python, Django, PostgreSQL, SQLite, Git, GitHub, Docker... Pronto vendrán más."
-    },
-    "3": {
-      "title": "Mis logros",
-      "preview": "Graduado en el IPVCE Carlos Roloff en Cienfuegos, Cuba, Exámenes de Premio durante mi carrera...",
-      "descripcion": "Graduado en el IPVCE Carlos Roloff en Cienfuegos, Cuba, Exámenes de Premio durante mi carrera universitaria. Resultados satisfactorios en los proyectos que he liderado."
-    },
-    "4": {
-      "title": "Habilidades Blandas",
-      "preview": "Inglés (Intermedio), Español (nativo), Resolución de problemas, Liderazgo, Trabajo en equipo...",
-      "descripcion": "Inglés (Intermedio), Español (nativo), Resolución de problemas, Liderazgo, Trabajo en equipo, Compromiso, Superación, Comunicación efectiva, Gestión del tiempo, Adaptabilidad, Pensamiento crítico, Creatividad, Empatía, Manejo del estrés, Ética profesional."
+  "profesion": {
+    "titulo": "Mi Carrera",
+    "texto": "Mi trayectoria en el ámbito tecnológico se ha desarrollado principalmente a través de mis estudios en ingeniería informática, donde actualmente me encuentro cursando el cuarto año. Gracias a mi impulso autodidacta, he logrado profundizar en el desarrollo full-stack, alcanzando múltiples metas y adquiriendo valiosa experiencia y conocimientos en el campo."
+  },
+
+  "metas": {
+    "titulo": "Mis Metas",
+    "texto": "Mi objetivo es graduarme como ingeniero informático y continuar mi desarrollo personal y profesional, esforzándome por alcanzar la mejor versión de mí mismo. Aspiro a trabajar en empresas líderes en el sector, lo que me permitirá ampliar mis conocimientos y enriquecer mis experiencias laborales."
+  },
+
+  "tecnologias": {
+    "titulo": "Tecnologías",
+    "otras": "Otras tecnologías"
+  },
+
+  "habilidades_blandas": {
+    "titulo": "Habilidades Blandas",
+    "lista": {
+      "1": "Español nativo",
+      "2": "Inglés intermedio",
+      "3": "Pensamiento analítico",
+      "4": "Pensamiento creativo",
+      "5": "Resiliencia y adaptabilidad",
+      "6": "Empatía y escucha activa",
+      "7": "Trabajo en equipo",
+      "8": "Liderazgo",
+      "9": "Confiabilidad y atención al detalle",
+      "10": "Curiosidad y aprendizaje continuo"
     }
   }
 }

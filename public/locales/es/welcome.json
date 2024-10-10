@@ -1,10 +1,11 @@
 {
   "Hola": "Hola",
   "Soy": "Soy",
-  "profesion": "Un programador fullstack",
+  "profesion": "Un programador full-stack con un año de experiencia",
   "Contáctame": "Contact me",
   "Inicio": "Inicio",
   "Sobre mi": "Sobre mi",
   "Experiencia": "Experiencia",
-  "Proyectos": "Proyectos"
+  "Proyectos": "Proyectos",
+  "Welcome": "Bienvenid@"
 }

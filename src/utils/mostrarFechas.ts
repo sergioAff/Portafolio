@@ -1,7 +1,7 @@
 import { formatearFecha } from "@/utils/formatearFecha";
 
 export function mostrarFechas(desde?: Date, hasta?: Date | "Actual"): string {
-  if (!desde) return ""; // Si 'desde' es undefined, retornar una cadena vacía
+  if (!desde) return "";
   const fechaInicio = formatearFecha(desde);
   const fechaFin =
     hasta === "Actual" ? "Actual" : hasta ? formatearFecha(hasta) : "";

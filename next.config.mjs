@@ -6,7 +6,7 @@ const nextConfig = {
     defaultLocale: "en",
     localeDetection: false,
   },
-  eloadOnPrerender: process.env.NODE_ENV === "development",
+  // eloadOnPrerender: process.env.NODE_ENV === "development",
 };
 
 export default nextConfig;

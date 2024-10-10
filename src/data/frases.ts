@@ -1,95 +1,23 @@
-export const frases = [
-  {
-    frase: "Hablar es bara. Enséñame el código.",
-    aur: "Linus rvalds",
-  },
-  {
-    frase:
-      "El código limpio siempre parece que fue escri por alguien que se preocupó.",
-    aur: "Robert C. Martin",
-  },
-  {
-    frase: "La simplicidad es la máxima sofisticación.",
-    aur: "Leonardo da Vinci",
-  },
-  {
-    frase: "Primero, resuelve el problema. Luego, escribe el código.",
-    aur: "John Johnson",
-  },
-  {
-    frase: "El optimismo es un riesgo profesional en la programación.",
-    aur: "Kent Beck",
-  },
-  {
-    frase:
-      "La programación no es sobre lo que sabes, sino sobre lo que puedes descubrir.",
-    aur: "Chris Pine",
-  },
-  {
-    frase:
-      "Cualquier n puede escribir código que una computadora entienda. Los buenos programadores escriben código que los humanos entiendan.",
-    aur: "Martin Fowler",
-  },
-  {
-    frase: "El código es como el humor. Cuando tienes que explicarlo, es malo.",
-    aur: "Cory House",
-  },
-  {
-    frase:
-      "Si piensas que tus usuarios son idiotas, solo los idiotas usarán tu programa.",
-    aur: "Linus rvalds",
-  },
-  {
-    frase:
-      "No te preocupes si no funciona bien. Si do estuviera bien, no estarías aquí.",
-    aur: "Mosher's Law of Software Engineering",
-  },
-  {
-    frase:
-      "Las cosas buenas de los programadores es que no necesitamos una razón para hacer cosas, solo una excusa.",
-    aur: "Anónimo",
-  },
-  {
-    frase: "La gente piensa que el diseño es cómo se ve. Es cómo funciona.",
-    aur: "Steve Jobs",
-  },
-  {
-    frase:
-      "El software es una herramienta para hacer cosas, no una cosa en sí misma.",
-    aur: "Ward Cunningham",
-  },
-  {
-    frase:
-      "La medición puede ayudar a las organizaciones a comprender dónde están y cómo mejorarse.",
-    aur: "Tim Berners-Lee",
-  },
-  {
-    frase: "Aprende a trabajar con el código como si fuera un poema.",
-    aur: "John Romero",
-  },
-  {
-    frase:
-      "La verdadera prueba de cualquier sistema es cómo responde cuando do va mal.",
-    aur: "Charlie Miller",
-  },
-  {
-    frase:
-      "La perfección se alcanza, no cuando no hay nada más que añadir, sino cuando no hay nada más que quitar.",
-    aur: "Anine de Saint-Exupéry",
-  },
-  {
-    frase:
-      "Los programas deben ser escris para que la gente los lea, y solo incidentalmente para que las máquinas los ejecuten.",
-    aur: "Hal Abelson",
-  },
-  {
-    frase:
-      "Una buena arquitectura permite cambios, malas decisiones, y el aprendizaje.",
-    aur: "Jim Shore",
-  },
-  {
-    frase:
-      "No cometas el mismo error dos veces. Solo hay una cantidad finita de errores posibles.",
-    aur: "Bertrand Meyer",
-  },
-];
+import { useTranslation } from "react-i18next";
+
+export const Frases = () => {
+  const { t } = useTranslation("frases");
+
+  return [
+    { id: 1, frase: t("1.frase"), autor: t("1.autor") },
+    { id: 2, frase: t("2.frase"), autor: t("2.autor") },
+    { id: 3, frase: t("3.frase"), autor: t("3.autor") },
+    { id: 4, frase: t("4.frase"), autor: t("4.autor") },
+    { id: 5, frase: t("5.frase"), autor: t("5.autor") },
+    { id: 6, frase: t("6.frase"), autor: t("6.autor") },
+    { id: 7, frase: t("7.frase"), autor: t("7.autor") },
+    { id: 8, frase: t("8.frase"), autor: t("8.autor") },
+    { id: 9, frase: t("9.frase"), autor: t("9.autor") },
+    { id: 10, frase: t("10.frase"), autor: t("10.autor") },
+    { id: 11, frase: t("11.frase"), autor: t("11.autor") },
+    { id: 12, frase: t("12.frase"), autor: t("12.autor") },
+    { id: 13, frase: t("13.frase"), autor: t("13.autor") },
+    { id: 14, frase: t("14.frase"), autor: t("14.autor") },
+    { id: 15, frase: t("15.frase"), autor: t("15.autor") },
+  ];
+};

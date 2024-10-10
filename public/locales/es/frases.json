@@ -1,0 +1,62 @@
+{
+  "1": {
+    "frase": "El código limpio es como una broma: si tienes que explicarlo, no es bueno.",
+    "autor": "Martin Fowler"
+  },
+  "2": {
+    "frase": "Los programas deben escribirse para que las personas los lean, y solo incidentalmente para que las máquinas los ejecuten.",
+    "autor": "Harold Abelson"
+  },
+  "3": {
+    "frase": "En desarrollo, el mejor código es el que nunca tienes que escribir.",
+    "autor": "Robert C. Martin"
+  },
+  "4": {
+    "frase": "La simplicidad es la máxima sofisticación.",
+    "autor": "Leonardo da Vinci"
+  },
+  "5": {
+    "frase": "El código es como el humor. Cuando tienes que explicarlo, no es bueno.",
+    "autor": "Cory House"
+  },
+  "6": {
+    "frase": "Los buenos programadores escriben código que los humanos pueden entender.",
+    "autor": "Martin Fowler"
+  },
+  "7": {
+    "frase": "No te preocupes si no funciona bien. Si todo funcionara bien, no tendrías trabajo.",
+    "autor": "Mosher’s Law of Software Engineering"
+  },
+  "8": {
+    "frase": "Primero, resuelve el problema. Después, escribe el código.",
+    "autor": "John Johnson"
+  },
+  "9": {
+    "frase": "La programación no es aprender a programar, es aprender a pensar.",
+    "autor": "Steve Jobs"
+  },
+  "10": {
+    "frase": "La gente piensa que el diseño es cómo se ve. Pero, si miras de cerca, es cómo funciona.",
+    "autor": "Steve Jobs"
+  },
+  "11": {
+    "frase": "El desarrollo web es 90% lógica y 10% HTML.",
+    "autor": "Desconocido"
+  },
+  "12": {
+    "frase": "Cualquier tonto puede escribir código que una computadora entienda. Los buenos programadores escriben código que los humanos pueden entender.",
+    "autor": "Martin Fowler"
+  },
+  "13": {
+    "frase": "Si el código funciona pero no está limpio, no está terminado.",
+    "autor": "Michael Feathers"
+  },
+  "14": {
+    "frase": "Los errores son parte del viaje, no el destino.",
+    "autor": "Desconocido"
+  },
+  "15": {
+    "frase": "El software es como el vino, mejora con el tiempo... hasta que alguien lo toca.",
+    "autor": "Desconocido"
+  }
+}

@@ -1,5 +1,5 @@
-import { Inter } from "next/font/google";
+import { Urbanist } from "next/font/google";
 
-const inter = Inter({ subsets: ["latin"] });
+const urbanist = Urbanist({ subsets: ["latin"] });
 
-export default inter;
+export default urbanist;

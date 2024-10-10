@@ -1,0 +1,62 @@
+{
+  "1": {
+    "frase": "Clean code is like a joke: if you have to explain it, it’s not good.",
+    "autor": "Martin Fowler"
+  },
+  "2": {
+    "frase": "Programs must be written for people to read, and only incidentally for machines to execute.",
+    "autor": "Harold Abelson"
+  },
+  "3": {
+    "frase": "In development, the best code is the one you never have to write.",
+    "autor": "Robert C. Martin"
+  },
+  "4": {
+    "frase": "Simplicity is the ultimate sophistication.",
+    "autor": "Leonardo da Vinci"
+  },
+  "5": {
+    "frase": "Code is like humor. When you have to explain it, it’s bad.",
+    "autor": "Cory House"
+  },
+  "6": {
+    "frase": "Good programmers write code that humans can understand.",
+    "autor": "Martin Fowler"
+  },
+  "7": {
+    "frase": "Don’t worry if it doesn’t work right. If everything did, you’d be out of a job.",
+    "autor": "Mosher’s Law of Software Engineering"
+  },
+  "8": {
+    "frase": "First, solve the problem. Then, write the code.",
+    "autor": "John Johnson"
+  },
+  "9": {
+    "frase": "Programming is not about learning to code, it’s about learning to think.",
+    "autor": "Steve Jobs"
+  },
+  "10": {
+    "frase": "People think design is how it looks. But, if you look closely, it’s how it works.",
+    "autor": "Steve Jobs"
+  },
+  "11": {
+    "frase": "Web development is 90% logic and 10% HTML.",
+    "autor": "Unknown"
+  },
+  "12": {
+    "frase": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "autor": "Martin Fowler"
+  },
+  "13": {
+    "frase": "If the code works but it’s not clean, it’s not done.",
+    "autor": "Michael Feathers"
+  },
+  "14": {
+    "frase": "Mistakes are part of the journey, not the destination.",
+    "autor": "Unknown"
+  },
+  "15": {
+    "frase": "Software is like wine, it gets better with time... until someone touches it.",
+    "autor": "Unknown"
+  }
+}

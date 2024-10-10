@@ -2,7 +2,6 @@
 
 import { Links } from "@/components/Links";
 import { ReactNode, useState } from "react";
-import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
 interface ContactCardProps {
@@ -19,7 +18,7 @@ const visitIcon = (
     viewBox="0 0 24 24"
     strokeWidth="1.5"
     stroke="currentColor"
-    className="w-12 h-12 p-2 hover:bg-gray-100 rounded-full hover:ring-2 ring-offset-2 transition-all duration-100 ease-in-out ring-orange-400/50 hover:ring-orange-400"
+    className="w-12 h-12 p-2 text-gray-900 hover:bg-gray-100 rounded-full hover:ring-2 ring-offset-2 transition-all duration-100 ease-in-out ring-orange-400/50 hover:ring-orange-400"
   >
     <path
       strokeLinecap="round"
@@ -71,31 +70,28 @@ export const ContactCard = ({
 
   return (
     <>
-      <motion.div
-        className="relative flex min-h-[30dvh] sm:min-w-[20dvw] border flex-col items-center justify-between rounded-xl shadow-lg shadow-orange-800 border-orange-400 p-6 bg-white hover:bg-orange-50 transition-all duration-200 ease-in-out transform overflow-hidden z-50"
-        whileHover={{ scale: 1.05 }}
-      >
+      <div className="relative flex min-h-[23dvh] max-w-[90dvw] sm:max-w-[55dvw] md:max-w-[45dvw] lg:max-w-[33dvw] min-w-[90dvw] sm:min-w-[55dvw] md:min-w-[45dvw] lg:min-w-[33dvw]  flex-col items-center justify-between rounded-xl shadow-md hover:ring ring-orange-tertiary hover:ring-offset-2 bg-white/40 transition-all duration-100 ease-in-out transform overflow-hidden z-50 py-3">
         {showNotification && (
-          <div className="animate-fadeTop absolute top-1/3 w-4/5 bg-green-500 text-white px-4 py-2 rounded-lg shadow-md">
-            <p className="flex gap-2 justify-center">
+          <div className="animate-fadeTop absolute top-1/3 w-3/5 bg-green-500 text-white py-2 rounded-lg shadow-xl">
+            <p className="flex gap-2 justify-center items-center text-lg font-semibold tracking-wide">
               {title.replace(": ", "")} {t("Copiado")}{" "}
               <span>{correctIcon}</span>
             </p>
           </div>
         )}
-        <div className="pt-5 pb-1 flex flex-col justify-center items-center gap-2">
+        <div className="pt-3 pb-1 flex flex-col justify-center items-center gap-2">
           <Links nombre={icon} direccion={direccion} />
-          <h3 className="text-lg font-semibold text-gray-700">
+          <h3 className="text-2xl font-semibold text-gray-900">
             {title.replace(": ", "")}
           </h3>
         </div>
-        <div className="w-full px-5 flex justify-center font-mono text-gray-600">
+        <div className="w-full px-5 flex justify-center font-mono text-gray-600 font-medium">
           <Links direccion={direccion} nombre={enlace} />
         </div>
-        <div className="mt-3 flex justify-around w-full">
+        <div className=" flex justify-around w-full">
           <button
             onClick={() => handleCopy(enlace)}
-            className="text-gray-500 hover:text-gray-700 transition-colors duration-200 w-1/2 flex items-center justify-center py-2"
+            className="transition-colors duration-200 w-1/2 flex items-center justify-center py-2"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -103,7 +99,7 @@ export const ContactCard = ({
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="w-12 h-12 p-2 hover:bg-gray-100 rounded-full hover:ring-2 ring-offset-2 transition-all duration-100 ease-in-out ring-orange-400/50 hover:ring-orange-400"
+              className="w-12 h-12 text-gray-900 p-2 hover:bg-gray-100 rounded-full hover:ring-2 ring-offset-2 transition-all duration-100 ease-in-out ring-orange-400/50 hover:ring-orange-400"
             >
               <path
                 strokeLinecap="round"
@@ -116,7 +112,7 @@ export const ContactCard = ({
             <Links direccion={direccion} nombre={visitIcon} target="_blank" />
           </div>
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

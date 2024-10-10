@@ -8,14 +8,14 @@ interface OrderProps {
 }
 
 export const Order = ({ onOrderChange }: OrderProps) => {
-  const { t } = useTranslation(["oreder"]);
+  const { t } = useTranslation(["order"]);
   const [open, setOpen] = useState(false);
 
   return (
-    <div className=" flex sm:flex-row flex-col gap-1 justify-center items-center">
+    <div className=" flex flex-row gap-2 justify-center items-center ">
       <button
         onClick={() => setOpen(!open)}
-        className="bg-orange-500 text-white hover:bg-orange-600 font-bold p-2 rounded-full"
+        className="bg-orange-500 text-white hover:bg-orange-600 font-bold p-2 rounded-full shadow-lg "
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -34,10 +34,10 @@ export const Order = ({ onOrderChange }: OrderProps) => {
       </button>
       <ul
         className={clsx(
-          "border rounded-lg px-1 py-1 ring-2 ring-orange-secondary flex sm:flex-row flex-col lg:gap-5 gap-1 items-center ",
+          "rounded-md shadow-lg font-semibold transition-all duration-75 bg-white/45 ease-in-out ring-orange-secondary flex flex-row gap-2 items-center overflow-hidden",
           {
-            invisible: !open,
-            visible: open,
+            "max-w-0": !open,
+            "max-w-screen, px-2 py-1 ring-2": open,
           }
         )}
       >

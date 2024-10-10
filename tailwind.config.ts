@@ -18,6 +18,8 @@ const config: Config = {
         "orange-primary": "#FFB68D",
         "orange-secondary": "#FF9C71",
         "orange-tertiary": "#fB9B50",
+        claro: "#F9EEE7",
+        oscuro: "",
       },
       dropShadow: {
         lg: "2px 2px 5px rgba(0, 0, 0, 0.5)",

@@ -21,7 +21,7 @@ export default function Languaje() {
   return (
     <motion.div
       onClick={onChangeOpen}
-      className=" relative"
+      className=" relative text-gray-900"
       initial={{ opacity: 0, y: -50 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -43,7 +43,7 @@ export default function Languaje() {
 
       <ul
         className={clsx(
-          "ring-2 ring-orange-secondary absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-2 mt-4 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out",
+          "ring-2 ring-orange-secondary absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-2 mt-4 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out font-semibold",
           { "opacity-0": !open, "opacity-100": open }
         )}
       >

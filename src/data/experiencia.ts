@@ -1,18 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-interface Experience {
-  trabajo: string;
-  descripcion: string;
-  lugar: string;
-  preview: string;
-  imagen: string;
-  fechas: {
-    inicio: Date;
-    fin: Date | "Actual";
-  };
-}
-
-export const useExperience = (): Experience[] => {
+export const Experiencia = () => {
   const { t } = useTranslation(["experiencias"]);
   return [
     {

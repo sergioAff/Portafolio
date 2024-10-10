@@ -1,122 +1,81 @@
 "use client";
-import { useState, useRef, useEffect } from "react";
-import { Card } from "@/components/about/Card";
-import { useAbout } from "@/data/about";
-import { AgeCalculator } from "@/components/about/edad";
 import { motion } from "framer-motion";
-import { Suspense } from "react";
 import { useTranslation } from "react-i18next";
+import { SectionAbout } from "@/components/about/SectionAbout";
+import { TecnologiesSectionAbout } from "@/components/about/TecnologiesSectionAbout";
+import { HabilidadesSection } from "@/components/about/HabilidadesSectionAbout";
+import {
+  UserIcon,
+  AcademicCapIcon,
+  CheckCircleIcon,
+} from "@heroicons/react/24/outline";
+
+const up = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 24 24"
+    strokeWidth="1.5"
+    stroke="currentColor"
+    className="w-5"
+  >
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m4.5 18.75 7.5-7.5 7.5 7.5"
+    />
+    <path
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      d="m4.5 12.75 7.5-7.5 7.5 7.5"
+    />
+  </svg>
+);
 
 export default function Page() {
-  const [scrollPosition, setScrollPosition] = useState<number>(0);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const about = useAbout();
   const { t } = useTranslation(["about"]);
 
-  const handleScroll = (direction: "left" | "right") => {
-    const container = containerRef.current;
-    const scrollAmount = 450;
-
-    if (container) {
-      if (direction === "left") {
-        container.scrollTo({
-          left: container.scrollLeft - scrollAmount,
-          behavior: "smooth",
-        });
-      } else if (direction === "right") {
-        container.scrollTo({
-          left: container.scrollLeft + scrollAmount,
-          behavior: "smooth",
-        });
-      }
-
-      setScrollPosition(container.scrollLeft);
-    }
-  };
-
-  useEffect(() => {
-    const container = containerRef.current;
-    if (container) {
-      const updateScrollPosition = () =>
-        setScrollPosition(container.scrollLeft);
-      container.addEventListener("scroll", updateScrollPosition);
-
-      setScrollPosition(container.scrollLeft);
-
-      return () => {
-        container.removeEventListener("scroll", updateScrollPosition);
-      };
-    }
-  }, []);
-
   return (
-    <Suspense>
-      <motion.div
-        className="flex flex-col justify-between gap-5"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -20 }}
-        transition={{ duration: 0.2 }}
-      >
-        <h1 className="text-center text-3xl mb-1">{t("Sobre mi")}</h1>
-        <div
-          className="flex flex-col items-center sm:flex-row gap-20 py-3 sm:py-5 overflow-auto scrollbar-hide scroll-smooth"
-          ref={containerRef}
-        >
-          {about.map((info) => (
-            <Card
-              key={info.id}
-              title={info.title}
-              descripcion={info.descripcion}
-              preview={info.preview}
+    <motion.div
+      className=" flex items-start justify-center min-h-[80dvh]"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.2 }}
+    >
+      <div className="flex flex-col justify-center gap-3 mx-5 py-8 items-center sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%] ">
+        <SectionAbout
+          icon={<UserIcon />}
+          text={t("personal.texto")}
+          title={t("personal.titulo")}
+          estilos="w-full"
+          up={up}
+        />
+        <div className="flex flex-col sm:flex-row gap-3 w-full">
+          <div className="flex-1">
+            <SectionAbout
+              icon={<AcademicCapIcon />}
+              text={t("profesion.texto")}
+              title={t("profesion.titulo")}
+              estilos="flex-1"
+              up={up}
             />
-          ))}
+          </div>
+          <div className="flex-1">
+            <SectionAbout
+              icon={<CheckCircleIcon />}
+              text={t("metas.texto")}
+              title={t("metas.titulo")}
+              estilos="flex-1"
+              up={up}
+            />
+          </div>
         </div>
-        <div className="sm:flex hidden justify-between mb-5 px-5">
-          <button
-            className="bg-orange-500 hover:bg-orange-secondary active:bg-orange-secondary text-white font-bold py-2 px-4 rounded-full hover:cursor-pointer"
-            onClick={() => handleScroll("left")}
-            disabled={scrollPosition === 0}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
-              />
-            </svg>
-          </button>
-          <button
-            className="bg-orange-500 hover:bg-orange-secondary active:bg-orange-secondary text-white font-bold py-2 px-4 rounded-full hover:cursor-pointer"
-            onClick={() => handleScroll("right")}
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth="1.5"
-              stroke="currentColor"
-              className="w-6"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-              />
-            </svg>
-          </button>
+        <div className="flex flex-col  md:flex-row gap-2 w-full">
+          <TecnologiesSectionAbout up={up} />
+          <HabilidadesSection up={up} />
         </div>
-        <div className="max-h-[15dvh] flex mb-10 justify-center items-end">
-          <AgeCalculator />
-        </div>
-      </motion.div>
-    </Suspense>
+      </div>
+    </motion.div>
   );
 }
