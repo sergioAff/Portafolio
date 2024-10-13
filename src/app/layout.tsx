@@ -15,26 +15,24 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [showSplashFaster, setShowSplashFaster] = useState(true);
 
   useEffect(() => {
-    const onVisited = localStorage.getItem("onVisited");
+    const hasVisited = localStorage.getItem("onVisited");
 
-    if (onVisited) {
+    if (hasVisited) {
       setShowSplashFaster(true);
       const timerFaster = setTimeout(() => {
-        setTimeout(() => {
-          setShowSplashFaster(false);
-        }, 20);
-      }, 20);
+        setShowSplashFaster(false);
+      }, 500); // Aumenta este tiempo si es necesario
       return () => clearTimeout(timerFaster);
     } else {
-      // Mostrar solo el SplashPage para usuarios que visitan por primera vez
       setShowSplash(true);
       const timer = setTimeout(() => {
         setFadeOut(true);
-        setTimeout(() => {
+        const timerOut = setTimeout(() => {
           setShowSplash(false);
           localStorage.setItem("onVisited", "true");
-        }, 20);
-      }, 20);
+        }, 500); // Aumenta este tiempo si es necesario
+        return () => clearTimeout(timerOut);
+      }, 1000); // Aumenta este tiempo si es necesario
       return () => clearTimeout(timer);
     }
   }, []);
