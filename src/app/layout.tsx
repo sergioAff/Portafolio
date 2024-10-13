@@ -21,7 +21,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       setShowSplashFaster(true);
       const timerFaster = setTimeout(() => {
         setShowSplashFaster(false);
-      }, 1000); // Aumenta este tiempo si es necesario
+      }, 2000); // Aumenta este tiempo si es necesario
       return () => clearTimeout(timerFaster);
     } else {
       setShowSplash(true);
@@ -30,9 +30,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         const timerOut = setTimeout(() => {
           setShowSplash(false);
           localStorage.setItem("onVisited", "true");
-        }, 1000); // Aumenta este tiempo si es necesario
+        }, 2000); // Aumenta este tiempo si es necesario
         return () => clearTimeout(timerOut);
-      }, 1000); // Aumenta este tiempo si es necesario
+      }, 2000); // Aumenta este tiempo si es necesario
       return () => clearTimeout(timer);
     }
   }, []);
