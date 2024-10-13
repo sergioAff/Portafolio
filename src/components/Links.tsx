@@ -8,24 +8,11 @@ import { ReactNode, useState } from "react";
 interface PropLink {
   direccion?: string;
   nombre: ReactNode | string | StaticImport;
-  submenu?: Array<object> | boolean;
   estilos?: string;
   target?: string;
 }
 
-export const Links = ({
-  direccion,
-  nombre,
-  submenu,
-  estilos,
-  target,
-}: PropLink) => {
-  const [visible, setVisible] = useState(false);
-
-  const cambiarVisibilidad = () => {
-    setVisible(!visible);
-  };
-
+export const Links = ({ direccion, nombre, estilos, target }: PropLink) => {
   const isString = (value: any): value is string => {
     return typeof value === "string";
   };
@@ -39,12 +26,7 @@ export const Links = ({
   };
 
   return (
-    <Link
-      target={target}
-      className={estilos}
-      onClick={submenu ? cambiarVisibilidad : undefined}
-      href={direccion || "#"}
-    >
+    <Link target={target} className={estilos} href={direccion || "#"}>
       {isString(nombre) && isImagePath(nombre) ? (
         <Image
           src={nombre}

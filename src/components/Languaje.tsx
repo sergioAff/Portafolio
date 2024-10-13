@@ -6,11 +6,9 @@ import { clsx } from "clsx";
 import i18n from "@/config/i18next.config";
 
 export default function Languaje() {
-  const [Language, setLanguage] = useState("es");
   const [open, setOpen] = useState(false);
 
   function onChangeLanguage(idioma: string) {
-    setLanguage(idioma);
     i18n.changeLanguage(idioma);
   }
 
@@ -32,7 +30,7 @@ export default function Languaje() {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="size-6 text-orange-secondary hover:text-orange-primary cursor-pointer"
+        className="size-6 text-orange-secondary dark:text-orange-night hover:text-orange-primary dark:hover:text-orange-primary cursor-pointer"
       >
         <path
           strokeLinecap="round"
@@ -50,9 +48,7 @@ export default function Languaje() {
         <li>
           <button
             onClick={() => onChangeLanguage("es")}
-            className={clsx("hover:text-orange-700", {
-              "text-orange-500 underline underline-offset-2": Language === "es",
-            })}
+            className="hover:text-orange-500 dark:text-orange-50 dark:hover:text-orange-primary"
           >
             Español
           </button>
@@ -61,9 +57,7 @@ export default function Languaje() {
           <button
             onClick={() => onChangeLanguage("en")}
             lang="en"
-            className={clsx("hover:text-orange-700", {
-              "text-orange-500 underline underline-offset-2": Language === "en",
-            })}
+            className="hover:text-orange-500 dark:text-orange-50 dark:hover:text-orange-primary"
           >
             English
           </button>

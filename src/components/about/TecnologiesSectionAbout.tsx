@@ -8,15 +8,20 @@ import { CodeBracketSquareIcon } from "@heroicons/react/24/outline";
 
 interface TecnologiesSectionInterface {
   up: ReactNode;
+  allOpen: boolean;
 }
 
-export function TecnologiesSectionAbout({ up }: TecnologiesSectionInterface) {
+export function TecnologiesSectionAbout({
+  up,
+  allOpen,
+}: TecnologiesSectionInterface) {
   const { t } = useTranslation(["about"]);
   return (
     <div className="flex-1 ">
       <SectionAbout2
         icon={<CodeBracketSquareIcon />}
         title={t("tecnologias.titulo")}
+        allOpen={allOpen}
         body={
           <div className="flex flex-col">
             <FrontendSection up={up} />

@@ -4,15 +4,20 @@ import { useTranslation } from "react-i18next";
 import clsx from "clsx";
 
 interface OrderProps {
-  onOrderChange: (order: "latest" | "oldest" | "normal") => void;
+  onOrderChange: (order: "latest" | "oldest") => void;
 }
 
 export const Order = ({ onOrderChange }: OrderProps) => {
   const { t } = useTranslation(["order"]);
   const [open, setOpen] = useState(false);
 
+  function handleCharger(order: "latest" | "oldest") {
+    onOrderChange(order);
+    setOpen(false);
+  }
+
   return (
-    <div className=" flex flex-row gap-2 justify-center items-center ">
+    <div className=" flex flex-row gap-2 justify-start items-center w-[80%] lg:w-[25%]">
       <button
         onClick={() => setOpen(!open)}
         className="bg-orange-500 text-white hover:bg-orange-600 font-bold p-2 rounded-full shadow-lg "
@@ -34,7 +39,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
       </button>
       <ul
         className={clsx(
-          "rounded-md shadow-lg font-semibold transition-all duration-75 bg-white/45 ease-in-out ring-orange-secondary flex flex-row gap-2 items-center overflow-hidden",
+          "rounded-md shadow-lg font-semibold transition-all duration-75 bg-white/45 ease-in-out ring-orange-secondary flex flex-row gap-2 items-center overflow-hidden text-gray-800",
           {
             "max-w-0": !open,
             "max-w-screen, px-2 py-1 ring-2": open,
@@ -43,7 +48,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
       >
         <li>
           <button
-            onClick={() => onOrderChange("latest")}
+            onClick={() => handleCharger("latest")}
             className="hover:text-orange-500"
           >
             {t("Recientes")}
@@ -51,18 +56,10 @@ export const Order = ({ onOrderChange }: OrderProps) => {
         </li>
         <li>
           <button
-            onClick={() => onOrderChange("oldest")}
+            onClick={() => handleCharger("oldest")}
             className="hover:text-orange-500"
           >
             {t("Antiguos")}
-          </button>
-        </li>
-        <li>
-          <button
-            onClick={() => onOrderChange("normal")}
-            className="hover:text-orange-500"
-          >
-            {t("Normal")}
           </button>
         </li>
       </ul>

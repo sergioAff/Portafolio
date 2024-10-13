@@ -7,7 +7,12 @@ import {
   faJsSquare,
   faReact,
 } from "@fortawesome/free-brands-svg-icons";
-import { SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
+import {
+  SiNextdotjs,
+  SiTypescript,
+  SiTailwindcss,
+  SiRedux,
+} from "react-icons/si";
 
 interface FrontendSectionInterface {
   up: ReactNode;
@@ -18,7 +23,7 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
     <SectionAbout3
       title={"Frontend"}
       body={
-        <ul className="flex flex-wrap gap-6 lg:gap-8 items-center justify-around px-5 py-1">
+        <ul className="flex flex-wrap gap-6 lg:gap-8 items-end justify-around px-5 py-1">
           <li className="flex flex-col items-center transition-transform duration-100 ease-in-out hover:scale-105">
             <FontAwesomeIcon
               icon={faHtml5}
@@ -58,6 +63,10 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
               color="#61DAFB"
             />
             <p className=" text-sm font-semibold text-gray-800">React</p>
+          </li>
+          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
+            <SiRedux className="w-10 h-auto" color="#764ABC" />
+            <p className=" text-sm font-semibold text-gray-800">Redux</p>
           </li>
           <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
             <SiNextdotjs className="w-10 h-auto" color="black" />

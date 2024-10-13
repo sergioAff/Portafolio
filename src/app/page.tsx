@@ -1,18 +1,19 @@
 "use client";
 import { useTranslation } from "react-i18next";
 import { CoverParticles } from "@/components/CoverParticles";
-import { TransitionPage } from "@/components/TransitionPage";
+import { DescargarCv } from "@/components/home/DescagarCV";
+import { Container } from "@/components/home/Container";
 
 export default function Page() {
   const { t } = useTranslation(["welcome"]);
 
   return (
-    <main className="flex items-center justify-center h-auto ">
+    <main className="flex relative flex-col items-center justify-center h-auto ">
       <CoverParticles />
 
       <div className="flex flex-col h-auto w-4/5 sm:w-3/5 lg:w-2/5 items-start justify-center px-2 py-10 md:px-10">
         <hgroup className="w-full ">
-          <p className="mt-4 text-4xl sm:text-5xl  text-gray-600 animate-fadeRight ">
+          <p className="mt-4 text-4xl sm:text-5xl text-gray-600 animate-fadeRight ">
             {t("Soy")}{" "}
           </p>
           <h1 className="text-orange-500 font-bold text-6xl sm:text-7xl animate-fadeLeft">
@@ -25,7 +26,9 @@ export default function Page() {
             </span>
           </p>
         </hgroup>
+        <DescargarCv />
       </div>
+      {/* <Container /> */}
     </main>
   );
 }

@@ -15,7 +15,7 @@ export function SectionAbout3({ title, body, up }: SectionAbout3Interface) {
     >
       <div className=" flex w-full justify-between items-center pb-2">
         <div className=" flex justify-between items-center gap-2">
-          <h3 className=" font-semibold text-2xl lg:text-3xl tracking-wide text-orange-700">
+          <h3 className=" font-semibold text-2xl tracking-wide text-orange-700">
             {title}
           </h3>
         </div>

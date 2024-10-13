@@ -13,20 +13,17 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   const [showSplash, setShowSplash] = useState(false);
   const [fadeOut, setFadeOut] = useState(false);
   const [showSplashFaster, setShowSplashFaster] = useState(true);
-  const [fadeOutFaster, setFadeOutFaster] = useState(false);
 
   useEffect(() => {
     const hasVisited = localStorage.getItem("hasVisited");
 
     if (hasVisited) {
-      // Mostrar solo el SplashPageFaster para usuarios que ya han visitado
       setShowSplashFaster(true);
       const timerFaster = setTimeout(() => {
-        setFadeOutFaster(true);
         setTimeout(() => {
           setShowSplashFaster(false);
-        }, 100);
-      }, 600);
+        }, 1);
+      }, 1);
       return () => clearTimeout(timerFaster);
     } else {
       // Mostrar solo el SplashPage para usuarios que visitan por primera vez
@@ -36,8 +33,8 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         setTimeout(() => {
           setShowSplash(false);
           localStorage.setItem("hasVisited", "true");
-        }, 1000);
-      }, 2900);
+        }, 1);
+      }, 1);
       return () => clearTimeout(timer);
     }
   }, []);
@@ -52,12 +49,14 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <body
         className={`${urbanist.className} bg-claro dark:bg-oscuro antialiased overflow-x-hidden flex flex-col min-h-[100dvh]`}
       >
-        <ThemeProvider attribute="class" enableSystem={true}>
+        <ThemeProvider
+          attribute="class"
+          enableSystem={true}
+          defaultTheme="light"
+        >
           {/* Mostrar solo uno de los splash screens según la condición */}
           {showSplash && <SplashPage fadeOut={fadeOut} />}
-          {showSplashFaster && !showSplash && (
-            <SplashPageFaster fadeOut={fadeOutFaster} />
-          )}
+          {showSplashFaster && !showSplash && <SplashPageFaster />}
 
           {!showSplash && !showSplashFaster && (
             <>

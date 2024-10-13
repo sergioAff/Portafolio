@@ -1,8 +1,11 @@
 {
   "personal": {
     "titulo": "Información Personal",
-    "texto": "Soy Sergio Adrian Fernández Figueredo, un apasionado profesional de la tecnología originario de Cuba, actualmente residenciado en Montevideo, Uruguay. A mis 22 años, he cultivado una profunda fascinación por la programación desde una edad temprana. Mis intereses abarcan no solo la tecnología, sino también la fotografía, la salud, el deporte y los viajes. Mi curiosidad innata por el aprendizaje me impulsa a ser perfeccionista en las actividades que elijo realizar."
+    "texto": "Soy Sergio Adrian Fernández Figueredo, un apasionado profesional de la tecnología originario de Cuba, actualmente residenciado en Montevideo, Uruguay. A mis 22 años, he cultivado una profunda fascinación por la programación, las redes y la tecnología desde una edad temprana. Mis intereses abarcan no solo la tecnología, sino también la fotografía, la salud, el deporte y los viajes. Mi curiosidad innata por el aprendizaje me impulsa a ser perfeccionista en las actividades que elijo realizar."
   },
+
+  "Desplegar": "Desplegar",
+  "Recoger": "Recoger",
 
   "profesion": {
     "titulo": "Mi Carrera",

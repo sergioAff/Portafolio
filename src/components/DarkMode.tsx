@@ -1,13 +1,25 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import { motion } from "framer-motion";
 
 export default function DarkMode() {
-  const [DarkMode, setDarkMode] = useState(false);
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    return null;
+  }
+
+  const isDarkMode = theme === "dark";
 
   function onChange() {
-    setDarkMode(!DarkMode);
+    setTheme(isDarkMode ? "light" : "dark");
   }
 
   return (
@@ -20,10 +32,10 @@ export default function DarkMode() {
       <motion.button
         onClick={onChange}
         initial={{ opacity: 1, scale: 1 }}
-        animate={{ opacity: DarkMode ? 0 : 1, scale: DarkMode ? 0.8 : 1 }}
+        animate={{ opacity: isDarkMode ? 0 : 1, scale: isDarkMode ? 0.8 : 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
-        style={{ display: DarkMode ? "none" : "inline-block" }}
+        style={{ display: isDarkMode ? "none" : "inline-block" }}
       >
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
@@ -47,10 +59,10 @@ export default function DarkMode() {
       <motion.button
         onClick={onChange}
         initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: DarkMode ? 1 : 0, scale: DarkMode ? 1 : 0.8 }}
+        animate={{ opacity: isDarkMode ? 1 : 0, scale: isDarkMode ? 1 : 0.8 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.3 }}
-        style={{ display: DarkMode ? "inline-block" : "none" }}
+        style={{ display: isDarkMode ? "inline-block" : "none" }}
       >
         <motion.svg
           xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +70,7 @@ export default function DarkMode() {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6 hover:fill-orange-secondary text-orange-secondary cursor-pointer"
+          className="size-6 hover:fill-orange-secondary dark:hover:text-orange-night text-orange-secondary dark:text-orange-night cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}

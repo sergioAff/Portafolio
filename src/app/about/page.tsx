@@ -9,6 +9,8 @@ import {
   UserIcon,
   AcademicCapIcon,
   CheckCircleIcon,
+  ChevronUpIcon,
+  ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 
 const up = (
@@ -32,40 +34,48 @@ const up = (
     />
   </svg>
 );
-
 export default function Page() {
   const { t } = useTranslation(["about"]);
-  const [isOpenAll, setIsOpenAll] = useState<boolean>(false);
+  const [allOpen, setAllOpen] = useState<boolean>(true); // Estado global
+
+  const toggleAllSections = (isOpen: boolean) => {
+    setAllOpen(isOpen);
+  };
 
   return (
     <motion.div
-      className=" flex items-start justify-center min-h-[80dvh]"
+      className="flex items-start justify-center min-h-[80dvh]"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="flex flex-col justify-center gap-3 mx-5 py-8 items-center sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%] ">
+      <div className="flex flex-col justify-center gap-3 mx-5 py-8 items-center sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%]">
         <div className="text-base font-semibold tracking-wide text-black flex gap-2 w-full">
-          <button
-            className=" rounded-lg bg-orange-500 px-2 py-1 shadow-md hover:bg-orange-600 text-white transition-all duration-200 ease-in-out"
-            onClick={() => setIsOpenAll(true)}
-          >
-            Desplegar
-          </button>
-          <button
-            className=" rounded-lg bg-orange-500 px-2 py-1 shadow-md hover:bg-orange-600 text-white transition-all duration-200 ease-in-out"
-            onClick={() => setIsOpenAll(false)}
-          >
-            Recoger
-          </button>
+          {!allOpen ? (
+            <button
+              onClick={() => toggleAllSections(true)}
+              className="flex items-center rounded-lg bg-orange-500 px-2 py-1 shadow-lg hover:bg-orange-600 text-white transition-transform transform  duration-200 ease-in-out"
+            >
+              <ChevronDownIcon className="w-5 h-5 mr-1" /> {t("Desplegar")}
+            </button>
+          ) : (
+            <button
+              onClick={() => toggleAllSections(false)}
+              className="flex items-center rounded-lg bg-orange-500 px-2 py-1 shadow-lg hover:bg-orange-600 text-white transition-transform transform duration-200 ease-in-out"
+            >
+              <ChevronUpIcon className="w-5 h-5 mr-1" /> {t("Recoger")}
+            </button>
+          )}
         </div>
+
         <SectionAbout
           icon={<UserIcon />}
           text={t("personal.texto")}
           title={t("personal.titulo")}
           estilos="w-full"
           up={up}
+          allOpen={allOpen}
         />
         <div className="flex flex-col sm:flex-row gap-3 w-full">
           <div className="flex-1">
@@ -75,6 +85,7 @@ export default function Page() {
               title={t("profesion.titulo")}
               estilos="flex-1"
               up={up}
+              allOpen={allOpen}
             />
           </div>
           <div className="flex-1">
@@ -84,12 +95,13 @@ export default function Page() {
               title={t("metas.titulo")}
               estilos="flex-1"
               up={up}
+              allOpen={allOpen}
             />
           </div>
         </div>
-        <div className="flex flex-col  md:flex-row gap-2 w-full">
-          <TecnologiesSectionAbout up={up} />
-          <HabilidadesSection up={up} />
+        <div className="flex flex-col md:flex-row gap-2 w-full">
+          <TecnologiesSectionAbout up={up} allOpen={allOpen} />
+          <HabilidadesSection up={up} allOpen={allOpen} />
         </div>
       </div>
     </motion.div>

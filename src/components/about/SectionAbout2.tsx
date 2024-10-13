@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import clsx from "clsx";
 
 interface SectionAbout2Interface {
@@ -7,6 +7,7 @@ interface SectionAbout2Interface {
   body: ReactNode;
   estilos: string;
   up: ReactNode;
+  allOpen: boolean;
 }
 
 export function SectionAbout2({
@@ -14,16 +15,24 @@ export function SectionAbout2({
   title,
   body,
   up,
+  allOpen,
 }: SectionAbout2Interface) {
   const [isOpen, setIsOpen] = useState<boolean>(true);
+
+  useEffect(() => {
+    setIsOpen(allOpen);
+  }, [allOpen]);
+
   return (
     <div
       className={` text-gray-900 h-auto hover:ring hover:ring-offset-2 transition-all duration-100 ease-in-out ring-orange-tertiary px-4 py-3 rounded-xl bg-white/40 shadow-md`}
     >
       <div className=" flex w-full flex-wrap justify-between items-center pb-2">
         <div className=" flex justify-between items-center gap-2">
-          <span className="w-7 text-orange-600">{icon}</span>
-          <h3 className=" font-semibold text-3xl lg:text-4xl tracking-wide text-orange-600">
+          <span className="w-7 text-orange-600 hidden sm:inline-block">
+            {icon}
+          </span>
+          <h3 className=" font-semibold text-3xl tracking-wide text-orange-600">
             {title}
           </h3>
         </div>
