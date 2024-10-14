@@ -10,6 +10,7 @@ export default function Logo() {
         width={1000}
         height={1000}
         src={"/Logos/logo.png"}
+        priority
         className="saturate-200 brightness-90 contrast-75 w-20 md:w-24"
       />
     </Link>

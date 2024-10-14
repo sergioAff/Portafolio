@@ -17,9 +17,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     const timer = setTimeout(() => {
       const timerOut = setTimeout(() => {
         setShowSplashFaster(false);
-      }, 1500); // Aumenta este tiempo si es necesario
+      }, 2500); // Aumenta este tiempo si es necesario
       return () => clearTimeout(timerOut);
-    }, 1500); // Aumenta este tiempo si es necesario
+    }, 2500); // Aumenta este tiempo si es necesario
     return () => clearTimeout(timer);
   }, []);
 
