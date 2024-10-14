@@ -22,7 +22,7 @@ export default function Contact() {
           {
             "bg-opacity-0 ring-2 ring-orange-500 dark:ring-orange-night text-black dark:text-orange-primary":
               pathname === linkContact.enlace,
-            "bg-orange-500 dark:bg-orange-night dark:contrast-125 dark:text-orange-50 text-gray-100":
+            "bg-orange-500 dark:bg-orange-night dark:contrast-100 dark:text-orange-50 text-gray-100":
               pathname !== linkContact.enlace,
           }
         )}

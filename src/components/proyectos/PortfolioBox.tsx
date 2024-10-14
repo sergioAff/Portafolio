@@ -3,6 +3,9 @@ import { Links } from "../Links";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import { ModalDescription } from "@/components/proyectos/ModalDescription";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 interface PortfolioBoxProps {
   data: {
@@ -12,6 +15,7 @@ interface PortfolioBoxProps {
     visitar: string;
     descripcion: string;
     image: string;
+    tecnologies: React.JSX.Element[];
   };
 }
 
@@ -19,6 +23,17 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
   const { nombre, link, descripcion, image, visitar } = data;
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const { t } = useTranslation(["proyectos"]);
+  const settings = {
+    dots: false,
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    autoplay: true,
+    speed: 6000,
+    autoplaySpeed: 3000,
+    cssEase: "linear",
+    arrows: false,
+  };
 
   return (
     <>
@@ -29,7 +44,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           setIsModalOpen={setIsModalOpen}
         />
       )}
-      <li className="p-4 hover:ring hover:ring-offset-2 transition-all duration-200 ease-in-out ring-orange-tertiary rounded-xl bg-white/40 shadow-md flex flex-col items-center gap-3 justify-between">
+      <li className="p-4 max-w-64 sm:max-w-72 md:max-w-xs hover:ring hover:ring-offset-2 transition-all duration-200 ease-in-out ring-orange-tertiary rounded-xl bg-white/40 shadow-md flex flex-col items-center gap-3 justify-between">
         <h3 className="font-semibold text-2xl text-center tracking-wide text-orange-600">
           {nombre}
         </h3>
@@ -38,8 +53,19 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           alt={nombre}
           width={200}
           height={200}
-          className="w-full md:w-[200px] rounded-2xl h-auto"
+          className="w-full md:w-[200px] rounded-md h-auto"
         />
+
+        <Slider {...settings} className="flex w-full px-10">
+          {data.tecnologies.map((tecnology) => (
+            <div
+              key={tecnology.key}
+              className=" flex items-center justify-center"
+            >
+              {tecnology}
+            </div>
+          ))}
+        </Slider>
         <div className="flex justify-around items-center gap-2 mt-4">
           {link && (
             <Links

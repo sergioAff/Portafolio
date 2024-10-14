@@ -28,19 +28,6 @@ export function BackendSection({ up }: BackendSectionInterface) {
             <p className=" text-sm font-semibold text-gray-800">Django</p>
           </li>
           <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
-            <Image
-              className="w-24 h-auto"
-              color="#D22128"
-              src={"/Logos/rest-framework.png"}
-              alt={"Rest Framework"}
-              width={1000}
-              height={1000}
-            />{" "}
-            <p className=" text-sm font-semibold text-gray-800">
-              REST Framework
-            </p>
-          </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
             <SiPostgresql className="w-10 h-auto" color="#336791" />{" "}
             <p className=" text-sm font-semibold text-gray-800">PostgreSQL</p>
           </li>

@@ -20,7 +20,7 @@ const up = (
     viewBox="0 0 24 24"
     strokeWidth="1.5"
     stroke="currentColor"
-    className="w-5"
+    className="w-6"
   >
     <path
       strokeLinecap="round"
@@ -36,7 +36,7 @@ const up = (
 );
 export default function Page() {
   const { t } = useTranslation(["about"]);
-  const [allOpen, setAllOpen] = useState<boolean>(true); // Estado global
+  const [allOpen, setAllOpen] = useState<boolean>(true);
 
   const toggleAllSections = (isOpen: boolean) => {
     setAllOpen(isOpen);
@@ -51,18 +51,18 @@ export default function Page() {
       transition={{ duration: 0.2 }}
     >
       <div className="flex flex-col justify-center gap-3 mx-5 py-8 items-center sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%]">
-        <div className="text-base font-semibold tracking-wide text-black flex gap-2 w-full">
+        <div className="text-base font-semibold tracking-wide flex gap-2 w-full">
           {!allOpen ? (
             <button
               onClick={() => toggleAllSections(true)}
-              className="flex items-center rounded-lg bg-orange-500 px-2 py-1 shadow-lg hover:bg-orange-600 text-white transition-transform transform  duration-200 ease-in-out"
+              className="flex items-center rounded-lg bg-orange-500 dark:bg-orange-night dark:hover:bg-orange-500/90 px-2 py-1 shadow-lg hover:bg-orange-600 text-white dark:text-orange-50 transition-transform transform  duration-200 ease-in-out"
             >
               <ChevronDownIcon className="w-5 h-5 mr-1" /> {t("Desplegar")}
             </button>
           ) : (
             <button
               onClick={() => toggleAllSections(false)}
-              className="flex items-center rounded-lg bg-orange-500 px-2 py-1 shadow-lg hover:bg-orange-600 text-white transition-transform transform duration-200 ease-in-out"
+              className="flex items-center rounded-lg bg-orange-500 dark:bg-orange-night dark:hover:bg-orange-500/90 px-2 py-1 shadow-lg hover:bg-orange-600 text-white dark:text-orange-50 transition-transform transform duration-200 ease-in-out"
             >
               <ChevronUpIcon className="w-5 h-5 mr-1" /> {t("Recoger")}
             </button>

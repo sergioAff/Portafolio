@@ -7,10 +7,10 @@ export default function Logo() {
       <Image
         alt="Logo de S@ff"
         title="Logo de S@ff"
-        width={100}
-        height={50}
+        width={1000}
+        height={1000}
         src={"/Logos/logo.png"}
-        className="dark:contrast-75"
+        className="saturate-200 brightness-90 contrast-75 w-20 md:w-24"
       />
     </Link>
   );

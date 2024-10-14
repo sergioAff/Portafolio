@@ -1,13 +1,14 @@
 "use client";
-import { useTranslation } from "react-i18next";
 import { Proyectos } from "@/data/proyectos";
 import { PortfolioBox } from "@/components/proyectos/PortfolioBox";
+import { Filter } from "@/components/proyectos/Filter";
 
 export default function Page() {
   const proyectos = Proyectos();
   return (
-    <div className=" animate-fadeBottom-for-contacts flex flex-col justify-center h-full gap-5 px-10">
-      <ul className=" z-10 grid max-w-5xl gap-6 mx-auto mt-4 md:grid-cols-3 sm:grid-cols-2">
+    <div className="realtive animate-fadeBottom-for-contacts flex flex-col md:flex-row justify-center gap-5 lg:gap-0 px-10 md:px-5 mt-10">
+      <Filter />
+      <ul className=" grid gap-6 mx-auto sm:grid-cols-2 xl:grid-cols-3">
         {proyectos.map((proyecto) => (
           <PortfolioBox key={proyecto.id} data={proyecto} />
         ))}

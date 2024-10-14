@@ -11,7 +11,7 @@ export default function NavLinks() {
 
   return (
     <nav className=" pt-4 md:pt-0 flex items-center justify-center animate-fadeTop">
-      <ul className="border border-orange-500 dark:border-orange-night shadow-lg bg-white/45 dark:bg-oscuro shadow-orange-800 dark:shadow-orange-night p-0.5 w-auto flex justify-center items-center rounded-2xl">
+      <ul className="border border-orange-500 dark:border-orange-night dark:shadow-md shadow-lg bg-white/45 dark:bg-gray-800/40 shadow-orange-800 dark:shadow-orange-night p-0.5 w-auto flex justify-center items-center rounded-2xl">
         {enlaces.map((link) => (
           <li key={link.id}>
             <Links
@@ -22,7 +22,8 @@ export default function NavLinks() {
                 {
                   "bg-orange-500 dark:bg-orange-night text-white font-semibold":
                     pathname === link.enlace,
-                  "text-black": pathname !== link.enlace,
+                  "text-black dark:text-orange-50 dark:hover:text-orange-primary":
+                    pathname !== link.enlace,
                   "hover:text-orange-500": pathname !== link.enlace,
                 }
               )}

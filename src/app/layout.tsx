@@ -7,34 +7,20 @@ import urbanist from "@/utils/tipografia";
 import "@/config/i18next.config";
 import { ThemeProvider } from "next-themes";
 import { useState, useEffect } from "react";
-import { SplashPage, SplashPageFaster } from "@/components/SplashPage";
+import { SplashPageFaster } from "@/components/SplashPage";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
-  const [showSplash, setShowSplash] = useState(false);
-  const [fadeOut, setFadeOut] = useState(false);
   const [showSplashFaster, setShowSplashFaster] = useState(true);
 
   useEffect(() => {
-    const hasVisited = localStorage.getItem("onVisited");
-
-    if (hasVisited) {
-      setShowSplashFaster(true);
-      const timerFaster = setTimeout(() => {
+    setShowSplashFaster(false);
+    const timer = setTimeout(() => {
+      const timerOut = setTimeout(() => {
         setShowSplashFaster(false);
-      }, 2000); // Aumenta este tiempo si es necesario
-      return () => clearTimeout(timerFaster);
-    } else {
-      setShowSplash(true);
-      const timer = setTimeout(() => {
-        setFadeOut(true);
-        const timerOut = setTimeout(() => {
-          setShowSplash(false);
-          localStorage.setItem("onVisited", "true");
-        }, 2000); // Aumenta este tiempo si es necesario
-        return () => clearTimeout(timerOut);
-      }, 2000); // Aumenta este tiempo si es necesario
-      return () => clearTimeout(timer);
-    }
+      }, 1500); // Aumenta este tiempo si es necesario
+      return () => clearTimeout(timerOut);
+    }, 1500); // Aumenta este tiempo si es necesario
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -53,10 +39,9 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           defaultTheme="light"
         >
           {/* Mostrar solo uno de los splash screens según la condición */}
-          {showSplash && <SplashPage fadeOut={fadeOut} />}
-          {showSplashFaster && !showSplash && <SplashPageFaster />}
+          {showSplashFaster && <SplashPageFaster />}
 
-          {!showSplash && !showSplashFaster && (
+          {!showSplashFaster && (
             <>
               <Header />
               <main className="z-20 flex-1 relative flex flex-col pb-20 justify-center">
