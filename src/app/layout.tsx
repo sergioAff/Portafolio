@@ -15,7 +15,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplashFaster(false);
-    }, 500); // Aumenta este tiempo si es necesario
+    }, 500);
     return () => clearTimeout(timer);
   }, []);
 
@@ -27,14 +27,13 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <title>S@ff</title>
       </head>
       <body
-        className={`${urbanist.className} bg-claro dark:bg-oscuro antialiased overflow-x-hidden flex flex-col min-h-[100dvh]`}
+        className={`${urbanist.className} bg-claro antialiased overflow-x-hidden flex flex-col min-h-[100dvh]`}
       >
         <ThemeProvider
           attribute="class"
           enableSystem={true}
           defaultTheme="light"
         >
-          {/* Mostrar solo uno de los splash screens según la condición */}
           {showSplashFaster && <SplashPageFaster />}
 
           {!showSplashFaster && (

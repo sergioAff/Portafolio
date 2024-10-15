@@ -11,7 +11,7 @@ export default function NavLinks() {
 
   return (
     <nav className=" pt-4 md:pt-0 flex items-center justify-center animate-fadeTop">
-      <ul className="border border-orange-500 dark:border-orange-night dark:shadow-md shadow-lg bg-white/45 dark:bg-gray-800/40 shadow-orange-800 dark:shadow-orange-night p-0.5 w-auto flex justify-center items-center rounded-2xl">
+      <ul className="border border-orange-500  shadow-lg bg-white/45  shadow-orange-800 p-0.5 w-auto flex justify-center items-center rounded-2xl">
         {enlaces.map((link) => (
           <li key={link.id}>
             <Links
@@ -20,10 +20,9 @@ export default function NavLinks() {
               estilos={clsx(
                 "flex item-center justify-center w-full text-sm sm:text-base transition-all ease-in duration-75 rounded-xl px-2 sm:px-3 py-1 sm:py-0.5 font-semibold",
                 {
-                  "bg-orange-500 dark:bg-orange-night text-white font-semibold":
+                  "bg-gradient-to-b from-orange-secondary via-orange-500 to-orange-500 text-white font-semibold":
                     pathname === link.enlace,
-                  "text-black dark:text-orange-50 dark:hover:text-orange-primary":
-                    pathname !== link.enlace,
+                  "text-black": pathname !== link.enlace,
                   "hover:text-orange-500": pathname !== link.enlace,
                 }
               )}

@@ -12,6 +12,7 @@ import {
   ChevronUpIcon,
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
+import { BlurButtons } from "@/components/BlurButtons";
 
 const up = (
   <svg
@@ -41,7 +42,6 @@ export default function Page() {
   const toggleAllSections = (isOpen: boolean) => {
     setAllOpen(isOpen);
   };
-
   return (
     <motion.div
       className="flex items-start justify-center min-h-[80dvh]"
@@ -50,25 +50,23 @@ export default function Page() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="flex flex-col justify-center gap-3 mx-5 py-8 items-center sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%]">
-        <div className="text-base font-semibold tracking-wide flex gap-2 w-full">
-          {!allOpen ? (
-            <button
-              onClick={() => toggleAllSections(true)}
-              className="flex items-center rounded-lg bg-orange-500 dark:bg-orange-night dark:hover:bg-orange-500/90 px-2 py-1 shadow-lg hover:bg-orange-600 text-white dark:text-orange-50 transition-transform transform  duration-200 ease-in-out"
-            >
-              <ChevronDownIcon className="w-5 h-5 mr-1" /> {t("Desplegar")}
-            </button>
+      <div className="flex flex-col justify-center gap-3 mx-5 py-8 mb-12 items-center sm:max-w-[80%] md:max-w-[80%] lg:max-w-[80%]">
+        <button
+          onClick={() => toggleAllSections(!allOpen)}
+          className="self-start relative px-2 py-1 rounded-lg hover:bg-transparent hover:ring-2 hover:outline-none hover:ring-orange-500 shadow-lg text-base shadow-orange-600/50 transition-all ease-in duration-100 hover:text-gray-700 active:scale-95 font-semibold bg-orange-500 text-gray-100"
+        >
+          <BlurButtons />
+          {allOpen ? (
+            <div className=" flex items-center justify-center">
+              <ChevronUpIcon className="w-5 h-5 mr-1" />
+              {t("Recoger")}
+            </div>
           ) : (
-            <button
-              onClick={() => toggleAllSections(false)}
-              className="flex items-center rounded-lg bg-orange-500 dark:bg-orange-night dark:hover:bg-orange-500/90 px-2 py-1 shadow-lg hover:bg-orange-600 text-white dark:text-orange-50 transition-transform transform duration-200 ease-in-out"
-            >
-              <ChevronUpIcon className="w-5 h-5 mr-1" /> {t("Recoger")}
-            </button>
+            <div className=" flex items-center justify-center">
+              <ChevronDownIcon className="w-5 h-5 mr-1" /> {t("Desplegar")}
+            </div>
           )}
-        </div>
-
+        </button>
         <SectionAbout
           icon={<UserIcon />}
           text={t("personal.texto")}

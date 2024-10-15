@@ -62,11 +62,15 @@ html {
 }
 
 .animate-fadeBottom {
-  animation: fadeBottom 1.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: fadeBottom 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .animate-fadeBottomForCV {
-  animation: fadeBottom 1.6s cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation: fadeBottom 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.animate-fadeBottomForCV {
+  animation: fadeBottom 1.4s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .animate-fadeBottom-for-contacts {
@@ -105,6 +109,19 @@ html {
   animation: bounce 1s ease-in-out forwards;
   animation-iteration-count: 2.5;
 }
+
+.avatar-conteiner {
+  background-image: url("../../public/Home/graph.png");
+  background-position: center;
+  object-fit: scale-down;
+  background-repeat: no-repeat;
+  height: auto;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* .avatar-image {
+} */
 
 @keyframes loader {
   to {

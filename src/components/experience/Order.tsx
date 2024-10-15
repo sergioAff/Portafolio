@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { BlurButtons } from "@/components/BlurButtons";
 import clsx from "clsx";
 
 interface OrderProps {
@@ -20,8 +21,15 @@ export const Order = ({ onOrderChange }: OrderProps) => {
     <div className=" flex flex-row gap-2 justify-start items-center w-[80%] lg:w-[25%]">
       <button
         onClick={() => setOpen(!open)}
-        className="bg-orange-500 text-white hover:bg-orange-600 font-bold p-2 rounded-full shadow-lg "
+        className={clsx(
+          "relative p-2 rounded-full shadow-lg hover:bg-transparent hover:ring-2 hover:outline-none hover:ring-orange-500 shadow-orange-600/50 transition-all ease-in duration-100 hover:text-gray-700 active:scale-95  text-gray-100",
+          {
+            "bg-orange-500": !open,
+            "ring-2 ring-orange-500 text-gray-700": open,
+          }
+        )}
       >
+        <BlurButtons />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

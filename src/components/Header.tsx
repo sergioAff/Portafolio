@@ -1,7 +1,7 @@
 import Contact from "./contact/Contact";
 import Logo from "./Logo";
 import Languaje from "./Languaje";
-import DarkMode from "./DarkMode";
+// import DarkMode from "./DarkMode";
 import NavLinks from "../components/NavLinks";
 
 export const Header = () => {
@@ -10,7 +10,7 @@ export const Header = () => {
       <div className=" flex w-full justify-between items-center">
         <Logo />
         <div className=" flex items-center justify-center gap-5 md:gap-9">
-          <DarkMode />
+          {/* <DarkMode /> */}
           <Languaje />
           <Contact />
         </div>

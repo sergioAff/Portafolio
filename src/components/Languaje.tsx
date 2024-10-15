@@ -30,7 +30,7 @@ export default function Languaje() {
         viewBox="0 0 24 24"
         strokeWidth="1.5"
         stroke="currentColor"
-        className="size-7 text-orange-secondary dark:text-orange-night hover:text-orange-primary dark:hover:text-orange-primary cursor-pointer"
+        className="size-7 text-orange-secondary  hover:text-orange-primary cursor-pointer"
       >
         <path
           strokeLinecap="round"
@@ -41,14 +41,14 @@ export default function Languaje() {
 
       <ul
         className={clsx(
-          "ring-2 ring-orange-500 absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-2 mt-4 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out font-semibold",
+          "ring-2 ring-orange-500 absolute left-[-9dvh] lg:left-[-3dvh] px-2 rounded-md sm:mt-2 mt-3 flex lg:flex-col gap-2 transition-opacity duration-75 ease-in-out font-semibold",
           { "opacity-0": !open, "opacity-100": open }
         )}
       >
         <li>
           <button
             onClick={() => onChangeLanguage("es")}
-            className="hover:text-orange-500 dark:text-orange-50 dark:hover:text-orange-primary"
+            className="hover:text-orange-500 "
           >
             Español
           </button>
@@ -57,7 +57,7 @@ export default function Languaje() {
           <button
             onClick={() => onChangeLanguage("en")}
             lang="en"
-            className="hover:text-orange-500 dark:text-orange-50 dark:hover:text-orange-primary"
+            className="hover:text-orange-500"
           >
             English
           </button>

@@ -46,8 +46,8 @@ export const tecnologiesArray = [
   <SiDjango key="django" className="w-6 h-auto" color="#0f6117" />,
   <SiPostgresql key="postgresql" className="w-6 h-auto" color="#336791" />,
   <SiSqlite key="sqlite" className="w-6 h-auto" color="#003B57" />,
-  <SiFlutter key="flutter" className="w-6 h-auto" color="#003B57" />,
-  <SiSwift key="swift" className="w-6 h-auto" color="#003B57" />,
+  <SiFlutter key="flutter" className="w-6 h-auto" color="#02569B" />,
+  <SiSwift key="swift" className="w-6 h-auto" color="#FA7343" />,
   <SiGit key="git" className="w-6 h-auto" color="#F05032" />,
   <SiGithub key="github" className="w-6 h-auto" color="#181717" />,
 ];

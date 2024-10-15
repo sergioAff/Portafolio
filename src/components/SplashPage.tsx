@@ -10,7 +10,7 @@ export const SplashPageFaster = () => {
 
   return (
     <div
-      className={`absolute inset-0 z-50 flex flex-col items-center justify-center bg-claro dark:bg-oscuro  cursor-pointer `}
+      className={`absolute inset-0 z-50 flex flex-col items-center justify-center bg-claro cursor-pointer `}
     >
       <Image
         src="/Logos/logo.png"

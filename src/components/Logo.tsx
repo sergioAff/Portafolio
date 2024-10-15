@@ -11,7 +11,7 @@ export default function Logo() {
         height={1000}
         src={"/Logos/logo.png"}
         priority
-        className="saturate-200 brightness-90 contrast-75 w-20 md:w-24"
+        className="saturate-200 brightness-125 contrast-50 w-20 md:w-24 hover:scale-95 active:scale-90 transition-transform ease-in-out duration-150"
       />
     </Link>
   );

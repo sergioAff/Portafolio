@@ -70,7 +70,7 @@ export default function DarkMode() {
           viewBox="0 0 24 24"
           strokeWidth="1.5"
           stroke="currentColor"
-          className="size-6 hover:fill-orange-secondary dark:hover:text-orange-night text-orange-secondary dark:text-orange-night cursor-pointer"
+          className="size-6 hover:fill-orange-secondary  text-orange-secondary cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}

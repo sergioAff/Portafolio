@@ -24,7 +24,7 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
       title={"Frontend"}
       body={
         <ul className="flex flex-wrap gap-6 lg:gap-8 items-end justify-around px-5 py-1">
-          <li className="flex flex-col items-center transition-transform duration-100 ease-in-out hover:scale-105">
+          <li className="flex flex-col items-center transition-transform duration-100 ease-in-out ">
             <FontAwesomeIcon
               icon={faHtml5}
               className="w-10 h-auto"
@@ -32,7 +32,7 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
             />
             <p className=" text-sm font-semibold text-gray-800">HTML</p>
           </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
+          <li className="flex flex-col items-center transition-transform duration-100 ">
             <FontAwesomeIcon
               icon={faCss3Alt}
               className="w-10 h-auto"
@@ -40,11 +40,11 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
             />
             <p className=" text-sm font-semibold text-gray-800">CSS</p>
           </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
+          <li className="flex flex-col items-center transition-transform duration-100 ">
             <SiTailwindcss className="w-10 h-auto" color="#06B6D4" />
             <p className=" text-sm font-semibold text-gray-800">TailwindCSS</p>
           </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
+          <li className="flex flex-col items-center transition-transform duration-100 ">
             <FontAwesomeIcon
               icon={faJsSquare}
               className="w-10 h-auto"
@@ -52,11 +52,11 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
             />
             <p className=" text-sm font-semibold text-gray-800">JavaScript</p>
           </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
+          <li className="flex flex-col items-center transition-transform duration-100 ">
             <SiTypescript className="w-10 h-auto" color="#007ACC" />
             <p className=" text-sm font-semibold text-gray-800">TypeScript</p>
           </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
+          <li className="flex flex-col items-center transition-transform duration-100 ">
             <FontAwesomeIcon
               icon={faReact}
               className="w-10 h-auto"
@@ -64,11 +64,7 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
             />
             <p className=" text-sm font-semibold text-gray-800">React</p>
           </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
-            <SiRedux className="w-10 h-auto" color="#764ABC" />
-            <p className=" text-sm font-semibold text-gray-800">Redux</p>
-          </li>
-          <li className="flex flex-col items-center transition-transform duration-100 hover:scale-105">
+          <li className="flex flex-col items-center transition-transform duration-100 ">
             <SiNextdotjs className="w-10 h-auto" color="black" />
             <p className=" text-sm font-semibold text-gray-800">Next.js</p>
           </li>

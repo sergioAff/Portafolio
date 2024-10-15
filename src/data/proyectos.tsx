@@ -9,6 +9,7 @@ export const Proyectos = () => {
       visitar: "",
       descripcion: "",
       image: "/Proyectos/Clinica/1.jpg",
+      imagesCarrusek: [""],
       tecnologies: [
         tecnologies.html,
         tecnologies.css,
@@ -32,6 +33,7 @@ export const Proyectos = () => {
       descripcion:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis laborum corrupti obcaecati quae deserunt earum, dignissimos voluptates, cumque quo recusandae praesentium debitis, vel dicta incidunt id error nisi. Eos, ratione.",
       image: "",
+      imagesCarrusek: [""],
       tecnologies: [
         tecnologies.html,
         tecnologies.css,
@@ -49,7 +51,8 @@ export const Proyectos = () => {
       link: "https://github.com/sergioAff/Dashboard",
       visitar: "",
       descripcion: "",
-      image: "",
+      image: "/Proyectos/Dashboard/1.png",
+      imagesCarrusek: [""],
       tecnologies: [
         tecnologies.html,
         tecnologies.css,
@@ -70,6 +73,7 @@ export const Proyectos = () => {
       visitar: "",
       descripcion: "",
       image: "",
+      imagesCarrusek: [""],
       tecnologies: [
         tecnologies.html,
         tecnologies.css,
@@ -89,6 +93,7 @@ export const Proyectos = () => {
       visitar: "",
       descripcion: "",
       image: "",
+      imagesCarrusek: [""],
       tecnologies: [tecnologies.python, tecnologies.git, tecnologies.github],
     },
     {
@@ -98,21 +103,8 @@ export const Proyectos = () => {
       visitar: "",
       descripcion: "",
       image: "",
+      imagesCarrusek: [""],
       tecnologies: [tecnologies.fluter, tecnologies.git, tecnologies.github],
-    },
-    {
-      id: 7,
-      nombre: "Data Browser SQLite",
-      link: "https://github.com/sergioAff/Db-SQLite",
-      visitar: "",
-      descripcion: "",
-      image: "",
-      tecnologies: [
-        tecnologies.python,
-        tecnologies.slite,
-        tecnologies.git,
-        tecnologies.github,
-      ],
     },
     {
       id: 8,
@@ -121,6 +113,7 @@ export const Proyectos = () => {
       visitar: "",
       descripcion: "",
       image: "/Proyectos/SuperHero/1.png",
+      imagesCarrusek: [""],
       tecnologies: [tecnologies.swift, tecnologies.git, tecnologies.github],
     },
     {
@@ -130,7 +123,23 @@ export const Proyectos = () => {
       visitar: "",
       descripcion: "",
       image: "/Proyectos/IMC/1.png",
+      imagesCarrusek: [""],
       tecnologies: [tecnologies.swift, tecnologies.git, tecnologies.github],
+    },
+    {
+      id: 7,
+      nombre: "Data Browser SQLite",
+      link: "https://github.com/sergioAff/Db-SQLite",
+      visitar: "",
+      descripcion: "",
+      image: "",
+      imagesCarrusek: [""],
+      tecnologies: [
+        tecnologies.python,
+        tecnologies.slite,
+        tecnologies.git,
+        tecnologies.github,
+      ],
     },
   ];
 };

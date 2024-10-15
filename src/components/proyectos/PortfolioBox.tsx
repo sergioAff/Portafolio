@@ -6,6 +6,7 @@ import { ModalDescription } from "@/components/proyectos/ModalDescription";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import clsx from "clsx";
 
 interface PortfolioBoxProps {
   data: {
@@ -44,18 +45,25 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           setIsModalOpen={setIsModalOpen}
         />
       )}
-      <li className="p-4 max-w-64 sm:max-w-72 md:max-w-xs hover:ring hover:ring-offset-2 transition-all duration-200 ease-in-out ring-orange-tertiary rounded-xl bg-white/40 shadow-md flex flex-col items-center gap-3 justify-between">
+      <li
+        className="p-4 max-w-[80dvw] sm:max-w-96 md:max-w-md 
+       lg:max-w-lg hover:ring hover:ring-offset-2 transition-all duration-200 ease-in-out ring-orange-tertiary rounded-xl bg-white/40 shadow-md flex flex-col items-center gap-1 justify-between"
+      >
         <h3 className="font-semibold text-2xl text-center tracking-wide text-orange-600">
           {nombre}
         </h3>
-        <Image
-          src={image}
-          alt={nombre}
-          width={200}
-          height={200}
-          className="w-full md:w-[200px] rounded-md h-auto"
-        />
-
+        {image && (
+          <Image
+            src={image}
+            alt={nombre}
+            width={200}
+            height={200}
+            className={clsx("w-full max-h-[30dvh] rounded-md  my-2", {
+              "object-scale-down max-h-[50dvh]":
+                nombre === "Super Hero Finder" || nombre === "IMC",
+            })}
+          />
+        )}
         <Slider {...settings} className="flex w-full px-10">
           {data.tecnologies.map((tecnology) => (
             <div
@@ -66,7 +74,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
             </div>
           ))}
         </Slider>
-        <div className="flex justify-around items-center gap-2 mt-4">
+        <div className="flex justify-around items-center gap-2 mt-2">
           {link && (
             <Links
               nombre="GitHub"
