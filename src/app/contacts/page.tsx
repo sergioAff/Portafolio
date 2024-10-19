@@ -31,7 +31,7 @@ export default function ContactPage() {
         ))}
 
         <li className="flex items-center justify-center w-full h-full">
-          <div className="flex min-h-[20dvh] max-w-[90dvw] sm:max-w-[55dvw] md:max-w-[45dvw] lg:max-w-[33dvw] min-w-[90dvw] sm:min-w-[55dvw] md:min-w-[45dvw] lg:min-w-[33dvw] z-50 p-5">
+          <div className="flex min-h-[20dvh] max-w-[90dvw] sm:max-w-[55dvw] md:max-w-[45dvw] lg:max-w-[33dvw] min-w-[90dvw] sm:min-w-[55dvw] md:min-w-[45dvw] lg:min-w-[33dvw] p-5">
             <blockquote className="text-black text-xl font-semibold tracking-wide italic">
               <TypeAnimation
                 sequence={[...animationSequence]}

@@ -27,16 +27,16 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <title>S@ff</title>
       </head>
       <body
-        className={`${urbanist.className} bg-claro antialiased overflow-x-hidden flex flex-col min-h-[100dvh]`}
+        className={`${urbanist.className} bg-claro antialiased flex flex-col min-h-[100dvh]`}
       >
         <ThemeProvider
           attribute="class"
           enableSystem={true}
           defaultTheme="light"
         >
-          {showSplashFaster && <SplashPageFaster />}
-
-          {!showSplashFaster && (
+          {showSplashFaster ? (
+            <SplashPageFaster />
+          ) : (
             <>
               <Header />
               <main className="z-20 flex-1 relative flex flex-col pb-20 justify-center">

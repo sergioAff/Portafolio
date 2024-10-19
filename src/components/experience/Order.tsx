@@ -18,18 +18,18 @@ export const Order = ({ onOrderChange }: OrderProps) => {
   }
 
   return (
-    <div className=" flex flex-row gap-2 justify-start items-center w-[80%] lg:w-[25%]">
+    <div className=" flex gap-2 justify-start items-center w-[80%] lg:w-[25%]">
       <button
         onClick={() => setOpen(!open)}
         className={clsx(
-          "relative p-2 rounded-full shadow-lg hover:bg-transparent hover:ring-2 hover:outline-none hover:ring-orange-500 shadow-orange-600/50 transition-all ease-in duration-100 hover:text-gray-700 active:scale-95  text-gray-100",
+          "relative p-2 rounded-full shadow-lg hover:bg-transparent hover:ring-2 outline-none hover:ring-orange-500 shadow-orange-600/50 transition-all ease-in duration-100 hover:text-gray-700 active:scale-95  text-gray-100",
           {
             "bg-orange-500": !open,
             "ring-2 ring-orange-500 text-gray-700": open,
           }
         )}
       >
-        <BlurButtons />
+        <BlurButtons proyect={false} />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -47,7 +47,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
       </button>
       <ul
         className={clsx(
-          "rounded-md shadow-lg font-semibold transition-all duration-75 bg-white/45 ease-in-out ring-orange-secondary flex flex-row gap-2 items-center overflow-hidden text-gray-800",
+          "rounded-md shadow-lg overflow-hidden font-semibold transition-all duration-75 bg-white/35 ease-in-out ring-orange-secondary flex gap-2 items-center text-gray-800",
           {
             "max-w-0": !open,
             "max-w-screen, px-2 py-1 ring-2": open,

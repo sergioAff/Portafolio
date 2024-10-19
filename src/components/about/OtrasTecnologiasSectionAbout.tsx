@@ -1,9 +1,8 @@
 import { SectionAbout3 } from "@/components/about/SectionAbout3";
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faGit } from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faGit, faSwift } from "@fortawesome/free-brands-svg-icons";
 
 interface OtrasSectionInterface {
   up: ReactNode;
@@ -16,7 +15,7 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
       title={t("tecnologias.otras")}
       body={
         <ul className="flex flex-wrap gap-10 items-center justify-center px-5 py-1">
-          <li className="flex flex-col items-center transition-transform duration-100 ">
+          <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faGit}
               className="w-10 h-auto"
@@ -25,13 +24,21 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
             <p className="text-sm font-semibold text-gray-800">Git</p>
           </li>
 
-          <li className="flex flex-col items-center transition-transform duration-100 ">
+          <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faGithub}
               className="w-10 h-auto"
               color="#181717"
             />
             <p className="text-sm font-semibold text-gray-800">GitHub</p>
+          </li>
+          <li className="flex flex-col items-center  ">
+            <FontAwesomeIcon
+              icon={faSwift}
+              className="w-10 h-auto"
+              color="#FA7343"
+            />
+            <p className="text-sm font-semibold text-gray-800">Swift</p>
           </li>
         </ul>
       }

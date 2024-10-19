@@ -41,7 +41,7 @@ export const TimeLine = ({
                   }/${experience.fechas.inicio.getFullYear()} - ${
                     experience.fechas.fin.getMonth() + 1
                   }/${experience.fechas.fin.getFullYear()}`}</time>
-                  <div className="bg-white/40 rounded-lg px-3 py-2 mx-2 md:m-2 shadow-lg">
+                  <div className="bg-white/30 rounded-lg px-3 py-2 mx-2 md:m-2 shadow-lg">
                     <p className="text-lg font-medium text-gray-900 md:px-1 border-b-2 border-orange-500 flex items-center justify-start py-1 gap-1">
                       <span>
                         <MapPinIcon className="w-6 h-auto text-gray-500" />

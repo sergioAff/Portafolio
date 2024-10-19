@@ -25,7 +25,7 @@ export function SectionAbout({
 
   return (
     <div
-      className={`${estilos} text-gray-900 hover:ring hover:ring-offset-2 transition-all duration-100 ease-in-out ring-orange-tertiary p-3 rounded-xl bg-white/40 shadow-md`}
+      className={`${estilos} text-gray-900 hover:ring hover:ring-offset-2 transition-all duration-100 ease-in-out ring-orange-tertiary p-3 rounded-xl bg-white/30 shadow-md`}
     >
       <div className="flex w-full justify-between items-center pb-2">
         <div className="flex justify-between items-center gap-2">
@@ -48,7 +48,7 @@ export function SectionAbout({
       </div>
       <p
         className={clsx(
-          "text-base text-gray-700 font-semibold lg:text-lg overflow-hidden transition-all ease-in-out duration-200",
+          "text-base text-gray-700 font-semibold lg:text-lg transition-all ease-in-out duration-200",
           {
             "max-h-screen": isOpen,
             "max-h-0": !isOpen,

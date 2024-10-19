@@ -17,34 +17,38 @@ import {
 } from "react-icons/si";
 
 export const tecnologies = {
-  html: <SiHtml5 className="w-8 h-auto" color="#E34F26" />,
-  css: <SiCss3 className="w-8 h-auto" color="#1572B6" />,
-  tailwind: <SiTailwindcss className="w-8 h-auto" color="#06B6D4" />,
-  js: <SiJavascript className="w-8 h-auto" color="#F7DF1E" />,
-  ts: <SiTypescript className="w-8 h-auto" color="#007ACC" />,
-  react: <SiReact className="w-8 h-auto" color="#61DAFB" />,
-  nextjs: <SiNextdotjs className="w-8 h-auto" color="black" />,
-  python: <SiPython className="w-8 h-auto" color="#3776AB" />,
-  django: <SiDjango className="w-8 h-auto" color="#0f6117" />,
-  postgres: <SiPostgresql className="w-8 h-auto" color="#336791" />,
-  slite: <SiSqlite className="w-8 h-auto" color="#003B57" />,
-  fluter: <SiFlutter className="w-8 h-auto" color="#02569B" />,
-  swift: <SiSwift className="w-8 h-auto" color="#FA7343" />,
-  git: <SiGit className="w-8 h-auto" color="#F05032" />,
-  github: <SiGithub className="w-8 h-auto" color="#181717" />,
+  html: <SiHtml5 className="w-8 h-auto" color="#E34F26" key={"html"} />,
+  css: <SiCss3 className="w-8 h-auto" color="#1572B6" key={"css"} />,
+  tailwind: (
+    <SiTailwindcss className="w-8 h-auto" color="#06B6D4" key={"tailwind"} />
+  ),
+  js: <SiJavascript className="w-8 h-auto" color="#F7DF1E" key={"js"} />,
+  ts: <SiTypescript className="w-8 h-auto" color="#007ACC" key={"ts"} />,
+  react: <SiReact className="w-8 h-auto" color="#61DAFB" key={"react"} />,
+  nextjs: <SiNextdotjs className="w-8 h-auto" color="black" key={"nextjs"} />,
+  python: <SiPython className="w-8 h-auto" color="#3776AB" key={"python"} />,
+  django: <SiDjango className="w-8 h-auto" color="#0f6117" key={"django"} />,
+  postgres: (
+    <SiPostgresql className="w-8 h-auto" color="#336791" key={"postgres"} />
+  ),
+  slite: <SiSqlite className="w-8 h-auto" color="#003B57" key={"sqlite"} />,
+  fluter: <SiFlutter className="w-8 h-auto" color="#02569B" key={"flutter"} />,
+  swift: <SiSwift className="w-8 h-auto" color="#FA7343" key={"swift"} />,
+  git: <SiGit className="w-8 h-auto" color="#F05032" key={"git"} />,
+  github: <SiGithub className="w-8 h-auto" color="#181717" key={"github"} />,
 };
 
 export const tecnologiesArray = [
   <SiHtml5 key="html" className="w-6 h-auto" color="#E34F26" />,
   <SiCss3 key="css" className="w-6 h-auto" color="#1572B6" />,
   <SiTailwindcss key="tailwind" className="w-6 h-auto" color="#06B6D4" />,
-  <SiJavascript key="javascript" className="w-6 h-auto" color="#F7DF1E" />,
-  <SiTypescript key="typescript" className="w-6 h-auto" color="#007ACC" />,
+  <SiJavascript key="js" className="w-6 h-auto" color="#F7DF1E" />,
+  <SiTypescript key="ts" className="w-6 h-auto" color="#007ACC" />,
   <SiReact key="react" className="w-6 h-auto" color="#61DAFB" />,
   <SiNextdotjs key="nextjs" className="w-6 h-auto" color="black" />,
   <SiPython key="python" className="w-6 h-auto" color="#3776AB" />,
   <SiDjango key="django" className="w-6 h-auto" color="#0f6117" />,
-  <SiPostgresql key="postgresql" className="w-6 h-auto" color="#336791" />,
+  <SiPostgresql key="postgres" className="w-6 h-auto" color="#336791" />,
   <SiSqlite key="sqlite" className="w-6 h-auto" color="#003B57" />,
   <SiFlutter key="flutter" className="w-6 h-auto" color="#02569B" />,
   <SiSwift key="swift" className="w-6 h-auto" color="#FA7343" />,

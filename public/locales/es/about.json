@@ -14,7 +14,7 @@
 
   "metas": {
     "titulo": "Mis Metas",
-    "texto": "Mi objetivo es graduarme como ingeniero informático en una gran universidad y continuar mi desarrollo personal y profesional como ingeniero informático, esforzándome por alcanzar la mejor versión de mí mismo. Aspiro a trabajar en empresas líderes en el sector, lo que me permitirá ampliar mis conocimientos y enriquecer mis experiencias laborales"
+    "texto": "Mi objetivo es graduarme como ingeniero informático en una gran universidad y continuar mi desarrollo personal y profesional como ingeniero informático, esforzándome por alcanzar la mejor versión de mí mismo. Aspiro a trabajar en empresas líderes en el sector, lo que me permitirá ampliar mis conocimientos y enriquecer mis experiencias laborales."
   },
 
   "tecnologias": {
@@ -23,7 +23,7 @@
   },
 
   "habilidades_blandas": {
-    "titulo": "Habilidades Blandas",
+    "titulo": "Habilidades",
     "lista": {
       "1": "Español nativo",
       "2": "Inglés intermedio",

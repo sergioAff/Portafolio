@@ -1,3 +1,47 @@
 {
-  "Ver": "Más"
+  "Ver": "Más",
+  "1": {
+    "title": "Clinica Fernández",
+    "description": "Aplicación web para para la gestión de citas, pacientes, especialistas y servicios en una clínica privada. Cuenta con una intuitiva y completa interfaz contruida con React y NextJS donde cada usuario registrado puede acceder a cada uno de los servicios e informaciones que brinda la clínica. El sistema se enfoca también en la protección de datos sensibles gracias a un sólido Backend construido con Django, usando Rest Framework y Postgres para la gestión de la base de datos"
+  },
+  "2": {
+    "title": "Buscador de Gifs",
+    "description": "Gif Finder es una aplicación web que permite buscar y visualizar GIFs usando la API de Giphy. Ofrece una experiencia de usuario rápida y responsiva gracias a React y Tailwind CSS. Los usuarios pueden buscar por categorías y ver los GIFs en una cuadrícula dinámica y con carga asíncrona."
+  },
+  "3": {
+    "title": "Dashboard",
+    "description": "Dashboard es una aplicación web desarrollada con Next.js apoyandose en la guía de Vercel que permite a los usuarios gestionar y visualizar datos de manera eficiente. Con características como autenticación de usuarios y gráficos interactivos, esta aplicación está diseñada para ser rápida y fácil de usar con una autenticación de usuarios,g estión de datos en tiempo real, visualización de datos con gráficos interactivos y todo desplegado en Vercel"
+  },
+  "4": {
+    "title": "Gestión de Estudiantes",
+    "description": "Aplicación web integral desarrollada para optimizar el proceso de matrícula de estudiantes universitarios en una institución educativa. Esta solución mejora significativamente los tiempos y la logística del proceso de matrícula, facilitando una experiencia más eficiente tanto para estudiantes como para administradores. Tiene una interfaz de usuario intuitiva, base de datos en PostgreSQL y el backend está desarrollado en Django."
+  },
+  "5": {
+    "title": "Yahtzee",
+    "description": "Yatzee es un juego de mesa clásico desarrollado como una aplicación de escritorio utilizando Tkinter y Python. Los jugadores lanzan dados y tratan de obtener la mejor combinación posible para sumar puntos, siguiendo las reglas tradicionales del juego. Tiene una interfaz intuitiva, soporte para múltiples jugadores y registro de puntajes."
+  },
+  "6": {
+    "title": "Recursos Humanos",
+    "description": "Aplicación de escritorio desarrollada con Tkinter y Python para la gestión eficiente de recursos humanos. Esta herramienta permite a los administradores manejar información de empleados, facilitar la comunicación interna y optimizar los procesos relacionados con la gestión del personal."
+  },
+  "7": {
+    "title": "Buscador de Héroes",
+    "description": "Aplicación desarrollada en Swift que utiliza una API externa para buscar superhéroes y mostrar información detallada sobre ellos. Los usuarios pueden buscar superhéroes por nombre, ver una lista de coincidencias y acceder a estadísticas como poder, fuerza, velocidad, entre otras. Tiene una interfaz intuitiva un diseño limpio y fácil de usar."
+  },
+  "8": {
+    "title": "IMC",
+    "description": "App desarrollada en Swift que permite calcular el Índice de Masa Corporal (IMC). El IMC es un valor que se utiliza para determinar si una persona tiene un peso saludable en relación con su estatura. Esta herramienta es útil para quienes desean monitorear su peso y salud de manera sencilla. Muestra si el IMC corresponde a una categoría saludable, bajo peso, sobrepeso o alguna forma de obesidad."
+  },
+  "9": {
+    "title": "Gimnasio",
+    "description": "Aplicación móvil desarrollada en Flutter que sirve como una guía de entrenamiento para el gimnasio. La aplicación ofrece diferentes rutinas de entrenamiento organizadas por días y grupos musculares, proporcionando a los usuarios una referencia clara y práctica para estructurar sus sesiones de ejercicio. Presenta una fácil navegación entre las rutinas y las descripciones de los ejercicios. Cada rutina contiene explicaciones detalladas de los ejercicios, repeticiones y series."
+  },
+  "10": {
+    "title": "Monitor de recursos",
+    "description": "Script para Windows que permite supervisar el uso del CPU y otros parámetros del sistema. Con esta herramienta, los usuarios pueden obtener información en tiempo real sobre el rendimiento de su PC, ayudando a identificar posibles cuellos de botella y optimizar el funcionamiento del equipo."
+  },
+  "11": {
+    "title": "Generador de contraseñas",
+    "description": "Script en Python que genera contraseñas seguras y aleatorias. Diseñado para mejorar la seguridad de tus cuentas."
+  }
 }

@@ -25,7 +25,7 @@ export function SectionAbout2({
 
   return (
     <div
-      className={` text-gray-900 h-auto hover:ring hover:ring-offset-2 transition-all duration-100 ease-in-out ring-orange-tertiary px-4 py-3 rounded-xl bg-white/40 shadow-md`}
+      className={` text-gray-900 h-auto hover:ring hover:ring-offset-2 transition-all duration-100 ease-in-out ring-orange-tertiary px-4 py-3 rounded-xl bg-white/30 shadow-md`}
     >
       <div className=" flex w-full flex-wrap justify-between items-center pb-2">
         <div className=" flex justify-between items-center gap-2">

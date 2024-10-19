@@ -1,20 +1,20 @@
 {
   "personal": {
     "titulo": "Personal Information",
-    "texto": "I am Sergio Adrian Fernández Figueredo, a passionate technology professional originally from Cuba, currently residing in Montevideo, Uruguay. At 22 years old, I have cultivated a deep fascination for programming from an early age. My interests extend beyond technology to include photography, health, sports, and travel. My innate curiosity for learning drives me to be a perfectionist in the activities I choose to undertake."
-  },
-
-  "profesion": {
-    "titulo": "My Career",
-    "texto": "My journey in the technological field has primarily developed through my studies in computer engineering, where I am currently in my fourth year. Thanks to my self-driven motivation, I have been able to deepen my knowledge in full-stack development, achieving multiple goals and acquiring valuable experience and knowledge in the field."
+    "texto": "I am Sergio Adrian Fernández Figueredo, a passionate technology professional originally from Cuba, currently residing in Montevideo, Uruguay. At 22 years old, I have cultivated a deep fascination for programming, networking, and technology from an early age. My interests encompass not only technology but also photography, health, sports, and travel. My innate curiosity for learning drives me to be a perfectionist in the activities I choose to pursue."
   },
 
   "Desplegar": "Expand",
   "Recoger": "Collapse",
 
+  "profesion": {
+    "titulo": "My Career",
+    "texto": "My journey in the technology field has primarily developed through my studies in computer engineering, where I am currently in my fourth year. Thanks to my self-taught drive, I have been able to delve into full-stack development, achieving multiple goals and acquiring valuable experience and knowledge in the field."
+  },
+
   "metas": {
     "titulo": "My Goals",
-    "texto": "My objective is to graduate as a computer engineer and continue my personal and professional development, striving to reach the best version of myself. I aspire to work in leading companies in the sector, which will allow me to expand my knowledge and enrich my work experiences."
+    "texto": "My objective is to graduate as a computer engineer from a major university and continue my personal and professional development as a computer engineer, striving to reach the best version of myself. I aspire to work for leading companies in the sector, which will allow me to expand my knowledge and enrich my work experiences."
   },
 
   "tecnologias": {
@@ -23,7 +23,7 @@
   },
 
   "habilidades_blandas": {
-    "titulo": "Soft Skills",
+    "titulo": "Skills",
     "lista": {
       "1": "Native Spanish",
       "2": "Intermediate English",

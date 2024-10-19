@@ -70,7 +70,7 @@ export const ContactCard = ({
 
   return (
     <>
-      <div className="relative flex min-h-[23dvh] max-w-[90dvw] sm:max-w-[55dvw] md:max-w-[45dvw] lg:max-w-[33dvw] min-w-[90dvw] sm:min-w-[55dvw] md:min-w-[45dvw] lg:min-w-[33dvw]  flex-col items-center justify-between rounded-xl shadow-md hover:ring ring-orange-tertiary hover:ring-offset-2 bg-white/40 transition-all duration-100 ease-in-out transform overflow-hidden z-50 py-3">
+      <div className="relative flex min-h-[23dvh] max-w-[90dvw] sm:max-w-[55dvw] md:max-w-[45dvw] lg:max-w-[33dvw] min-w-[90dvw] sm:min-w-[55dvw] md:min-w-[45dvw] lg:min-w-[33dvw] flex-col items-center justify-between rounded-xl shadow-md hover:ring ring-orange-tertiary hover:ring-offset-2 bg-white/30 transition-all duration-100 ease-in-out transform overflow-hidden py-3">
         {showNotification && (
           <div className="animate-fadeTop absolute top-1/3 w-3/5 bg-green-500 text-white py-2 rounded-lg shadow-xl">
             <p className="flex gap-2 justify-center items-center text-lg font-semibold tracking-wide">
@@ -86,7 +86,7 @@ export const ContactCard = ({
           </h3>
         </div>
         <div className="w-full px-5 flex justify-center font-mono text-gray-600 font-medium">
-          <Links direccion={direccion} nombre={enlace} />
+          <Links direccion={direccion} nombre={enlace} target="_blank" />
         </div>
         <div className=" flex justify-around w-full">
           <button

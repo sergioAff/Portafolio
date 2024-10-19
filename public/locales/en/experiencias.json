@@ -2,37 +2,38 @@
   "experiencias": {
     "1": {
       "title": "Freelance Developer",
-      "description": "Development of web applications using TypeScript and React, creation of desktop applications with Python, and database management in SQLite and PostgreSQL. Focused on delivering customized solutions that meet clients' specific requirements, ensuring high quality and meeting deadlines.",
+      "description": "Development of web applications using technologies such as TypeScript, React, and TailwindCSS, among others; creation of desktop applications with Python, sometimes using databases like SQLite or PostgreSQL. Focus on providing customized solutions that meet specific client requirements, ensuring high quality and timely delivery. Completed over a dozen projects with total success.",
       "place": "Remote"
     },
     "2": {
       "title": "SQL Programmer",
-      "description": "Responsible for developing and managing databases for efficient management of material, human, and logistical resources at Empresa Eléctrica de Cienfuegos. Implementation of solutions that optimize performance and security of databases, contributing to better organizational decision-making.",
-      "place": "Reomto"
+      "description": "Responsible for developing databases for the efficient management of material, human, and logistical resources at the Cienfuegos Electric Company as part of my work practice. Implementation of solutions that optimize database performance, contributing to better organizational decision-making.",
+      "place": "Cienfuegos Electric Company, Cuba"
     },
     "3": {
       "title": "Development Leader",
-      "description": "Leadership of a project focused on data analysis and identification of key indicators for the tourism sector in Cuba. Coordination of a multidisciplinary team to develop analytical tools that support strategic decision-making.",
+      "description": "Leadership of a project focused on data analysis and identification of key indicators for the tourism sector in Cuba using Python for system development and data analysis. Coordination of a multidisciplinary team to develop analytical tools that support strategic decision-making. The project is currently of great utility for the institutions using it, aiding in the analysis of tourism parameters and future decision-making.",
       "place": "University of Cienfuegos"
     },
     "4": {
       "title": "Junior Python Developer",
-      "description": "Software development as a Jr Python Developer at Merchise Austrement, contributing to the implementation of features using best programming practices."
+      "description": "Software development as a Junior Python Developer at Merchise Austrement, contributing to the implementation of business solutions using Odoo.",
+      "place": "Remote"
     },
     "5": {
-      "title": "Full Stack Developer",
-      "description": "Creation and development of a comprehensive web application as a Full Stack Developer and project leadership at 'Clínica Fernández'. Implementation of solutions in both frontend and backend, ensuring functionality and optimal user experience.",
-      "place": "Reomto"
+      "title": "Full Stack Developer and Project Leader",
+      "description": "Creation and development of a comprehensive web application as a Full Stack Developer and project leader for 'Clínica Fernández,' a private clinic located in Montevideo, Uruguay. Implementation of solutions in both frontend and backend, ensuring functionality and an optimal user experience. The project is considered the core of the business model, where managing appointments, clients, and specialists will facilitate the proper functioning of the clinic.",
+      "place": "Remote"
     },
     "6": {
-      "title": "Desarrollador Full Stack",
-      "description": "Creación y desarrollo de una aplicación web como práctica laboral, para la gestión de matriculas de estudiantes universitarios en una institución educativa en la provincia de Cienfuegos, Cuba. ",
-      "place": "Universidad de Cienfuegos"
+      "title": "Full Stack Developer",
+      "description": "Creation and development of a comprehensive web application as a work practice for managing university student enrollments at an educational institution in Cienfuegos province, Cuba. Improved the timing of the enrollment management process and enhanced its logistics.",
+      "place": "University of Cienfuegos"
     },
     "7": {
-      "title": "Agente de Marketing",
-      "description": "Divulgador de noticias, webs, anuncios y audiovisuales en redes sociales, páginas y canales de difusión para NotiFresh",
-      "place": "Remotos"
+      "title": "Marketing Agent",
+      "description": "Disseminator of news, websites, advertisements, and audiovisual content on social media, websites, and channels for companies like NotiFresh, TipsDiarios, among others, reaching the level of manager, tutor, and organizer of several teams, generating high revenues and visibility for the companies.",
+      "place": "Remote"
     }
   }
 }

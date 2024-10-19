@@ -15,13 +15,14 @@ interface PortfolioBoxProps {
     link: string;
     visitar: string;
     descripcion: string;
+    imagesCarrusel: string[];
     image: string;
     tecnologies: React.JSX.Element[];
   };
 }
 
 export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
-  const { nombre, link, descripcion, image, visitar } = data;
+  const { nombre, link, descripcion, image, visitar, imagesCarrusel } = data;
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const { t } = useTranslation(["proyectos"]);
   const settings = {
@@ -30,8 +31,8 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
     slidesToShow: 4,
     slidesToScroll: 3,
     autoplay: true,
-    speed: 6000,
-    autoplaySpeed: 3000,
+    speed: 3000,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     arrows: false,
   };
@@ -43,28 +44,41 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           title={nombre}
           description={descripcion}
           setIsModalOpen={setIsModalOpen}
+          imagesCarrusel={imagesCarrusel}
         />
       )}
       <li
-        className="p-4 max-w-[80dvw] sm:max-w-96 md:max-w-md 
-       lg:max-w-lg hover:ring hover:ring-offset-2 transition-all duration-200 ease-in-out ring-orange-tertiary rounded-xl bg-white/40 shadow-md flex flex-col items-center gap-1 justify-between"
+        className={clsx(
+          "p-3 max-w-[80dvw] sm:max-w-96 md:max-w-md lg:max-w-lg hover:ring hover:ring-offset-2 transition-all duration-200 ease-in-out ring-orange-tertiary rounded-xl bg-white/30 shadow-md flex flex-col items-center gap-1 justify-between",
+          {
+            "md:max-h-[500px] lg:max-h-[600px]": image,
+            "md:max-h-[990px] lg:max-h-[765px]":
+              nombre === "Buscador de Héroes" ||
+              nombre === "IMC" ||
+              nombre === "Super Hero Finder",
+          }
+        )}
       >
-        <h3 className="font-semibold text-2xl text-center tracking-wide text-orange-600">
+        <h3 className="font-semibold text-2xl text-center tracking-wider text-orange-600 select-none">
           {nombre}
         </h3>
-        {image && (
+        {image ? (
           <Image
             src={image}
             alt={nombre}
             width={200}
             height={200}
-            className={clsx("w-full max-h-[30dvh] rounded-md  my-2", {
-              "object-scale-down max-h-[50dvh]":
-                nombre === "Super Hero Finder" || nombre === "IMC",
+            className={clsx("w-full rounded-md my-1", {
+              "lg:max-h-[600px] object-scale-down":
+                nombre === "IMC" ||
+                nombre === "Super Hero Finder" ||
+                nombre === "Buscador de Héroes",
             })}
           />
+        ) : (
+          <p className="font-semibold p-2">{descripcion}</p>
         )}
-        <Slider {...settings} className="flex w-full px-10">
+        <Slider {...settings} className="flex w-full px-2">
           {data.tecnologies.map((tecnology) => (
             <div
               key={tecnology.key}
@@ -74,7 +88,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
             </div>
           ))}
         </Slider>
-        <div className="flex justify-around items-center gap-2 mt-2">
+        <div className="flex justify-around items-center gap-2 mt-1">
           {link && (
             <Links
               nombre="GitHub"
@@ -86,17 +100,19 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           {visitar && (
             <Links
               nombre="Visitar"
-              direccion={link}
+              direccion={visitar}
               estilos="text-white font-semibold rounded-md tracking-wide ring-orange-500 ring-offset-2 hover:ring-2 px-2 py-1 transition duration-150 bg-orange-500 hover:bg-orange-500/80 shadow-md"
               target="_blank"
             />
           )}
-          <button
-            onClick={() => setIsModalOpen(true)}
-            className="text-white font-semibold rounded-md tracking-wide ring-orange-500 ring-offset-2 hover:ring-2 px-2 py-1 transition duration-150 bg-orange-500 hover:bg-orange-500/80 shadow-md"
-          >
-            {t("Ver")}
-          </button>
+          {imagesCarrusel.length > 0 && (
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className="text-white font-semibold rounded-md tracking-wide ring-orange-500 ring-offset-2 hover:ring-2 px-2 py-1 transition duration-150 bg-orange-500 hover:bg-orange-500/80 shadow-md"
+            >
+              {t("Ver")}
+            </button>
+          )}
         </div>
       </li>
     </>

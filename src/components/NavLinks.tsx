@@ -11,9 +11,9 @@ export default function NavLinks() {
 
   return (
     <nav className=" pt-4 md:pt-0 flex items-center justify-center animate-fadeTop">
-      <ul className="border border-orange-500  shadow-lg bg-white/45  shadow-orange-800 p-0.5 w-auto flex justify-center items-center rounded-2xl">
+      <ul className="border border-orange-500 shadow-lg bg-white/45  shadow-orange-800 p-0.5 w-auto flex justify-center items-center rounded-2xl">
         {enlaces.map((link) => (
-          <li key={link.id}>
+          <li key={link.id} className="relative">
             <Links
               direccion={link.enlace}
               nombre={link.nombre}
