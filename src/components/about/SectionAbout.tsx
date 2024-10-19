@@ -48,7 +48,7 @@ export function SectionAbout({
       </div>
       <p
         className={clsx(
-          "text-base text-gray-700 font-semibold lg:text-lg transition-all ease-in-out duration-200",
+          "text-base text-gray-700 font-semibold lg:text-lg transition-all ease-in-out duration-200 overflow-hidden",
           {
             "max-h-screen": isOpen,
             "max-h-0": !isOpen,
