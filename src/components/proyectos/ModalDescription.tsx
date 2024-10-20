@@ -17,7 +17,7 @@ export const ModalDescription = ({
 }: ModalDescription) => {
   return (
     <motion.div
-      className="fixed self-start mt-10 flex flex-col gap-1 md:gap-5 lg:gap-2 inset-0 z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] max-h-auto "
+      className="absolute flex flex-col gap-1 md:gap-5 lg:gap-2 inset-x-0 inset-y-auto z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] max-h-auto "
       initial={{ opacity: 0, y: 50 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}

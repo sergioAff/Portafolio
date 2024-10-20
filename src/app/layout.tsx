@@ -8,6 +8,7 @@ import "@/config/i18next.config";
 import { ThemeProvider } from "next-themes";
 import { useState, useEffect } from "react";
 import { SplashPageFaster } from "@/components/SplashPage";
+import { Up } from "@/components/Up";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   const [showSplashFaster, setShowSplashFaster] = useState(true);
@@ -41,6 +42,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <Header />
               <main className="z-20 flex-1 relative flex flex-col pb-20 justify-center">
                 {children}
+                <Up />
               </main>
               <Footer />
             </>

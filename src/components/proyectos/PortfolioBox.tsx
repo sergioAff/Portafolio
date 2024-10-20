@@ -55,7 +55,8 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
             "md:max-h-[990px] lg:max-h-[765px]":
               nombre === "Buscador de Héroes" ||
               nombre === "IMC" ||
-              nombre === "Super Hero Finder",
+              nombre === "Super Hero Finder" ||
+              nombre === "BMI",
           }
         )}
       >
@@ -72,7 +73,8 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
               "lg:max-h-[600px] object-scale-down":
                 nombre === "IMC" ||
                 nombre === "Super Hero Finder" ||
-                nombre === "Buscador de Héroes",
+                nombre === "Buscador de Héroes" ||
+                nombre === "BMI",
             })}
           />
         ) : (

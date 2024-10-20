@@ -1,47 +1,47 @@
 {
   "Ver": "More",
   "1": {
-    "title": "Clinica Fernández",
-    "description": "Aplicación web para para la gestión de citas, pacientes, especialistas y servicios en una clínica privada. Cuenta con una intuitiva y completa interfaz contruida con React y NextJS donde cada usuario registrado puede acceder a cada uno de los servicios e informaciones que brinda la clínica. El sistema se enfoca también en la protección de datos sensibles gracias a un sólido Backend construido con Django, usando Rest Framework y Postgres para la gestión de la base de datos"
+    "title": "Fernandez Clinic",
+    "description": "Web application for managing appointments, patients, specialists, and services in a private clinic. It features an intuitive and comprehensive interface built with React and NextJS, where every registered user can access each of the services and information provided by the clinic. The system also focuses on protecting sensitive data, thanks to a robust backend built with Django, using the Rest Framework and Postgres for database management."
   },
   "2": {
     "title": "Gif Finder",
-    "description": "Gif Finder es una aplicación web que permite buscar y visualizar GIFs usando la API de Giphy. Ofrece una experiencia de usuario rápida y responsiva gracias a React y Tailwind CSS. Los usuarios pueden buscar por categorías y ver los GIFs en una cuadrícula dinámica y con carga asíncrona."
+    "description": "Gif Finder is a web application that allows users to search for and display GIFs using the Giphy API. It provides a fast and responsive user experience, thanks to React and Tailwind CSS. Users can search by categories and view GIFs in a dynamic grid with asynchronous loading."
   },
   "3": {
     "title": "Dashboard",
-    "description": "Dashboard es una aplicación web desarrollada con Next.js que permite a los usuarios gestionar y visualizar datos de manera eficiente. Con características como autenticación de usuarios y gráficos interactivos, esta aplicación está diseñada para ser rápida y fácil de usar con una autenticación de usuarios,g estión de datos en tiempo real, visualización de datos con gráficos interactivos y todo desplegado en Vercel"
+    "description": "Dashboard is a web application developed with Next.js that allows users to efficiently manage and visualize data. With features like user authentication and interactive charts, this app is designed to be fast and easy to use with user authentication, real-time data management, data visualization with interactive charts, all deployed on Vercel."
   },
   "4": {
-    "title": "Gestión de Estudiantes",
-    "description": "Aplicación web integral desarrollada para optimizar el proceso de matrícula de estudiantes universitarios en una institución educativa. Esta solución mejora significativamente los tiempos y la logística del proceso de matrícula, facilitando una experiencia más eficiente tanto para estudiantes como para administradores. Tiene una interfaz de usuario intuitiva, base de datos en PostgreSQL y el backend está desarrollado en Django."
+    "title": "Student Management",
+    "description": "Comprehensive web application developed to optimize the university student enrollment process at an educational institution. This solution significantly improves the logistics and time management of the enrollment process, providing a more efficient experience for both students and administrators. It has an intuitive user interface, a PostgreSQL database, and a backend developed in Django."
   },
   "5": {
     "title": "Yahtzee",
-    "description": "Yatzee es un juego de mesa clásico desarrollado como una aplicación de escritorio utilizando Tkinter y Python. Los jugadores lanzan dados y tratan de obtener la mejor combinación posible para sumar puntos, siguiendo las reglas tradicionales del juego. Tiene una interfaz intuitiva, soporte para múltiples jugadores y registro de puntajes."
+    "description": "Yahtzee is a classic board game developed as a desktop application using Tkinter and Python. Players roll dice and try to get the best possible combination to score points, following the traditional game rules. It features an intuitive interface, support for multiple players, and score tracking."
   },
   "6": {
     "title": "Human Resources",
-    "description": "Aplicación de escritorio desarrollada con Tkinter y Python para la gestión eficiente de recursos humanos. Esta herramienta permite a los administradores manejar información de empleados, facilitar la comunicación interna y optimizar los procesos relacionados con la gestión del personal."
+    "description": "Desktop application developed with Tkinter and Python for efficient human resource management. This tool allows administrators to handle employee information, facilitate internal communication, and optimize processes related to personnel management."
   },
   "7": {
     "title": "Super Hero Finder",
-    "description": "Aplicación desarrollada en Swift que utiliza una API externa para buscar superhéroes y mostrar información detallada sobre ellos. Los usuarios pueden buscar superhéroes por nombre, ver una lista de coincidencias y acceder a estadísticas como poder, fuerza, velocidad, entre otras. Tiene una interfaz intuitiva un diseño limpio y fácil de usar."
+    "description": "Application developed in Swift that uses an external API to search for superheroes and display detailed information about them. Users can search for superheroes by name, view a list of matches, and access statistics such as power, strength, speed, among others. It has an intuitive interface and a clean, easy-to-use design."
   },
   "8": {
-    "title": "IMC",
-    "description": "App desarrollada en Swift que permite calcular el Índice de Masa Corporal (IMC). El IMC es un valor que se utiliza para determinar si una persona tiene un peso saludable en relación con su estatura. Esta herramienta es útil para quienes desean monitorear su peso y salud de manera sencilla. Muestra si el IMC corresponde a una categoría saludable, bajo peso, sobrepeso o alguna forma de obesidad."
+    "title": "BMI",
+    "description": "App developed in Swift that allows users to calculate the Body Mass Index (BMI). BMI is a value used to determine if a person has a healthy weight relative to their height. This tool is useful for those who want to monitor their weight and health easily. It shows whether the BMI falls into a healthy, underweight, overweight, or obese category."
   },
   "9": {
-    "title": "Gimnasio",
-    "description": "Aplicación móvil desarrollada en Flutter que sirve como una guía de entrenamiento para el gimnasio. La aplicación ofrece diferentes rutinas de entrenamiento organizadas por días y grupos musculares, proporcionando a los usuarios una referencia clara y práctica para estructurar sus sesiones de ejercicio. Presenta una fácil navegación entre las rutinas y las descripciones de los ejercicios. Cada rutina contiene explicaciones detalladas de los ejercicios, repeticiones y series."
+    "title": "Gym",
+    "description": "Mobile application developed in Flutter that serves as a workout guide for the gym. The app offers different workout routines organized by days and muscle groups, providing users with a clear and practical reference to structure their exercise sessions. It features easy navigation between routines and exercise descriptions. Each routine contains detailed explanations of exercises, repetitions, and sets."
   },
   "10": {
-    "title": "Monitor de recursos",
-    "description": "Script para Windows que permite supervisar el uso del CPU y otros parámetros del sistema. Con esta herramienta, los usuarios pueden obtener información en tiempo real sobre el rendimiento de su PC, ayudando a identificar posibles cuellos de botella y optimizar el funcionamiento del equipo."
+    "title": "Resource Monitor",
+    "description": "Script for Windows that allows users to monitor CPU usage and other system parameters. With this tool, users can obtain real-time information about their PC's performance, helping to identify potential bottlenecks and optimize system operation."
   },
   "11": {
-    "title": "Generador de contraseñas",
-    "description": "Script en Python que genera contraseñas seguras y aleatorias. Diseñado para mejorar la seguridad de tus cuentas."
+    "title": "Password Generator",
+    "description": "Python script that generates secure and random passwords. Designed to improve the security of your accounts."
   }
 }
