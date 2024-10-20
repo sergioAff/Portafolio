@@ -10,6 +10,7 @@ export default function Languaje() {
 
   function onChangeLanguage(idioma: string) {
     i18n.changeLanguage(idioma);
+    window.location.reload();
   }
 
   function onChangeOpen() {
