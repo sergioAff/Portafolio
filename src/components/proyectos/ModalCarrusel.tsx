@@ -4,6 +4,7 @@ import Image from "next/image";
 
 interface ModalCarruselProps {
   imagesCarrusel: string[];
+  onImageClick: (image: string) => void;
 }
 
 const carouselSettings = {
@@ -19,17 +20,24 @@ const carouselSettings = {
   emulateTouch: true,
 };
 
-export const ModalCarrusel = ({ imagesCarrusel }: ModalCarruselProps) => {
+export const ModalCarrusel = ({
+  imagesCarrusel,
+  onImageClick,
+}: ModalCarruselProps) => {
   return (
-    <Carousel {...carouselSettings} className="">
+    <Carousel {...carouselSettings} className="relative">
       {imagesCarrusel.map((image, index) => (
-        <div key={index}>
+        <div
+          key={index}
+          className="cursor-pointer"
+          onClick={() => onImageClick(image)}
+        >
           <Image
             src={image}
             alt={`Imagen ${index + 1}`}
             width={1000}
             height={0}
-            className=" object-scale-down max-h-[400px] select-none"
+            className="object-scale-down max-h-[400px] select-none cursor-pointer"
           />
         </div>
       ))}

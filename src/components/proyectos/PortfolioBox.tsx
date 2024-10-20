@@ -37,6 +37,14 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
     arrows: false,
   };
 
+  function handleModal() {
+    setIsModalOpen(true);
+    window.scrollTo({
+      top: 100,
+      behavior: "smooth",
+    });
+  }
+
   return (
     <>
       {isModalOpen && (
@@ -109,7 +117,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           )}
           {imagesCarrusel.length > 0 && (
             <button
-              onClick={() => setIsModalOpen(true)}
+              onClick={() => handleModal()}
               className="text-white font-semibold rounded-md tracking-wide ring-orange-500 ring-offset-2 hover:ring-2 px-2 py-1 transition duration-150 bg-orange-500 hover:bg-orange-500/80 shadow-md"
             >
               {t("Ver")}
