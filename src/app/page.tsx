@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 import { CoverParticles } from "@/components/CoverParticles";
 import { DescargarCv } from "@/components/home/DescagarCV";
-import { Avatar } from "@/components/home/Avatar";
+import { AvatarComponent } from "@/components/home/Avatar";
 
 export default function Page() {
   const { t } = useTranslation(["welcome"]);
@@ -26,7 +26,7 @@ export default function Page() {
         </hgroup>
         <DescargarCv />
       </div>
-      <Avatar />
+      <AvatarComponent />
     </main>
   );
 }

@@ -1,16 +1,14 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Avatar from "react-avatar";
 
-export const Avatar = () => {
+export const AvatarComponent = () => {
   return (
-    <div className="avatar-container relative py-1 animate-fadeBottomForCV w-full flex items-center justify-center sm:w-2/3 h-full lg:w-2/6 ">
-      <Image
-        src="/Home/me.png"
-        alt="Avatar"
-        width={1000}
-        height={1000}
-        priority
-        className="avatar-image w-1/2"
+    <div className="relative py-4 w-full flex items-center justify-center sm:w-2/3 lg:w-2/6 h-full animate-fadeBottomForCV transition-transform duration-300 ease-in-out">
+      <Avatar
+        src="/Home/me.jpeg"
+        size="230"
+        round={true}
+        alt="Profile picture of Sergio Adrián Fernández"
+        className="shadow-xl ring-4 ring-offset-2 ring-orange-500 transition-all duration-200 ease-in-out hover:ring-offset-4 hover:shadow-2xl"
       />
     </div>
   );
