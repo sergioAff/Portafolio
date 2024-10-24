@@ -16,7 +16,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowSplashFaster(false);
-    }, 500);
+    }, 1000);
     return () => clearTimeout(timer);
   }, []);
 
