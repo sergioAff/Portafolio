@@ -10,7 +10,7 @@
   },
   "3": {
     "title": "Dashboard",
-    "description": "Dashboard es una aplicación web desarrollada con Next.js apoyandose en la guía de Vercel que permite a los usuarios gestionar y visualizar datos de manera eficiente. Con características como autenticación de usuarios y gráficos interactivos, esta aplicación está diseñada para ser rápida y fácil de usar con una autenticación de usuarios,g estión de datos en tiempo real, visualización de datos con gráficos interactivos y todo desplegado en Vercel"
+    "description": "Dashboard es una aplicación web desarrollada con Next.js apoyandose en la guía de Vercel que permite a los usuarios gestionar y visualizar datos de manera eficiente. Con características como autenticación de usuarios y gráficos interactivos, esta aplicación está diseñada para ser rápida y fácil de usar con una autenticación de usuarios, gestión de datos en tiempo real, visualización de datos con gráficos interactivos y todo desplegado en Vercel"
   },
   "4": {
     "title": "Gestión de Estudiantes",
