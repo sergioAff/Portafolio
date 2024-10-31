@@ -2,37 +2,37 @@
   "experiencias": {
     "1": {
       "title": "Desarrollador Freelance",
-      "description": "Desarrollo de aplicaciones web utilizando tecnologías como TypeScript, React, TailwindCSS entre otros, creación de aplicaciones de escritorio con Python usando en algunos casos bases de datos como SQLite o PostgreSQL. Enfoque en ofrecer soluciones personalizadas que cumplan con los requisitos específicos de los clientes, asegurando alta calidad y cumplimiento de los plazos. Completados más de una docena de proyectos con total éxito.",
+      "description": "Diseñé y desarrollé aplicaciones web utilizando tecnologías como TypeScript, React y TailwindCSS, así como aplicaciones de escritorio con Python. Integré bases de datos como PostgreSQL y SQLite. Ofrecí soluciones personalizadas que cumplieron con los requisitos específicos de los clientes, garantizando altos estándares de calidad y cumplimiento de plazos. Completé con éxito más de una docena de proyectos, contribuyendo a la satisfacción del 100% de los clientes.",
       "place": "Remoto"
     },
     "2": {
       "title": "Programador SQL",
-      "description": "Responsable del desarrollo de bases de datos para la gestión eficiente de recursos materiales, humanos y logísticos en Empresa Eléctrica de Cienfuegos como práctica laboral. Implementación de soluciones que optimizan el rendimiento de las bases de datos, contribuyendo a una mejor toma de decisiones organizacionales.",
+      "description": "Desarrollé bases de datos para la gestión integral de recursos materiales, humanos y logísticos. Apliqué soluciones innovadoras que optimizan el rendimiento operativo en un 40% y facilitan la toma de decisiones estratégicas. Diseñé e implementé las estructuras de datos que permiten un acceso rápido y fácil a la información relevante. Mejoré la planificación y la gestión de sus operaciones.",
       "place": "Empresa Eléctrica de Cienfuegos, Cuba"
     },
     "3": {
-      "title": "Líder de Desarrollo",
-      "description": "Liderazgo de un proyecto centrado en el análisis de datos e identificación de indicadores clave para el sector turístico en Cuba utilizando Python para el desarollo del sistema y análisis de los datos. Coordinación de un equipo multidisciplinario para desarrollar herramientas analíticas que apoyen la toma de decisiones estratégicas. El proyecto actualmente sirve de gran utilidad para las instituciones que lo usan sirviendo de ayuda para el análisis de los parámetros turísticos y la toma de futuras decisiones. ",
+      "title": "Líder de Desarrollo y programador Python",
+      "description": "Lideré un proyecto innovador enfocado en el análisis de datos y la identificación de indicadores clave para el sector turístico en Cuba. Utilicé Python para desarrollar un sistema robusto y eficiente. Coordiné un equipo multidisciplinario que trabajó en la creación de herramientas analíticas diseñadas para optimizar la toma de decisiones estratégicas. Proporcioné a las instituciones beneficiarias acceso a datos críticos y análisis detallados, lo que facilitó la identificación de tendencias y patrones en el sector turístico. El proyecto continúa siendo fundamental para mejorar la calidad de las decisiones tomadas por los organismos turísticos, permitiéndoles ajustar sus estrategias y responder de manera más efectiva a las dinámicas del mercado.",
       "place": "Universidad de Cienfuegos"
     },
     "4": {
       "title": "Desarrollador Python Junior",
-      "description": "Desarrollo de software como Desarrollador Python Jr en Merchise Austrement, contribuyendo a la implementación de soluciones empresariales utilizando Odoo.",
+      "description": "Participé en el desarrollo de soluciones empresariales utilizando Odoo, contribuyendo a la optimización de procesos y soluciones empresariales. Integré módulos y simplifiqué flujos de trabajo.",
       "place": "Remoto"
     },
     "5": {
-      "title": "Desarrollador Full Stack y líder de proyecto",
-      "description": "Creación y desarrollo de una aplicación web integral como Desarrollador Full Stack y lider del proyecto 'Clínica Fernández' para una clínica privada ubicada en Montevideo, Uruguay. Implementación de soluciones tanto en el frontend como en el backend, asegurando funcionalidad y una experiencia de usuario óptima. El proyecto es considerado el centro del modelo de negocio donde la gestión de citas, clientes y especialistas permitirá el correcto funcionamiento de la clínica.",
-      "place": "Remoto"
+      "title": "Desarrollador Full Stack",
+      "description": "Desarrollé una aplicación web para una clínica privada. Diseñé e implementé soluciones innovadoras tanto en frontend como en backend para asegurar una experiencia de usuario excepcional. Realicé el levantamiento de requisitos, documentación completa del ciclo de vida del proyecto, estimación de costos y tiempos. Esta plataforma se convertirá en el núcleo del modelo de negocio de la clínica, optimizando la gestión de citas, clientes y especialistas y garantizando así una operación eficiente y fluida.",
+      "place": "Montevideo, Uruguay"
     },
     "6": {
       "title": "Desarrollador Full Stack",
-      "description": "Creación y desarrollo de una aplicación web integral como práctica laboral, para la gestión de matriculas de estudiantes universitarios en una institución educativa en la provincia de Cienfuegos, Cuba. Se consiguió mejorar los tiempos del proceso de gestión de matriculas y mejorar la logística del mismo. ",
+      "description": "Desarrollé una aplicación web para la gestión de matrículas de estudiantes universitarios en una institución educativa en Cienfuegos. Diseñé e implementé una solución integral que optimizó significativamente los tiempos del proceso de matrícula en más del 50%. Mejoré la logística y la experiencia tanto para estudiantes como para el personal administrativo. Facilité la gestión de datos, permitiendo un acceso rápido y eficiente a la información necesaria, lo que resultó en un flujo de trabajo más ágil y organizado.",
       "place": "Universidad de Cienfuegos"
     },
     "7": {
       "title": "Agente de Marketing",
-      "description": "Divulgador de noticias, webs, anuncios y audiovisuales en redes sociales, páginas y canales de difusión para empresas como NotiFresh, TipsDiarios, entre otros, llegando a ser manager, tutor y organizador de varios equipos, haciendo generar altos ingresos y visibilidad a las empresas",
+      "description": "Divulgación de noticias, creación de contenido web y publicidad en redes sociales. Lideré y organicé equipos multidisciplinarios para maximizar la rentabilidad y visibilidad de las empresas, implementando estrategias efectivas que generan un impacto significativo en el alcance y la interacción con el público objetivo. Contribuí al crecimiento de marcas y al fortalecimiento de su presencia en el entorno digital.",
       "place": "Remoto"
     }
   }

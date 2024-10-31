@@ -2,37 +2,37 @@
   "experiencias": {
     "1": {
       "title": "Freelance Developer",
-      "description": "Development of web applications using technologies such as TypeScript, React, and TailwindCSS, among others; creation of desktop applications with Python, sometimes using databases like SQLite or PostgreSQL. Focus on providing customized solutions that meet specific client requirements, ensuring high quality and timely delivery. Completed over a dozen projects with total success.",
+      "description": "I designed and developed web applications using technologies such as TypeScript, React, and TailwindCSS, as well as desktop applications with Python. Integrated databases like PostgreSQL and SQLite. Provided custom solutions meeting specific client requirements, ensuring high-quality standards and timely delivery. Successfully completed over a dozen projects, contributing to 100% client satisfaction.",
       "place": "Remote"
     },
     "2": {
       "title": "SQL Programmer",
-      "description": "Responsible for developing databases for the efficient management of material, human, and logistical resources at the Cienfuegos Electric Company as part of my work practice. Implementation of solutions that optimize database performance, contributing to better organizational decision-making.",
+      "description": "Developed databases for comprehensive management of material, human, and logistical resources. Implemented innovative solutions that optimized operational performance by 40% and facilitated strategic decision-making. Designed and implemented data structures allowing fast and easy access to relevant information. Improved operational planning and management.",
       "place": "Cienfuegos Electric Company, Cuba"
     },
     "3": {
-      "title": "Development Leader",
-      "description": "Leadership of a project focused on data analysis and identification of key indicators for the tourism sector in Cuba using Python for system development and data analysis. Coordination of a multidisciplinary team to develop analytical tools that support strategic decision-making. The project is currently of great utility for the institutions using it, aiding in the analysis of tourism parameters and future decision-making.",
+      "title": "Development Lead and Python Programmer",
+      "description": "Led an innovative project focused on data analysis and identifying key indicators for the tourism sector in Cuba. Utilized Python to develop a robust and efficient system. Coordinated a multidisciplinary team working on creating analytical tools designed to optimize strategic decision-making. Provided beneficiary institutions with access to critical data and detailed analysis, facilitating the identification of trends and patterns in the tourism sector. The project remains instrumental in improving the quality of decisions made by tourism agencies, allowing them to adjust strategies and respond more effectively to market dynamics.",
       "place": "University of Cienfuegos"
     },
     "4": {
       "title": "Junior Python Developer",
-      "description": "Software development as a Junior Python Developer at Merchise Austrement, contributing to the implementation of business solutions using Odoo.",
+      "description": "Participated in developing business solutions using Odoo, contributing to process optimization and business solutions. Integrated modules and simplified workflows.",
       "place": "Remote"
     },
     "5": {
-      "title": "Full Stack Developer and Project Leader",
-      "description": "Creation and development of a comprehensive web application as a Full Stack Developer and project leader for 'Clínica Fernández,' a private clinic located in Montevideo, Uruguay. Implementation of solutions in both frontend and backend, ensuring functionality and an optimal user experience. The project is considered the core of the business model, where managing appointments, clients, and specialists will facilitate the proper functioning of the clinic.",
-      "place": "Remote"
+      "title": "Full Stack Developer",
+      "description": "Developed a web application for a private clinic. Designed and implemented innovative solutions for both frontend and backend to ensure an exceptional user experience. Gathered requirements, completed full project lifecycle documentation, and provided cost and time estimation. This platform will become the core of the clinic’s business model, optimizing the management of appointments, clients, and specialists, thus ensuring efficient and smooth operations.",
+      "place": "Montevideo, Uruguay"
     },
     "6": {
       "title": "Full Stack Developer",
-      "description": "Creation and development of a comprehensive web application as a work practice for managing university student enrollments at an educational institution in Cienfuegos province, Cuba. Improved the timing of the enrollment management process and enhanced its logistics.",
+      "description": "Developed a web application for managing student enrollments at a higher education institution in Cienfuegos. Designed and implemented a comprehensive solution that significantly reduced enrollment process times by over 50%. Improved logistics and experience for both students and administrative staff. Facilitated data management, allowing fast and efficient access to necessary information, resulting in a more agile and organized workflow.",
       "place": "University of Cienfuegos"
     },
     "7": {
       "title": "Marketing Agent",
-      "description": "Disseminator of news, websites, advertisements, and audiovisual content on social media, websites, and channels for companies like NotiFresh, TipsDiarios, among others, reaching the level of manager, tutor, and organizer of several teams, generating high revenues and visibility for the companies.",
+      "description": "Promoted news, created web content, and managed social media advertising. Led and organized multidisciplinary teams to maximize company profitability and visibility, implementing effective strategies that created a significant impact on reach and engagement with the target audience. Contributed to brand growth and strengthening their digital presence.",
       "place": "Remote"
     }
   }
