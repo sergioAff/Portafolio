@@ -1,7 +1,7 @@
 {
   "Ver": "More",
   "1": {
-    "title": "Fernandez Clinic",
+    "title": "Fernandez's Clinic",
     "description": "Web application for managing appointments, patients, specialists, and services in a private clinic. It features an intuitive and comprehensive interface built with React and NextJS, where every registered user can access each of the services and information provided by the clinic. The system also focuses on protecting sensitive data, thanks to a robust backend built with Django, using the Rest Framework and Postgres for database management."
   },
   "2": {
