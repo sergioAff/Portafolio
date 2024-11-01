@@ -24,7 +24,6 @@ interface PortfolioBoxProps {
 export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
   const { nombre, link, descripcion, image, visitar, imagesCarrusel } = data;
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
   const { t } = useTranslation(["proyectos"]);
 
   const settings = {
@@ -74,9 +73,6 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           {nombre}
         </h3>
         <div className="relative w-full">
-          {isLoading && (
-            <div className="w-full h-24 bg-gray-200 animate-pulse rounded-md"></div>
-          )}
           <Image
             src={image}
             alt={nombre}
@@ -89,10 +85,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
                 nombre === "Super Hero Finder" ||
                 nombre === "Buscador de Héroes" ||
                 nombre === "BMI",
-              invisible: isLoading,
-              visible: !isLoading,
             })}
-            onLoad={() => setIsLoading(false)}
           />
         </div>
         <Slider {...settings} className="flex w-full px-2">
