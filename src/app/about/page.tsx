@@ -98,6 +98,14 @@ export default function Page() {
             />
           </div>
         </div>
+        <SectionAbout
+          icon={<CheckCircleIcon />}
+          text={t("profesiona_summary.texto")}
+          title={t("profesiona_summary.titulo")}
+          estilos="flex-1"
+          up={up}
+          allOpen={allOpen}
+        />
         <div className="flex flex-col md:flex-row gap-2 w-full">
           <TecnologiesSectionAbout up={up} allOpen={allOpen} />
           <HabilidadesSection up={up} allOpen={allOpen} />

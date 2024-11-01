@@ -16,7 +16,10 @@
     "titulo": "My Goals",
     "texto": "My objective is to graduate as a computer engineer from a major university and continue my personal and professional development as a computer engineer, striving to reach the best version of myself. I aspire to work for leading companies in the sector, which will allow me to expand my knowledge and enrich my work experiences."
   },
-
+  "profesiona_summary": {
+    "titulo": "Professional summary",
+    "texto": "Full Stack Developer with solid experience in developing scalable and optimized web applications, always focused on efficiency. My passion for technological innovation is complemented by a constant commitment to learning and incorporating the best practices and tools in the industry. With a strong focus on problem-solving and teamwork, I am interested in adding value to challenging projects and contributing to the success of organizations leading digital transformation"
+  },
   "tecnologias": {
     "titulo": "Technologies",
     "otras": "Other technologies"
