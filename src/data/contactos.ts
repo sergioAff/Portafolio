@@ -18,8 +18,8 @@ export const contactos: Contacto[] = [
   },
   {
     via: "Whatsapp: ",
-    direccion: "https://wa.me/5355528734",
-    enlace: "+5355528734",
+    direccion: "https://wa.me/59892609849",
+    enlace: "+59892609849",
     target: "_blank",
     icon: "/Contactos/whatsapp.png",
   },
