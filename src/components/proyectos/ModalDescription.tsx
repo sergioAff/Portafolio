@@ -68,12 +68,9 @@ export const ModalDescription = ({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          onClick={closeImageModal} // Cerrar el modal al hacer clic fuera de la imagen
+          onClick={closeImageModal}
         >
-          <div
-            className="relative"
-            onClick={(e) => e.stopPropagation()} // Evitar que el modal se cierre al hacer clic en la imagen
-          >
+          <div className="relative" onClick={(e) => e.stopPropagation()}>
             <button
               onClick={closeImageModal}
               className="absolute top-2 right-2 text-white"
@@ -84,6 +81,7 @@ export const ModalDescription = ({
               src={selectedImage}
               alt="Imagen ampliada"
               width={1000}
+              priority={true}
               height={800}
               className="max-w-[90vw] max-h-[90vh] object-contain"
             />

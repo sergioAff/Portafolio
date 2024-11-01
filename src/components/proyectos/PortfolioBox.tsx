@@ -75,6 +75,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           <Image
             src={image}
             alt={nombre}
+            priority={true}
             width={200}
             height={200}
             className={clsx("w-full rounded-md my-1", {
