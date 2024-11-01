@@ -17,6 +17,28 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     const timer = setTimeout(() => {
       setShowSplashFaster(false);
     }, 1000);
+
+    // Función para precargar las imágenes
+    const preloadImages = (urls: string[]) => {
+      urls.forEach((url) => {
+        const img = new Image();
+        img.src = url;
+      });
+    };
+
+    // Precarga de imágenes de la ruta `proyectos/`
+    const projectImages = [
+      "/Proyectos/Clinica/1.jpg",
+      "/Proyectos/Dashboard/1.jpg",
+      "/Proyectos/Gif_Finder/1.jpg",
+      "/Proyectos/IMC/1.jpg",
+      "/Proyectos/SuperHero/1.jpg",
+      "/Proyectos/Matricula/1.jpg",
+      "/Proyectos/RH/1.jpg",
+      "/Proyectos/Yatzhee/1.jpg",
+    ];
+    preloadImages(projectImages);
+
     return () => clearTimeout(timer);
   }, []);
 

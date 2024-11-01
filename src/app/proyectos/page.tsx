@@ -1,76 +1,27 @@
 "use client";
+import { useState } from "react";
+import { Proyectos } from "@/data/proyectos";
+import { PortfolioBox } from "@/components/proyectos/PortfolioBox";
+import { Filter } from "@/components/proyectos/Filter";
 
-import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
-import urbanist from "@/utils/tipografia";
-import "@/config/i18next.config";
-import { ThemeProvider } from "next-themes";
-import { useState, useEffect } from "react";
-import { SplashPageFaster } from "@/components/SplashPage";
-import { Up } from "@/components/Up";
-
-export default function Layout({ children }: { children: React.ReactNode }) {
-  const [showSplashFaster, setShowSplashFaster] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setShowSplashFaster(false);
-    }, 1000);
-
-    // Función para precargar las imágenes
-    const preloadImages = (urls: string[]) => {
-      urls.forEach((url) => {
-        const img = new Image();
-        img.src = url;
-      });
-    };
-
-    const projectImages = [
-      "/Proyectos/Clinica/1.jpg",
-      "/Proyectos/Dashboard/1.jpg",
-      "/Proyectos/Gif_Finder/1.jpg",
-      "/Proyectos/IMC/1.jpg",
-      "/Proyectos/SuperHero/1.jpg",
-      "/Proyectos/Matricula/1.jpg",
-      "/Proyectos/RH/1.jpg",
-      "/Proyectos/Yatzhee/1.jpg",
-    ];
-    preloadImages(projectImages);
-
-    return () => clearTimeout(timer);
-  }, []);
+export default function Page() {
+  const [selectedTecnologies, setSelectedTecnologies] = useState<string[]>([]);
+  const filteredProyectos = Proyectos().filter((proyecto) =>
+    selectedTecnologies.length === 0
+      ? true
+      : proyecto.tecnologiesKey.some((tecnology) =>
+          selectedTecnologies.includes(tecnology ?? "")
+        )
+  );
 
   return (
-    <html lang="es">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="theme-color" content="#F9EEE7" />
-        <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
-        <title>S@ff</title>
-      </head>
-      <body
-        className={`${urbanist.className} bg-claro antialiased flex flex-col min-h-[100dvh]`}
-      >
-        <ThemeProvider
-          attribute="class"
-          enableSystem={true}
-          defaultTheme="light"
-        >
-          {showSplashFaster ? (
-            <SplashPageFaster />
-          ) : (
-            <>
-              <Header />
-              <main className="z-20 flex-1 relative flex flex-col pb-20 justify-center">
-                {children}
-                <Up />
-              </main>
-              <Footer />
-            </>
-          )}
-        </ThemeProvider>
-      </body>
-    </html>
+    <div className="relative animate-fadeBottom-for-contacts flex flex-col md:flex-row justify-center gap-5 xl:gap-0 md:px-5 m-10">
+      <Filter onFilterChange={setSelectedTecnologies} />
+      <ul className="grid gap-6 mx-auto sm:grid-cols-2 xl:gap-10">
+        {filteredProyectos.map((proyecto) => (
+          <PortfolioBox key={proyecto.id} data={proyecto} />
+        ))}
+      </ul>
+    </div>
   );
 }
