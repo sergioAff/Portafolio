@@ -58,7 +58,7 @@ export const ModalDescription = ({
 
         <ModalCarrusel
           imagesCarrusel={imagesCarrusel}
-          onImageClick={openImageModal}
+          onImageClick={openImageModal} // Pasamos la función para abrir el modal al hacer clic
         />
       </motion.div>
 

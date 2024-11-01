@@ -25,7 +25,6 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
   const { nombre, link, descripcion, image, visitar, imagesCarrusel } = data;
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const { t } = useTranslation(["proyectos"]);
-
   const settings = {
     dots: false,
     infinite: true,
@@ -72,7 +71,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
         <h3 className="font-semibold text-2xl text-center tracking-wider text-orange-600 select-none">
           {nombre}
         </h3>
-        <div className="relative w-full">
+        {image ? (
           <Image
             src={image}
             alt={nombre}
@@ -87,12 +86,14 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
                 nombre === "BMI",
             })}
           />
-        </div>
+        ) : (
+          <p className="font-semibold p-2">{descripcion}</p>
+        )}
         <Slider {...settings} className="flex w-full px-2">
           {data.tecnologies.map((tecnology) => (
             <div
               key={tecnology.key}
-              className="flex items-center justify-center"
+              className=" flex items-center justify-center"
             >
               {tecnology}
             </div>
