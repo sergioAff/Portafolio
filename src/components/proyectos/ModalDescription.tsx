@@ -81,7 +81,7 @@ export const ModalDescription = ({
               src={selectedImage}
               alt="Imagen ampliada"
               width={1000}
-              priority={true}
+              loading="lazy"
               height={800}
               className="max-w-[90vw] max-h-[90vh] object-contain"
             />

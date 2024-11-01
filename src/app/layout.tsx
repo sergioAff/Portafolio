@@ -24,6 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     <html lang="es">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#F9EEE7" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
         <title>S@ff</title>
       </head>
