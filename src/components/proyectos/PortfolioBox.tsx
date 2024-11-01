@@ -24,7 +24,9 @@ interface PortfolioBoxProps {
 export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
   const { nombre, link, descripcion, image, visitar, imagesCarrusel } = data;
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const { t } = useTranslation(["proyectos"]);
+
   const settings = {
     dots: false,
     infinite: true,
@@ -71,7 +73,10 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
         <h3 className="font-semibold text-2xl text-center tracking-wider text-orange-600 select-none">
           {nombre}
         </h3>
-        {image ? (
+        <div className="relative w-full">
+          {isLoading && (
+            <div className="w-full h-48 bg-gray-200 animate-pulse rounded-md"></div>
+          )}
           <Image
             src={image}
             alt={nombre}
@@ -84,16 +89,17 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
                 nombre === "Super Hero Finder" ||
                 nombre === "Buscador de Héroes" ||
                 nombre === "BMI",
+              invisible: isLoading,
+              visible: !isLoading,
             })}
+            onLoad={() => setIsLoading(false)}
           />
-        ) : (
-          <p className="font-semibold p-2">{descripcion}</p>
-        )}
+        </div>
         <Slider {...settings} className="flex w-full px-2">
           {data.tecnologies.map((tecnology) => (
             <div
               key={tecnology.key}
-              className=" flex items-center justify-center"
+              className="flex items-center justify-center"
             >
               {tecnology}
             </div>
