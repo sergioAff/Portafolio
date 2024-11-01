@@ -11,6 +11,7 @@ import {
   CheckCircleIcon,
   ChevronUpIcon,
   ChevronDownIcon,
+  BriefcaseIcon,
 } from "@heroicons/react/24/outline";
 import { BlurButtons } from "@/components/BlurButtons";
 
@@ -99,7 +100,7 @@ export default function Page() {
           </div>
         </div>
         <SectionAbout
-          icon={<CheckCircleIcon />}
+          icon={<BriefcaseIcon />}
           text={t("profesiona_summary.texto")}
           title={t("profesiona_summary.titulo")}
           estilos="flex-1"
