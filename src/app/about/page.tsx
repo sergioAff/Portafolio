@@ -77,6 +77,14 @@ export default function Page() {
           up={up}
           allOpen={allOpen}
         />
+        <SectionAbout
+          icon={<BriefcaseIcon />}
+          text={t("profesiona_summary.texto")}
+          title={t("profesiona_summary.titulo")}
+          estilos="flex-1"
+          up={up}
+          allOpen={allOpen}
+        />
         <div className="flex flex-col sm:flex-row gap-3 w-full">
           <div className="flex-1">
             <SectionAbout
@@ -99,14 +107,7 @@ export default function Page() {
             />
           </div>
         </div>
-        <SectionAbout
-          icon={<BriefcaseIcon />}
-          text={t("profesiona_summary.texto")}
-          title={t("profesiona_summary.titulo")}
-          estilos="flex-1"
-          up={up}
-          allOpen={allOpen}
-        />
+
         <div className="flex flex-col md:flex-row gap-2 w-full">
           <TecnologiesSectionAbout up={up} allOpen={allOpen} />
           <HabilidadesSection up={up} allOpen={allOpen} />
