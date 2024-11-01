@@ -75,7 +75,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
         </h3>
         <div className="relative w-full">
           {isLoading && (
-            <div className="w-full h-48 bg-gray-200 animate-pulse rounded-md"></div>
+            <div className="w-full h-24 bg-gray-200 animate-pulse rounded-md"></div>
           )}
           <Image
             src={image}

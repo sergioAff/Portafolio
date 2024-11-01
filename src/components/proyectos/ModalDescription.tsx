@@ -19,7 +19,6 @@ export const ModalDescription = ({
 }: ModalDescription) => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true); // Estado de carga para la imagen
 
   function openImageModal(image: string) {
     setSelectedImage(image);
@@ -29,13 +28,12 @@ export const ModalDescription = ({
   function closeImageModal() {
     setIsImageModalOpen(false);
     setSelectedImage(null);
-    setIsLoading(true); // Reiniciar el estado de carga al cerrar el modal
   }
 
   return (
     <>
       <motion.div
-        className="absolute flex flex-col gap-1 md:gap-5 lg:gap-2 inset-x-0 inset-y-auto z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] max-h-auto"
+        className="absolute flex flex-col gap-1 md:gap-5 lg:gap-2 inset-x-0 inset-y-auto z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] max-h-auto "
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -79,23 +77,13 @@ export const ModalDescription = ({
             >
               <XMarkIcon className="w-10 text-gray-500" />
             </button>
-            {/* Contenedor para manejar el estado de carga de la imagen */}
-            {isLoading && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black rounded-md">
-                <span className="loader"></span>{" "}
-                {/* Aquí puedes usar tu loader preferido */}
-              </div>
-            )}
             <Image
               src={selectedImage}
               alt="Imagen ampliada"
               width={1000}
               loading="lazy"
               height={800}
-              className={`max-w-[90vw] max-h-[90vh] object-contain transition-opacity duration-300 ${
-                isLoading ? "invisible" : "visible"
-              }`}
-              onLoadingComplete={() => setIsLoading(false)} // Cambia el estado al cargar la imagen
+              className="max-w-[90vw] max-h-[90vh] object-contain"
             />
           </div>
         </motion.div>
