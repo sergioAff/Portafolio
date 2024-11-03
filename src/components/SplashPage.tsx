@@ -13,6 +13,7 @@ export const SplashPageFaster = () => {
         alt={t("Logo de S@ff")}
         width={150}
         height={200}
+        priority
         className="saturate-200 brightness-90 contrast-75"
       />
     </div>
