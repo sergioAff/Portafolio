@@ -10,7 +10,6 @@ export default function Page() {
 
   const handleOrderChange = (order: "latest" | "oldest") => {
     let sortedExperiencias;
-
     sortedExperiencias = [...experiencias].sort((a, b) => {
       const dateA = a.fechas.inicio || new Date();
       const dateB = b.fechas.inicio || new Date();
@@ -19,6 +18,7 @@ export default function Page() {
         : dateA.getTime() - dateB.getTime();
     });
     setExperiencias(sortedExperiencias);
+    sortedExperiencias = [];
   };
 
   return (
@@ -29,10 +29,10 @@ export default function Page() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.3 }}
     >
-      <div className="flex justify-around">
+      {/* <div className="flex justify-around">
         <Order onOrderChange={handleOrderChange} />
         <div></div>
-      </div>
+      </div> */}
       <div className=" flex items-center justify-center">
         <TimeLine experiencias={experiencias} />
       </div>
