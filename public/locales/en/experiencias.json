@@ -1,7 +1,7 @@
 {
   "experiencias": {
     "1": {
-      "title": "Freelance Developer ",
+      "title": "Freelance Developer",
       "description": "I designed and developed web applications using technologies such as TypeScript, React, and TailwindCSS, as well as desktop applications with Python. Integrated databases like PostgreSQL and SQLite. Provided custom solutions meeting specific client requirements, ensuring high-quality standards and timely delivery. Successfully completed over a dozen projects, contributing to 100% client satisfaction.",
       "place": "Remote"
     },
@@ -26,7 +26,7 @@
       "place": "Montevideo, Uruguay"
     },
     "6": {
-      "title": "Full Stack Developer",
+      "title": "Full Stack Developer ",
       "description": "Developed a web application for managing student enrollments at a higher education institution in Cienfuegos. Designed and implemented a comprehensive solution that significantly reduced enrollment process times by over 50%. Improved logistics and experience for both students and administrative staff. Facilitated data management, allowing fast and efficient access to necessary information, resulting in a more agile and organized workflow.",
       "place": "University of Cienfuegos"
     },
