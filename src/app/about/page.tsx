@@ -70,14 +70,6 @@ export default function Page() {
           )}
         </button>
         <SectionAbout
-          icon={<UserIcon />}
-          text={t("personal.texto")}
-          title={t("personal.titulo")}
-          estilos="w-full"
-          up={up}
-          allOpen={allOpen}
-        />
-        <SectionAbout
           icon={<BriefcaseIcon />}
           text={t("profesiona_summary.texto")}
           title={t("profesiona_summary.titulo")}
@@ -85,6 +77,15 @@ export default function Page() {
           up={up}
           allOpen={allOpen}
         />
+        <SectionAbout
+          icon={<UserIcon />}
+          text={t("personal.texto")}
+          title={t("personal.titulo")}
+          estilos="w-full"
+          up={up}
+          allOpen={allOpen}
+        />
+
         <div className="flex flex-col sm:flex-row gap-3 w-full">
           <div className="flex-1">
             <SectionAbout

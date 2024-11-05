@@ -1,7 +1,7 @@
 {
   "personal": {
     "titulo": "Información Personal",
-    "texto": "Soy Sergio Adrian Fernández Figueredo, un apasionado profesional de la tecnología originario de Cuba, actualmente residenciado en Montevideo, Uruguay. A mis 22 años, he cultivado una profunda fascinación por la programación, las redes y la tecnología desde una edad temprana. Mis intereses abarcan no solo la tecnología, sino también la fotografía, la salud, el deporte y los viajes. Mi curiosidad innata por el aprendizaje me impulsa a ser perfeccionista en las actividades que elijo realizar."
+    "texto": "Soy Sergio Adrian Fernández Figueredo, un apasionado profesional de la tecnología originario de Cuba, actualmente residenciado en Montevideo, Uruguay. A mis 22 años, he cultivado una profunda fascinación por la programación, las redes y la tecnología. Mis intereses abarcan no solo la tecnología, sino también la fotografía, la salud, el deporte y los viajes. Mi curiosidad por el aprendizaje me impulsa a ser perfeccionista en las actividades que realizo. "
   },
 
   "Desplegar": "Desplegar",
@@ -9,12 +9,12 @@
 
   "profesion": {
     "titulo": "Mi Carrera",
-    "texto": "Mi trayectoria en el ámbito tecnológico se ha desarrollado principalmente a través de mis estudios en ingeniería informática, donde actualmente me encuentro cursando el cuarto año. Gracias a mi impulso autodidacta, he logrado profundizar en el desarrollo full-stack, alcanzando múltiples metas y adquiriendo valiosa experiencia y conocimientos en el campo."
+    "texto": "Actualmente me encuentro cursando el cuarto año de la carrera de Ingeniería Informátoca. Gracias a mi impulso autodidacta, he logrado profundizar en el desarrollo full-stack, alcanzando múltiples metas y adquiriendo valiosa experiencia y conocimientos en el campo."
   },
 
   "metas": {
     "titulo": "Mis Metas",
-    "texto": "Mi objetivo es graduarme como ingeniero informático en una gran universidad y continuar mi desarrollo personal y profesional como ingeniero informático, esforzándome por alcanzar la mejor versión de mí mismo. Aspiro a trabajar en empresas líderes en el sector, lo que me permitirá ampliar mis conocimientos y enriquecer mis experiencias laborales."
+    "texto": "Mi objetivo es graduarme en una gran universidad y continuar mi desarrollo personal y profesional, esforzándome por alcanzar la mejor versión de mí mismo. Aspiro a trabajar en empresas líderes en el sector, lo que me permitirá ampliar mis conocimientos y enriquecer mis experiencias laborales."
   },
   "profesiona_summary": {
     "titulo": "Resumen Profesional",
@@ -23,7 +23,7 @@
 
   "tecnologias": {
     "titulo": "Tecnologías",
-    "otras": "Otras tecnologías"
+    "otras": "Otras"
   },
 
   "habilidades_blandas": {
