@@ -1,50 +1,51 @@
 {
-  "experiences": {
+  "experiencias": {
     "1": {
       "title": "Freelance Developer",
-      "description": "I designed and developed web applications using technologies like TypeScript, React, and TailwindCSS, as well as desktop applications with Python. Integrated databases such as PostgreSQL and SQLite. Delivered customized solutions that met specific client requirements, ensuring high quality standards and adherence to deadlines. Successfully completed over a dozen projects, achieving 100% client satisfaction.",
+      "company": "",
+      "description": "Designed and developed web applications using technologies such as TypeScript, React, and TailwindCSS, as well as desktop applications with Python. Integrated databases like PostgreSQL and SQLite. Delivered customized solutions that met specific client requirements, ensuring high quality standards and deadline compliance. Successfully completed over a dozen projects, contributing to 100% client satisfaction.",
       "place": "Remote"
     },
     "2": {
       "title": "SQL Programmer",
-      "company": "Cienfuegos Electric Company",
+      "company": "Electric Company",
       "companyLink": "https://www.google.com/search?q=Empresa+El%C3%A9ctrica+de+Cienfuegos&sca_esv=a07f0383584960a3&sxsrf=ADLYWILuRz0W8eCiTP2By4HxeC7SqbIZZQ%3A1731334424394&ei=GBEyZ5fnF6uw5OUP77rkwAY&ved=0ahUKEwiX0-mqu9SJAxUrGLkGHW8dGWgQ4dUDCA8&uact=5&oq=Empresa+El%C3%A9ctrica+de+Cienfuegos&gs_lp=Egxnd3Mtd2l6LXNlcnAiIEVtcHJlc2EgRWzDqWN0cmljYSBkZSBDaWVuZnVlZ29zMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK6EAVCcflicfnADeAGQAQCYAXagAXaqAQMwLjG4AQPIAQD4AQL4AQGYAgSgAo4BwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBmAMA4gMFEgExIECIBgGQBgy6BgQIARgIkgcDMy4xoAfBBA&sclient=gws-wiz-serp",
-      "description": "Developed databases for the comprehensive management of material, human, and logistical resources. Applied innovative solutions that optimized operational performance by 40% and facilitated strategic decision-making. Designed and implemented data structures allowing fast and easy access to relevant information. Improved planning and operational management.",
-      "place": "Cienfuegos Electric Company, Cuba"
+      "description": "Developed databases for the comprehensive management of material, human, and logistical resources. Applied innovative solutions that optimize operational performance by 40% and facilitate strategic decision-making. Designed and implemented data structures that allow fast and easy access to relevant information. Improved planning and management of operations.",
+      "place": "Cienfuegos, Cuba"
     },
     "3": {
       "title": "Development Lead and Python Programmer",
       "company": "University of Cienfuegos",
       "companyLink": "https://www.ucf.edu.cu/",
-      "description": "Led an innovative project focused on data analysis and identification of key indicators for the tourism sector in Cuba. Used Python to develop a robust and efficient system. Coordinated a multidisciplinary team working on analytical tools designed to optimize strategic decision-making. Provided beneficiary institutions with access to critical data and detailed analyses, facilitating the identification of trends and patterns in the tourism sector. The project continues to be fundamental in improving decision quality for tourism agencies, allowing them to adjust strategies and respond more effectively to market dynamics.",
-      "place": "University of Cienfuegos"
+      "description": "Led an innovative project focused on data analysis and identifying key indicators for the tourism sector in Cuba. Used Python to develop a robust and efficient system. Coordinated a multidisciplinary team working on the creation of analytical tools designed to optimize strategic decision-making. Provided beneficiary institutions with access to critical data and detailed analysis, which facilitated the identification of trends and patterns in the tourism sector. The project continues to be essential in improving the quality of decisions made by tourism organizations, enabling them to adjust strategies and respond more effectively to market dynamics.",
+      "place": "Cienfuegos, Cuba"
     },
     "4": {
       "title": "Junior Python Developer",
       "company": "Merchise Austrements",
       "companyLink": "https://www.merchise.org/",
-      "description": "Participated in the development of enterprise solutions using Odoo at Merchise Austrement, contributing to process optimization and enterprise solutions. Integrated modules and streamlined workflows.",
+      "description": "Participated in the development of business solutions using Odoo at Merchise Austrement, contributing to the optimization of processes and business solutions. Integrated modules and simplified workflows.",
       "place": "Remote"
     },
     "5": {
       "title": "Full Stack Developer",
-      "company": "Fernández Clinic",
+      "company": "Fernandez's Clinic",
       "companyLink": "",
-      "description": "Developed a web application for a private clinic. Designed and implemented innovative frontend and backend solutions to ensure an exceptional user experience. Conducted requirements gathering, complete documentation of the project lifecycle, cost and time estimation. This platform will become the core of the clinic's business model, optimizing appointment, client, and specialist management, ensuring efficient and smooth operations.",
+      "description": "Developed a web application for a private clinic. Designed and implemented innovative frontend and backend solutions to ensure an exceptional user experience. Conducted requirement gathering, full project lifecycle documentation, cost, and time estimation. This platform will become the core of the clinic’s business model, optimizing the management of appointments, clients, and specialists, ensuring efficient and smooth operations.",
       "place": "Montevideo, Uruguay"
     },
     "6": {
       "title": "Full Stack Developer",
       "company": "University of Cienfuegos",
       "companyLink": "https://www.ucf.edu.cu/",
-      "description": "Developed a web application for managing university student enrollment at an educational institution in Cienfuegos. Designed and implemented a comprehensive solution that significantly optimized enrollment processing times by over 50%. Enhanced logistics and the experience for both students and administrative staff. Facilitated data management, enabling quick and efficient access to necessary information, resulting in a smoother, more organized workflow.",
-      "place": "University of Cienfuegos"
+      "description": "Developed a web application for managing university student enrollments at an educational institution in Cienfuegos. Designed and implemented a comprehensive solution that significantly optimized enrollment processing times by over 50%. Improved logistics and the experience for both students and administrative staff. Facilitated data management, enabling fast and efficient access to necessary information, resulting in a more agile and organized workflow.",
+      "place": "Cienfuegos, Cuba"
     },
     "7": {
       "title": "Marketing Agent",
       "company": "NotifreshSL",
       "companyLink": "https://www.notifresh.com/",
-      "description": "News dissemination, web content creation, and social media advertising. Led and organized multidisciplinary teams to maximize profitability and company visibility, implementing effective strategies that generate a significant impact on reach and engagement with the target audience. Contributed to brand growth and strengthening of their digital presence.",
+      "description": "Disseminated news, created web content, and managed social media advertising. Led and organized multidisciplinary teams to maximize profitability and visibility of companies, implementing effective strategies that generate a significant impact on reach and engagement with target audiences. Contributed to brand growth and strengthened their digital presence.",
       "place": "Remote"
     }
   }
