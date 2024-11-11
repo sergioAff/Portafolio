@@ -60,10 +60,13 @@ export const TimeLine = ({
                                   : "#"
                               }
                               target="_blank"
-                              className={clsx(" font-semibold", {
-                                "underline underline-offset-2 hover:text-orange-500 transition-colors duration-150 ease-in-out":
-                                  experience.companyLink,
-                              })}
+                              className={clsx(
+                                " hover:cursor-default font-semibold",
+                                {
+                                  "underline underline-offset-2 hover:text-orange-500 transition-colors duration-150 ease-in-out":
+                                    experience.companyLink,
+                                }
+                              )}
                             >
                               {experience.company}
                             </Link>{" "}
