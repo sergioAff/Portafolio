@@ -1,5 +1,6 @@
 import { MapPinIcon, BuildingOfficeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
+import clsx from "clsx";
 
 export const TimeLine = ({
   experiencias,
@@ -55,7 +56,13 @@ export const TimeLine = ({
                             <Link
                               href={experience.companyLink}
                               target="_blank"
-                              className="underline underline-offset-2 hover:text-orange-500 transition-colors duration-150 ease-in-out"
+                              className={clsx(
+                                " hover:text-orange-500 transition-colors duration-150 ease-in-out",
+                                {
+                                  "underline underline-offset-2":
+                                    experience.companyLink,
+                                }
+                              )}
                             >
                               {experience.company}
                             </Link>{" "}
