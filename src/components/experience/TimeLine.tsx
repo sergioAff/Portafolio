@@ -54,7 +54,11 @@ export const TimeLine = ({
                           <div className="flex items-center justify-center gap-1">
                             <BuildingOfficeIcon className="w-6 h-auto text-gray-500" />
                             <Link
-                              href={experience.companyLink}
+                              href={
+                                experience.companyLink
+                                  ? experience.companyLink
+                                  : "#"
+                              }
                               target="_blank"
                               className={clsx(" font-semibold", {
                                 "underline underline-offset-2 hover:text-orange-500 transition-colors duration-150 ease-in-out":
