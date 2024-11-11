@@ -1,4 +1,5 @@
-import { MapPinIcon } from "@heroicons/react/24/outline";
+import { MapPinIcon, BuildingOfficeIcon } from "@heroicons/react/24/outline";
+import Link from "next/link";
 
 export const TimeLine = ({
   experiencias,
@@ -10,6 +11,8 @@ export const TimeLine = ({
       fin: Date;
     };
     lugar: string;
+    company: string;
+    companyLink: string;
     descripcion: string;
   }>;
 }) => {
@@ -24,6 +27,8 @@ export const TimeLine = ({
               fin: Date;
             };
             lugar: string;
+            company: string;
+            companyLink: string;
             descripcion: string;
           }) => (
             <li
@@ -43,10 +48,28 @@ export const TimeLine = ({
                   }/${experience.fechas.fin.getFullYear()}`}</time>
                   <div className="bg-white/30 rounded-lg px-3 py-2 mx-2 md:m-2 shadow-lg">
                     <p className="text-lg font-medium text-gray-900 md:px-1 border-b-2 border-orange-500 flex items-center justify-start py-1 gap-1">
-                      <span>
-                        <MapPinIcon className="w-6 h-auto text-gray-500" />
-                      </span>
-                      {experience.lugar}
+                      <div className="flex flex-col items-start">
+                        {experience.company && (
+                          <div className="flex items-center justify-center gap-1">
+                            <BuildingOfficeIcon className="w-6 h-auto text-gray-500" />
+                            <Link
+                              href={experience.companyLink}
+                              target="_blank"
+                              className="underline underline-offset-2 hover:text-orange-500 transition-colors duration-150 ease-in-out"
+                            >
+                              {experience.company}
+                            </Link>{" "}
+                          </div>
+                        )}
+
+                        <div className="flex items-center justify-center gap-1">
+                          {" "}
+                          <span>
+                            <MapPinIcon className="w-6 h-auto text-gray-500" />
+                          </span>{" "}
+                          {experience.lugar}
+                        </div>
+                      </div>
                     </p>
                     <p className="max-w-md lg:max-w-2xl text-gray-700 md:p-1 leading-relaxed">
                       {experience.descripcion}
