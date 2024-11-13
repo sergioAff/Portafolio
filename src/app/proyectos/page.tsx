@@ -9,7 +9,7 @@ export default function Page() {
   const filteredProyectos = Proyectos().filter((proyecto) =>
     selectedTecnologies.length === 0
       ? true
-      : proyecto.tecnologiesKey.some((tecnology) =>
+      : proyecto?.tecnologiesKey?.some((tecnology) =>
           selectedTecnologies.includes(tecnology ?? "")
         )
   );
