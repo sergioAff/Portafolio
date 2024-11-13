@@ -1,5 +1,9 @@
 {
   "Ver": "Más",
+  "0": {
+    "title": "Texto a Voz",
+    "description": "Aplicación web que genera salida de voz natural a partir de texto proporcionado por el usuario. Desarrollada con React, TypeScript y Next.js, utiliza la API de Hugging Face para ofrecer una síntesis de voz impulsada por IA de alta calidad. La interfaz es intuitiva y adaptable, brindando una experiencia fluida para los usuarios que deseen convertir contenido escrito en voz realista y expresiva."
+  },
   "1": {
     "title": "Clinica Fernández",
     "description": "Aplicación web para para la gestión de citas, pacientes, especialistas y servicios en una clínica privada. Cuenta con una intuitiva y completa interfaz contruida con React y NextJS donde cada usuario registrado puede acceder a cada uno de los servicios e informaciones que brinda la clínica. El sistema se enfoca también en la protección de datos sensibles gracias a un sólido Backend construido con Django, usando Rest Framework y Postgres para la gestión de la base de datos"
