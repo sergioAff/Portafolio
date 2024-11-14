@@ -47,8 +47,6 @@ export const Proyectos = () => {
         "/Proyectos/TextToVoice/1.jpg",
         "/Proyectos/TextToVoice/2.jpg",
         "/Proyectos/TextToVoice/3.jpg",
-        "/Proyectos/TextToVoice/4.jpg",
-        "/Proyectos/TextToVoice/5.jpg",
       ],
       tecnologies: [
         tecnologies.html,

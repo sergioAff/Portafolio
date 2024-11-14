@@ -29,7 +29,7 @@ export const ModalCarrusel = ({
       {imagesCarrusel.map((image, index) => (
         <div
           key={index}
-          className="cursor-pointer"
+          className="cursor-pointer bg-black/60 rounded-md"
           onClick={() => onImageClick(image)}
         >
           <Image
