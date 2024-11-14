@@ -37,7 +37,7 @@ export const ModalCarrusel = ({
             alt={`Imagen ${index + 1}`}
             width={1000}
             height={0}
-            className="object-scale-down max-h-[400px] select-none cursor-pointer"
+            className="object-scale-down p-1 rounded-md max-h-[400px] select-none cursor-pointer"
           />
         </div>
       ))}
