@@ -226,6 +226,26 @@ export const Proyectos = () => {
       tecnologiesKey: ["python", "git", "github"],
     },
     {
+      id: 7,
+      nombre: t("6.title"),
+      link: "https://github.com/sergioAff/Recursos_Humanos_v2.0",
+      visitar: "",
+      descripcion: t("6.description"),
+      image: "/Proyectos/RH/1.jpg",
+      imagesCarrusel: [
+        "/Proyectos/RH/1.jpg",
+        "/Proyectos/RH/2.jpg",
+        "/Proyectos/RH/3.jpg",
+      ],
+      tecnologies: [
+        tecnologies.python,
+        tecnologies.slite,
+        tecnologies.git,
+        tecnologies.github,
+      ],
+      tecnologiesKey: ["python", "sqlite", "git", "github"],
+    },
+    {
       id: 8,
       nombre: t("7.title"),
       link: "https://github.com/sergioAff/Super-Hero-Finder",
@@ -250,26 +270,7 @@ export const Proyectos = () => {
       tecnologies: [tecnologies.swift, tecnologies.git, tecnologies.github],
       tecnologiesKey: ["swift", "git", "github"],
     },
-    {
-      id: 7,
-      nombre: t("6.title"),
-      link: "https://github.com/sergioAff/Recursos_Humanos_v2.0",
-      visitar: "",
-      descripcion: t("6.description"),
-      image: "/Proyectos/RH/1.jpg",
-      imagesCarrusel: [
-        "/Proyectos/RH/1.jpg",
-        "/Proyectos/RH/2.jpg",
-        "/Proyectos/RH/3.jpg",
-      ],
-      tecnologies: [
-        tecnologies.python,
-        tecnologies.slite,
-        tecnologies.git,
-        tecnologies.github,
-      ],
-      tecnologiesKey: ["python", "sqlite", "git", "github"],
-    },
+
     {
       id: 6,
       nombre: t("9.title"),
