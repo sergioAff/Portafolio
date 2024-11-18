@@ -47,5 +47,9 @@
   "11": {
     "title": "Password Generator",
     "description": "Python script that generates secure and random passwords. Designed to improve the security of your accounts."
+  },
+  "12": {
+    "title": "Ecommerce",
+    "description": "Ecommerce website designed and developed using React, Next.js, Redux for state management, TypeScript, and Tailwind CSS. It features a responsive design and offers a seamless shopping experience with a modern, user-friendly interface."
   }
 }
