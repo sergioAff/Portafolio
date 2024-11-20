@@ -53,6 +53,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           description={descripcion}
           setIsModalOpen={setIsModalOpen}
           imagesCarrusel={imagesCarrusel}
+          tecnologies={data.tecnologies}
         />
       )}
       <li

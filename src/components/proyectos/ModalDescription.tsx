@@ -9,6 +9,7 @@ interface ModalDescription {
   description: string;
   setIsModalOpen: (action: boolean) => void;
   imagesCarrusel: string[];
+  tecnologies: React.JSX.Element[];
 }
 
 export const ModalDescription = ({
@@ -16,6 +17,7 @@ export const ModalDescription = ({
   description,
   setIsModalOpen,
   imagesCarrusel,
+  tecnologies,
 }: ModalDescription) => {
   const [isImageModalOpen, setIsImageModalOpen] = useState(false);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -33,7 +35,7 @@ export const ModalDescription = ({
   return (
     <>
       <motion.div
-        className="absolute flex flex-col gap-1 md:gap-5 lg:gap-2 inset-x-0 inset-y-auto z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] max-h-auto "
+        className="absolute flex flex-col gap-1 md:gap-5 lg:gap-2 inset-x-0 inset-y-auto z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] max-h-auto"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
@@ -52,14 +54,23 @@ export const ModalDescription = ({
             <XMarkIcon className="w-8 text-gray-900 rounded-full transition-all duration-150 ease-in-out hover:rotate-90" />
           </button>
         </div>
-        <p className="text-lg font-semibold text-gray-800 mb-1">
+        <p className="text-lg font-semibold text-gray-800 mb-3">
           {description}
-        </p>
-
+        </p>{" "}
+        <ul className="flex flex-wrap justify-evenly">
+          {tecnologies.map((tecnology, index) => (
+            <li
+              key={index}
+              className=" border border-orange-500 bg-white/30 hover:bg-white/60 rounded-full px-4 py-1.5 hover:cursor-pointer hover:scale-105 active:scale-95 transition-all duration-150 ease-in-out"
+            >
+              {tecnology}
+            </li>
+          ))}
+        </ul>
         <ModalCarrusel
           imagesCarrusel={imagesCarrusel}
-          onImageClick={openImageModal} // Pasamos la función para abrir el modal al hacer clic
-        />
+          onImageClick={openImageModal}
+        />{" "}
       </motion.div>
 
       {isImageModalOpen && selectedImage && (
