@@ -15,7 +15,6 @@ export default function Page() {
       return order === "latest" ? dateB - dateA : dateA - dateB;
     });
     setExperiencias(sortedExperiencias);
-    console.table(sortedExperiencias);
   };
 
   return (

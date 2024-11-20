@@ -48,7 +48,7 @@ export const TimeLine = ({
                     experience.fechas.fin.getMonth() + 1
                   }/${experience.fechas.fin.getFullYear()}`}</time>
                   <div className="bg-white/30 rounded-lg px-3 py-2 mx-2 md:m-2 shadow-lg">
-                    <p className="text-lg font-medium text-gray-900 md:px-1 border-b-2 border-orange-500 flex items-center justify-start py-1 gap-1">
+                    <div className="text-lg font-medium text-gray-900 md:px-1 border-b-2 border-orange-500 flex items-center justify-start py-1 gap-1">
                       <div className="flex flex-col items-start">
                         {experience.company && (
                           <div className="flex items-center justify-center gap-1">
@@ -81,7 +81,7 @@ export const TimeLine = ({
                           {experience.lugar}
                         </div>
                       </div>
-                    </p>
+                    </div>
                     <p className="max-w-md lg:max-w-2xl text-gray-700 md:p-1 leading-relaxed">
                       {experience.descripcion}
                     </p>
