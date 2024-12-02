@@ -49,7 +49,7 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
           <li>
             <FontAwesomeIcon
               icon={faFlutter}
-              className="w-10 h-auto"
+              className="w-8 h-auto"
               color="#02569B"
             />
             <p className="text-sm font-semibold text-gray-800">Flutter</p>
