@@ -20,7 +20,7 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
     <SectionAbout3
       title={t("tecnologias.otras")}
       body={
-        <ul className="flex flex-wrap gap-10 items-end justify-center px-5 py-1">
+        <ul className="flex flex-wrap gap-10 items-center justify-center px-5 py-1">
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faGit}
