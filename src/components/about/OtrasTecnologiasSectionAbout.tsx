@@ -2,7 +2,13 @@ import { SectionAbout3 } from "@/components/about/SectionAbout3";
 import { ReactNode } from "react";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faGit, faSwift } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faGit,
+  faSwift,
+  faFlutter,
+  faDocker,
+} from "@fortawesome/free-brands-svg-icons";
 
 interface OtrasSectionInterface {
   up: ReactNode;
@@ -14,7 +20,7 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
     <SectionAbout3
       title={t("tecnologias.otras")}
       body={
-        <ul className="flex flex-wrap gap-10 items-center justify-center px-5 py-1">
+        <ul className="flex flex-wrap gap-10 items-end justify-center px-5 py-1">
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faGit}
@@ -39,6 +45,22 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
               color="#FA7343"
             />
             <p className="text-sm font-semibold text-gray-800">Swift</p>
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faFlutter}
+              className="w-10 h-auto"
+              color="#02569B"
+            />
+            <p className="text-sm font-semibold text-gray-800">Flutter</p>
+          </li>
+          <li>
+            <FontAwesomeIcon
+              icon={faDocker}
+              className="w-10 h-auto"
+              color="#0db7ed"
+            />
+            <p className="text-sm font-semibold text-gray-800">Docker</p>
           </li>
         </ul>
       }
