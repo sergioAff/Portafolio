@@ -145,7 +145,7 @@ export const Proyectos = () => {
       id: 3,
       nombre: t("3.title"),
       link: "https://github.com/sergioAff/Dashboard",
-      visitar: "https://dashboard-tau-rust-57.vercel.app",
+      visitar: "",
       descripcion: t("3.description"),
       image: "/Proyectos/Dashboard/1.png",
       imagesCarrusel: [
