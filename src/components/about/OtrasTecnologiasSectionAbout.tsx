@@ -6,7 +6,6 @@ import {
   faGithub,
   faGit,
   faSwift,
-  faFlutter,
   faDocker,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -46,14 +45,7 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
             />
             <p className="text-sm font-semibold text-gray-800">Swift</p>
           </li>
-          <li>
-            <FontAwesomeIcon
-              icon={faFlutter}
-              className="w-8 h-auto"
-              color="#02569B"
-            />
-            <p className="text-sm font-semibold text-gray-800">Flutter</p>
-          </li>
+
           <li>
             <FontAwesomeIcon
               icon={faDocker}

@@ -6,6 +6,7 @@ import {
   faCss3Alt,
   faJsSquare,
   faReact,
+  faAngular,
 } from "@fortawesome/free-brands-svg-icons";
 import { SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
 
@@ -58,6 +59,14 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
               color="#61DAFB"
             />
             <p className=" text-sm font-semibold text-gray-800">React</p>
+          </li>
+          <li className="flex flex-col items-center ">
+            <FontAwesomeIcon
+              icon={faAngular}
+              className="w-10 h-auto"
+              color="red"
+            />
+            <p className=" text-sm font-semibold text-gray-800">Angular</p>
           </li>
           <li className="flex flex-col items-center ">
             <SiNextdotjs className="w-10 h-auto" color="black" />
