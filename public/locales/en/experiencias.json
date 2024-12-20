@@ -47,6 +47,13 @@
       "companyLink": "https://www.notifresh.com/",
       "description": "Disseminated news, created web content, and managed social media advertising. Led and organized multidisciplinary teams to maximize profitability and visibility of companies, implementing effective strategies that generate a significant impact on reach and engagement with target audiences. Contributed to brand growth and strengthened their digital presence.",
       "place": "Remote"
+    },
+    "8": {
+      "title": "Software Developer",
+      "company": "Sofka Technologies",
+      "companyLink": "https://sofka.com.co/index.html",
+      "description": "Collaborated in agile development teams to create and maintain enterprise software solutions. Implemented clean code practices and domain-driven design principles. Developed features using Java, Spring Boot, and Angluar technologies. Participated in code reviews, technical discussions, and continuous improvement initiatives. Contributed to the successful delivery of multiple client projects while maintaining high quality standards and best development practices.",
+      "place": "Montevideo, Uruguay"
     }
   }
 }
