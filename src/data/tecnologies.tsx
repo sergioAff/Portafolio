@@ -48,6 +48,7 @@ export const tecnologiesArray = [
   <SiTypescript key="ts" className="w-6 h-auto" color="#007ACC" />,
   <SiReact key="react" className="w-6 h-auto" color="#61DAFB" />,
   <SiNextdotjs key="nextjs" className="w-6 h-auto" color="black" />,
+  <SiAngular key="angular" className="w-6 h-auto" color="#DD0031" />,
   <SiPython key="python" className="w-6 h-auto" color="#3776AB" />,
   <SiDjango key="django" className="w-6 h-auto" color="#0f6117" />,
   <SiPostgresql key="postgres" className="w-6 h-auto" color="#336791" />,
