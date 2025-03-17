@@ -65,7 +65,7 @@ export const Proyectos = () => {
     {
       id: 14,
       nombre: t("14.title"),
-      link: "https://github.com/sergioAff/11-angular-routing/tree/development",
+      link: "https://github.com/sergioAff/12-architecture-example/tree/development",
       visitar: "https://restaurant-managment-api.netlify.app/",
       descripcion: t("14.description"),
       image: "/Proyectos/restaurant-managment/1.jpg",
