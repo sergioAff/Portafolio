@@ -59,5 +59,9 @@
   "14": {
     "title": "Gestor de restaurantes",
     "description": "Gestor de restaurantes es una aplicación web desarrollada en Angular, SCSS, Spring y MySQL para el backend. Se trata de un sistema de gestión de restaurantes simple e intuitivo que permite a los usuarios administrar el inventario, los pedidos, las reservas y los clientes de su restaurante."
+  },
+  "15": {
+    "title": "Air Sofka",
+    "description": "Air Sofka es una aplicación web desarrollada en Angular y SCSS para el frontend, y en Spring Boot y MySQL para el backend, utilizando una arquitectura hexagonal. Permite la reserva de vuelos, la gestión de reservas y ofrece una interfaz fácil de usar para los viajeros. Además, incluye funciones para la administración de vuelos, aeropuertos y perfiles de usuario, con autenticación y autorización.."
   }
 }

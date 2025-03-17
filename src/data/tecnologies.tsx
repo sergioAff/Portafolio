@@ -15,7 +15,11 @@ import {
   SiSqlite,
   SiSwift,
   SiAngular,
+  SiMysql,
 } from "react-icons/si";
+
+import { faJava } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const tecnologies = {
   html: <SiHtml5 className="w-8 h-auto" color="#E34F26" key={"html"} />,
@@ -30,6 +34,15 @@ export const tecnologies = {
   angular: <SiAngular className="w-8 h-auto" color="#DD0031" key={"angular"} />,
   python: <SiPython className="w-8 h-auto" color="#3776AB" key={"python"} />,
   django: <SiDjango className="w-8 h-auto" color="#0f6117" key={"django"} />,
+  java: (
+    <FontAwesomeIcon
+      icon={faJava}
+      className="w-6 h-auto"
+      color="#007396"
+      key={"java"}
+    />
+  ),
+  mysql: <SiMysql className="w-8 h-auto" color="#4479A1" key={"mysql"} />,
   postgres: (
     <SiPostgresql className="w-8 h-auto" color="#336791" key={"postgres"} />
   ),

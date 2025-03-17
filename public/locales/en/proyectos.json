@@ -59,5 +59,9 @@
   "14": {
     "title": "Restaurant Management",
     "description": "Restaurant Management is a web application developed in Angular and SCSS and Spring and MySQL for the backend. It is a simple and intuitive restaurant management system that allows users to manage their restaurant's inventory, orders, reservations, customers."
+  },
+  "15": {
+    "title": "Air Sofka",
+    "description": "Air Sofka is a web application developed in Angular and SCSS and Spring Boot and MySQL for the backend using hexagonal architecture. It allow booking flights, managing reservations, and providing a user-friendly interface for travelers. It also includes features for managing flights, airports, and user profiles with authentication and authorization."
   }
 }
