@@ -54,6 +54,10 @@
   },
   "13": {
     "title": "Duties",
-    "description": "Duties clone is a web developed in Angular and SCSS following the best practices in web desing. It is a simple and intuitive task manager that allows users to create, edit, and delete tasks. It also features a dark mode and a responsive design."
+    "description": "Duties clone is a web developed in Angular and SCSS following the best practices in web desing. It is a simple and intuitive web app."
+  },
+  "14": {
+    "title": "Restaurant Management",
+    "description": "Restaurant Management is a web application developed in Angular and SCSS and Spring and MySQL for the backend. It is a simple and intuitive restaurant management system that allows users to manage their restaurant's inventory, orders, reservations, customers."
   }
 }

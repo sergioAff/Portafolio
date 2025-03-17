@@ -63,6 +63,28 @@ export const Proyectos = () => {
       tecnologiesKey: ["html", "css", "js", "ts", "angular", "git", "github"],
     },
     {
+      id: 14,
+      nombre: t("14.title"),
+      link: "https://github.com/sergioAff/11-angular-routing/tree/development",
+      visitar: "https://restaurant-managment-api.netlify.app/",
+      descripcion: t("14.description"),
+      image: "/Proyectos/Duties/1.jpg",
+      imagesCarrusel: [
+        "/Proyectos/restaurant-managment/1.jpg",
+        "/Proyectos/restaurant-managment/2.jpg",
+      ],
+      tecnologies: [
+        tecnologies.html,
+        tecnologies.css,
+        tecnologies.js,
+        tecnologies.ts,
+        tecnologies.angular,
+        tecnologies.git,
+        tecnologies.github,
+      ],
+      tecnologiesKey: ["html", "css", "js", "ts", "angular", "git", "github"],
+    },
+    {
       id: 0,
       nombre: t("0.title"),
       link: "https://github.com/sergioAff/chatbox",
