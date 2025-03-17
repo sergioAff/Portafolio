@@ -39,7 +39,7 @@ export const Proyectos = () => {
     {
       id: 13,
       nombre: t("13.title"),
-      link: "https://github.com/sergioAff/08-html-seo-accesibilidad/tree/development",
+      link: "https://github.com/sergioAff/10-angular-fundamentals/tree/development",
       visitar: "https://duties-clone.netlify.app/",
       descripcion: t("13.description"),
       image: "/Proyectos/Duties/1.jpg",
