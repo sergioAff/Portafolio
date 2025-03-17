@@ -1,18 +1,5 @@
 {
   "experiencias": {
-    "1": {
-      "title": "Freelance Developer",
-      "company": "",
-      "description": "Designed and developed web applications using technologies such as TypeScript, React, and TailwindCSS, as well as desktop applications with Python. Integrated databases like PostgreSQL and SQLite. Delivered customized solutions that met specific client requirements, ensuring high quality standards and deadline compliance. Successfully completed over a dozen projects, contributing to 100% client satisfaction.",
-      "place": "Remote"
-    },
-    "2": {
-      "title": "SQL Programmer",
-      "company": "Electric Company",
-      "companyLink": "https://www.google.com/search?q=Empresa+El%C3%A9ctrica+de+Cienfuegos&sca_esv=a07f0383584960a3&sxsrf=ADLYWILuRz0W8eCiTP2By4HxeC7SqbIZZQ%3A1731334424394&ei=GBEyZ5fnF6uw5OUP77rkwAY&ved=0ahUKEwiX0-mqu9SJAxUrGLkGHW8dGWgQ4dUDCA8&uact=5&oq=Empresa+El%C3%A9ctrica+de+Cienfuegos&gs_lp=Egxnd3Mtd2l6LXNlcnAiIEVtcHJlc2EgRWzDqWN0cmljYSBkZSBDaWVuZnVlZ29zMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK6EAVCcflicfnADeAGQAQCYAXagAXaqAQMwLjG4AQPIAQD4AQL4AQGYAgSgAo4BwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBmAMA4gMFEgExIECIBgGQBgy6BgQIARgIkgcDMy4xoAfBBA&sclient=gws-wiz-serp",
-      "description": "Developed databases for the comprehensive management of material, human, and logistical resources. Applied innovative solutions that optimize operational performance by 40% and facilitate strategic decision-making. Designed and implemented data structures that allow fast and easy access to relevant information. Improved planning and management of operations.",
-      "place": "Cienfuegos, Cuba"
-    },
     "3": {
       "title": "Development Lead and Python Programmer",
       "company": "University of Cienfuegos",
@@ -41,19 +28,13 @@
       "description": "Developed a web application for managing university student enrollments at an educational institution in Cienfuegos. Designed and implemented a comprehensive solution that significantly optimized enrollment processing times by over 50%. Improved logistics and the experience for both students and administrative staff. Facilitated data management, enabling fast and efficient access to necessary information, resulting in a more agile and organized workflow.",
       "place": "Cienfuegos, Cuba"
     },
-    "7": {
-      "title": "Marketing Agent",
-      "company": "NotifreshSL",
-      "companyLink": "https://www.notifresh.com/",
-      "description": "Disseminated news, created web content, and managed social media advertising. Led and organized multidisciplinary teams to maximize profitability and visibility of companies, implementing effective strategies that generate a significant impact on reach and engagement with target audiences. Contributed to brand growth and strengthened their digital presence.",
-      "place": "Remote"
-    },
+
     "8": {
       "title": "Software Developer",
       "company": "Sofka Technologies",
       "companyLink": "https://sofka.com.co/index.html",
-      "description": "Collaborated in agile development teams to create and maintain enterprise software solutions. Implemented clean code practices and domain-driven design principles. Developed features using Java, Spring Boot, and Angluar technologies. Participated in code reviews, technical discussions, and continuous improvement initiatives. Contributed to the successful delivery of multiple client projects while maintaining high quality standards and best development practices.",
-      "place": "Montevideo, Uruguay"
+      "description": " I developed high-impact web applications using Java, Spring Boot, Angular, MySQL, advanced design patterns and DDD. I quickly adapted to new methodologies, mastering these technologies to deliver robust, scalable solutions that streamlined both backend and frontend processes, ultimately ensuring an exceptional user experience. I designed and implemented innovative development strategies that significantly improved system performance and enhanced the overall user experience. My proactive approach to learning and problem-solving allowed me to achieve concrete project objectives and deliver critical features ahead of schedule. I maintained a strong focus on integrating high-quality code and rigorous testing practices. This commitment not only streamlined the development process but also reinforced the application’s role as a strategic asset in advancing the organization's digital initiatives.",
+      "place": "Remote"
     }
   }
 }

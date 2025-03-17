@@ -1,18 +1,5 @@
 {
   "experiencias": {
-    "1": {
-      "title": "Desarrollador Freelance",
-      "company": "",
-      "description": "Diseñé y desarrollé aplicaciones web utilizando tecnologías como TypeScript, React y TailwindCSS, así como aplicaciones de escritorio con Python. Integré bases de datos como PostgreSQL y SQLite. Ofrecí soluciones personalizadas que cumplieron con los requisitos específicos de los clientes, garantizando altos estándares de calidad y cumplimiento de plazos. Completé con éxito más de una docena de proyectos, contribuyendo a la satisfacción del 100% de los clientes.",
-      "place": "Remoto"
-    },
-    "2": {
-      "title": "Programador SQL",
-      "company": "Empresa Eléctrica",
-      "companyLink": "https://www.google.com/search?q=Empresa+El%C3%A9ctrica+de+Cienfuegos&sca_esv=a07f0383584960a3&sxsrf=ADLYWILuRz0W8eCiTP2By4HxeC7SqbIZZQ%3A1731334424394&ei=GBEyZ5fnF6uw5OUP77rkwAY&ved=0ahUKEwiX0-mqu9SJAxUrGLkGHW8dGWgQ4dUDCA8&uact=5&oq=Empresa+El%C3%A9ctrica+de+Cienfuegos&gs_lp=Egxnd3Mtd2l6LXNlcnAiIEVtcHJlc2EgRWzDqWN0cmljYSBkZSBDaWVuZnVlZ29zMgUQABiABDIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSK6EAVCcflicfnADeAGQAQCYAXagAXaqAQMwLjG4AQPIAQD4AQL4AQGYAgSgAo4BwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAhMQLhiABBiwAxhDGMgDGIoF2AEBmAMA4gMFEgExIECIBgGQBgy6BgQIARgIkgcDMy4xoAfBBA&sclient=gws-wiz-serp",
-      "description": "Desarrollé bases de datos para la gestión integral de recursos materiales, humanos y logísticos. Apliqué soluciones innovadoras que optimizan el rendimiento operativo en un 40% y facilitan la toma de decisiones estratégicas. Diseñé e implementé las estructuras de datos que permiten un acceso rápido y fácil a la información relevante. Mejoré la planificación y la gestión de sus operaciones.",
-      "place": "Cienfuegos, Cuba"
-    },
     "3": {
       "title": "Líder de Desarrollo y programador Python",
       "company": "Universidad de Cienfuegos",
@@ -41,19 +28,12 @@
       "description": "Desarrollé una aplicación web para la gestión de matrículas de estudiantes universitarios en una institución educativa en Cienfuegos. Diseñé e implementé una solución integral que optimizó significativamente los tiempos del proceso de matrícula en más del 50%. Mejoré la logística y la experiencia tanto para estudiantes como para el personal administrativo. Facilité la gestión de datos, permitiendo un acceso rápido y eficiente a la información necesaria, lo que resultó en un flujo de trabajo más ágil y organizado.",
       "place": "Cienfuegos, Cuba"
     },
-    "7": {
-      "title": "Agente de Marketing",
-      "company": "NotifreshSL",
-      "companyLink": "https://www.notifresh.com/",
-      "description": "Divulgación de noticias, creación de contenido web y publicidad en redes sociales. Lideré y organicé equipos multidisciplinarios para maximizar la rentabilidad y visibilidad de las empresas, implementando estrategias efectivas que generan un impacto significativo en el alcance y la interacción con el público objetivo. Contribuí al crecimiento de marcas y al fortalecimiento de su presencia en el entorno digital.",
-      "place": "Remoto"
-    },
     "8": {
       "title": "Desarrollador de Software",
       "company": "Sofka Technologies",
       "companyLink": "https://sofka.com.co/index.html",
-      "description": "Colaboré con equipos de desarrollo ágil para crear y mantener soluciones de software empresarial. Implementé prácticas de código limpio y principios de diseño orientado al dominio. Desarrollé funcionalidades utilizando tecnologías como Java, Spring Boot y Angular. Participé en revisiones de código, discusiones técnicas e iniciativas de mejora continua. Contribuí al éxito en la entrega de múltiples proyectos para clientes, manteniendo altos estándares de calidad y las mejores prácticas de desarrollo.",
-      "place": "Montevideo, Uruguay"
+      "description": "Desarrollé aplicaciones web de alto impacto utilizando Java, Spring Boot, Angular, MySQL, patrones de diseño avanzados y DDD. Me adapté rápidamente a nuevas metodologías, dominando estas tecnologías para ofrecer soluciones robustas y escalables que optimizaron los procesos tanto de backend como de frontend, asegurando, en última instancia, una experiencia de usuario excepcional. Diseñé e implementé estrategias de desarrollo innovadoras que mejoraron significativamente el rendimiento del sistema y realzaron la experiencia global del usuario. Mi enfoque proactivo en el aprendizaje y la resolución de problemas me permitió alcanzar objetivos concretos del proyecto y entregar funcionalidades críticas antes de lo previsto. Mantuve un fuerte énfasis en la integración de código de alta calidad y en la aplicación de rigurosas prácticas de testing. Este compromiso no solo agilizó el proceso de desarrollo, sino que también reforzó el papel de la aplicación como un activo estratégico para impulsar las iniciativas digitales de la organización.",
+      "place": "Remoto"
     }
   }
 }

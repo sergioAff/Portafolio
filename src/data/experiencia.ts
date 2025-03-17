@@ -48,17 +48,6 @@ export const Experiencia = () => {
       },
     },
     {
-      trabajo: t("experiencias.1.title"),
-      descripcion: t("experiencias.1.description"),
-      lugar: t("experiencias.1.place"),
-      company: t("experiencias.1.company"),
-      companyLink: t("experiencias.1.companyLink"),
-      fechas: {
-        inicio: new Date(2023, 8),
-        fin: new Date(2024, 1),
-      },
-    },
-    {
       trabajo: t("experiencias.3.title"),
       descripcion: t("experiencias.3.description"),
       lugar: t("experiencias.3.place"),
@@ -67,28 +56,6 @@ export const Experiencia = () => {
       fechas: {
         inicio: new Date(2023, 4),
         fin: new Date(2023, 11),
-      },
-    },
-    {
-      trabajo: t("experiencias.2.title"),
-      descripcion: t("experiencias.2.description"),
-      lugar: t("experiencias.2.place"),
-      company: t("experiencias.2.company"),
-      companyLink: t("experiencias.2.companyLink"),
-      fechas: {
-        inicio: new Date(2022, 10),
-        fin: new Date(2023, 2),
-      },
-    },
-    {
-      trabajo: t("experiencias.7.title"),
-      descripcion: t("experiencias.7.description"),
-      lugar: t("experiencias.7.place"),
-      company: t("experiencias.7.company"),
-      companyLink: t("experiencias.7.companyLink"),
-      fechas: {
-        inicio: new Date(2020, 5),
-        fin: new Date(2023, 2),
       },
     },
   ];

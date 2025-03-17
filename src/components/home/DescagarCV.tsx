@@ -42,7 +42,7 @@ export const DescargarCv = () => {
             onClick={() => setIsOpen(false)}
             className="text-lg hover:scale-105 hover:text-orange-500 tracking-wide active:scale-95 transition-all ease-in-out duration-150 font-semibold"
             rel="noopener noreferrer"
-            href="https://drive.google.com/uc?id=1-bHCXHQmijMb9YxF9nZQi-uJ3ES2_esE&export=download"
+            href="https://drive.google.com/file/d/1I1MhhxOh79vqUJmCF6oIoDl9wJsirOXg/view?usp=sharing"
             target="_blank"
           >
             Español
@@ -52,7 +52,7 @@ export const DescargarCv = () => {
             className="text-lg hover:scale-105 tracking-wide hover:text-orange-500 active:scale-95 transition-all ease-in-out duration-150 font-semibold"
             onClick={() => setIsOpen(false)}
             rel="noopener noreferrer"
-            href="https://drive.google.com/uc?id=1-cBjyy87e2bzTNQwqm_t4uxkRxrbvORQ&export=download"
+            href="https://drive.google.com/file/d/1qZrhkNhtHSxPVhFY6n0vSYI8cWr1k5Px/view?usp=sharing"
             target="_blank"
           >
             English

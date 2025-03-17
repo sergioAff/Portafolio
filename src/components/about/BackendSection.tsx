@@ -2,7 +2,7 @@ import { SectionAbout3 } from "@/components/about/SectionAbout3";
 import { ReactNode } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPython, faJava } from "@fortawesome/free-brands-svg-icons";
-import { SiDjango, SiPostgresql, SiSqlite, SiSpringboot } from "react-icons/si";
+import { SiDjango, SiSpringboot, SiPostgresql } from "react-icons/si";
 
 interface BackendSectionInterface {
   up: ReactNode;
@@ -41,10 +41,6 @@ export function BackendSection({ up }: BackendSectionInterface) {
           <li className="flex flex-col items-center  ">
             <SiPostgresql className="w-10 h-auto" color="#336791" />{" "}
             <p className=" text-sm font-semibold text-gray-800">PostgreSQL</p>
-          </li>
-          <li className="flex flex-col items-center  ">
-            <SiSqlite className="w-10 h-auto" color="#003B57" />{" "}
-            <p className=" text-sm font-semibold text-gray-800">SQLite</p>
           </li>
         </ul>
       }

@@ -43,7 +43,7 @@ export function Footer() {
           &copy; {currentYear} S@ff. {t("derechos")}
         </h3>
       </div>
-      <div className="animate-fadeBottom absolute w-full h-screen bottom-0 pointer-events-auto z-10 ">
+      <div className="animate-fadeBottom absolute w-full h-screen bottom-0 pointer-events-auto ">
         <Olas />
       </div>
     </footer>
