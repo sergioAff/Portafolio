@@ -64,6 +64,12 @@ export const tecnologiesArray = [
   <SiAngular key="angular" className="w-6 h-auto" color="#DD0031" />,
   <SiPython key="python" className="w-6 h-auto" color="#3776AB" />,
   <SiDjango key="django" className="w-6 h-auto" color="#0f6117" />,
+  <FontAwesomeIcon
+    key="java"
+    icon={faJava}
+    className="w-6 h-auto"
+    color="#007396"
+  />,
   <SiPostgresql key="postgres" className="w-6 h-auto" color="#336791" />,
   <SiSqlite key="sqlite" className="w-6 h-auto" color="#003B57" />,
   <SiFlutter key="flutter" className="w-6 h-auto" color="#02569B" />,
