@@ -14,6 +14,7 @@ import {
   SiFlutter,
   SiSqlite,
   SiSwift,
+  SiAngular,
 } from "react-icons/si";
 
 export const tecnologies = {
@@ -26,6 +27,7 @@ export const tecnologies = {
   ts: <SiTypescript className="w-8 h-auto" color="#007ACC" key={"ts"} />,
   react: <SiReact className="w-8 h-auto" color="#61DAFB" key={"react"} />,
   nextjs: <SiNextdotjs className="w-8 h-auto" color="black" key={"nextjs"} />,
+  angular: <SiAngular className="w-8 h-auto" color="#DD0031" key={"angular"} />,
   python: <SiPython className="w-8 h-auto" color="#3776AB" key={"python"} />,
   django: <SiDjango className="w-8 h-auto" color="#0f6117" key={"django"} />,
   postgres: (

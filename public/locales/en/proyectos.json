@@ -51,5 +51,9 @@
   "12": {
     "title": "Ecommerce",
     "description": "Ecommerce website designed and developed using React, Next.js, Redux for state management, TypeScript, and Tailwind CSS. It features a responsive design and offers a seamless shopping experience with a modern, user-friendly interface."
+  },
+  "13": {
+    "title": "Duties",
+    "description": "Duties clone is a web developed in Angular and SCSS following the best practices in web desing. It is a simple and intuitive task manager that allows users to create, edit, and delete tasks. It also features a dark mode and a responsive design."
   }
 }
