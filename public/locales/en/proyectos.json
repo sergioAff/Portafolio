@@ -63,5 +63,9 @@
   "15": {
     "title": "Air Sofka",
     "description": "Air Sofka is a web application developed in Angular and SCSS and Spring Boot and MySQL for the backend using hexagonal architecture. It allow booking flights, managing reservations, and providing a user-friendly interface for travelers. It also includes features for managing flights, airports, and user profiles with authentication and authorization."
+  },
+  "16": {
+    "title": "ClimaVue",
+    "description": "A modern weather application built with Angular 19 that provides real-time meteorological information with an elegant, responsive interface. ClimaVue offers an intuitive experience for checking current weather conditions and forecasts from anywhere in the world."
   }
 }
