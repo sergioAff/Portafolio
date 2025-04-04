@@ -67,5 +67,9 @@
     "16": {
     "title": "ClimaVue",
     "description": "Una aplicación meteorológica moderna desarrollada con Angular 19 que proporciona información meteorológica en tiempo real a través de una interfaz elegante y adaptable. ClimaVue ofrece una experiencia intuitiva para consultar las condiciones climáticas actuales y los pronósticos desde cualquier parte del mundo."
+  },
+  "17": {
+    "title": "Mindful",
+    "description": "App desarrollada en Flutter para la gestión de hábitos y rutinas de mindfulness. Permite a los usuarios registrar y seguir sus rutinas de mindfulness, así como monitorear su progreso y obtener recomendaciones personalizadas."
   }
 }
