@@ -37,7 +37,7 @@
     "description": "App desarrollada en Swift que permite calcular el Índice de Masa Corporal (IMC). El IMC es un valor que se utiliza para determinar si una persona tiene un peso saludable en relación con su estatura. Esta herramienta es útil para quienes desean monitorear su peso y salud de manera sencilla. Muestra si el IMC corresponde a una categoría saludable, bajo peso, sobrepeso o alguna forma de obesidad."
   },
   "9": {
-    "title": "Gimnasio",
+    "title": "Gym",
     "description": "Aplicación móvil desarrollada en Flutter que sirve como una guía de entrenamiento para el gimnasio. La aplicación ofrece diferentes rutinas de entrenamiento organizadas por días y grupos musculares, proporcionando a los usuarios una referencia clara y práctica para estructurar sus sesiones de ejercicio. Presenta una fácil navegación entre las rutinas y las descripciones de los ejercicios. Cada rutina contiene explicaciones detalladas de los ejercicios, repeticiones y series."
   },
   "10": {
