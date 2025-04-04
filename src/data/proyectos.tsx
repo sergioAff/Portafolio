@@ -302,7 +302,28 @@ export const Proyectos = () => {
       ],
       tecnologies: [tecnologies.fluter, tecnologies.git, tecnologies.github],
       tecnologiesKey: ["flutter", "git", "github"],
-    },    {
+    }, 
+    
+    {
+      id: 6,
+      nombre: t("9.title"),
+      link: "https://github.com/sergioAff/gym_app",
+      visitar: "",
+      descripcion: t("9.description"),
+      image: "/Proyectos/gym/1.png",
+      imagesCarrusel: [
+        "/Proyectos/gym/1.png",
+        "/Proyectos/gym/2.png",
+        "/Proyectos/gym/3.png",
+        "/Proyectos/gym/4.png",
+        "/Proyectos/gym/5.png",
+        "/Proyectos/gym/6.png",
+        "/Proyectos/gym/7.png",
+        "/Proyectos/gym/8.png",
+      ],
+      tecnologies: [tecnologies.fluter, tecnologies.git, tecnologies.github],
+      tecnologiesKey: ["flutter", "git", "github"],
+    },   {
       id: 8,
       nombre: t("7.title"),
       link: "https://github.com/sergioAff/Super-Hero-Finder",
@@ -316,6 +337,19 @@ export const Proyectos = () => {
       tecnologies: [tecnologies.swift, tecnologies.git, tecnologies.github],
       tecnologiesKey: ["swift", "git", "github"],
     },
+
+    {
+      id: 9,
+      nombre: t("8.title"),
+      link: "https://github.com/sergioAff/IMC",
+      visitar: "",
+      descripcion: t("8.description"),
+      image: "/Proyectos/IMC/1.png",
+      imagesCarrusel: ["/Proyectos/IMC/1.png", "/Proyectos/SuperHero/2.png"],
+      tecnologies: [tecnologies.swift, tecnologies.git, tecnologies.github],
+      tecnologiesKey: ["swift", "git", "github"],
+    },
+
     {
       id: 3,
       nombre: t("3.title"),
@@ -421,29 +455,7 @@ export const Proyectos = () => {
       tecnologiesKey: ["python", "sqlite", "git", "github"],
     },
 
-    {
-      id: 9,
-      nombre: t("8.title"),
-      link: "https://github.com/sergioAff/IMC",
-      visitar: "",
-      descripcion: t("8.description"),
-      image: "/Proyectos/IMC/1.png",
-      imagesCarrusel: ["/Proyectos/IMC/1.png", "/Proyectos/SuperHero/2.png"],
-      tecnologies: [tecnologies.swift, tecnologies.git, tecnologies.github],
-      tecnologiesKey: ["swift", "git", "github"],
-    },
 
-    {
-      id: 6,
-      nombre: t("9.title"),
-      link: "https://github.com/sergioAff/gym_app",
-      visitar: "",
-      descripcion: t("9.description"),
-      image: "",
-      imagesCarrusel: [],
-      tecnologies: [tecnologies.fluter, tecnologies.git, tecnologies.github],
-      tecnologiesKey: ["flutter", "git", "github"],
-    },
     {
       id: 10,
       nombre: t("10.title"),

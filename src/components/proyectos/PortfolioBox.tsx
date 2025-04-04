@@ -65,8 +65,9 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
               nombre === "Buscador de Héroes" ||
               nombre === "IMC" ||
               nombre === "Super Hero Finder" ||
-              nombre === "BMI"||
-              nombre === "Mindful",
+              nombre === "BMI" ||
+              nombre === "Mindful" ||
+              nombre === "Gimnasio",
           }
         )}
       >
@@ -86,7 +87,8 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
                 nombre === "Super Hero Finder" ||
                 nombre === "Buscador de Héroes" ||
                 nombre === "BMI" ||
-                nombre === "Mindful",
+                nombre === "Mindful" ||
+                nombre === "Gimnasio",
             })}
           />
         ) : (
