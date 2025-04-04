@@ -288,7 +288,7 @@ export const Proyectos = () => {
     {
       id: 17,
       nombre: t("17.title"),
-      link: "",
+      link: "https://github.com/sergioAff/mindul",
       visitar: "",
       descripcion: t("17.description"),
       image: "/Proyectos/mindful/1.png",
