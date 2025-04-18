@@ -24,43 +24,49 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faGit}
-              className="w-10 h-auto"
+              className="w-10 2xl:w-12 h-auto"
               color="#F05032"
             />
-            <p className="text-sm font-semibold text-gray-800">Git</p>
+            <p className="text-sm 2xl:text-lg font-semibold text-gray-800">Git</p>
           </li>
 
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faGithub}
-              className="w-10 h-auto"
+              className="w-10 2xl:w-12 h-auto"
               color="#181717"
             />
-            <p className="text-sm font-semibold text-gray-800">GitHub</p>
+            <p className="text-sm 2xl:text-lg font-semibold text-gray-800">
+              GitHub
+            </p>
           </li>
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faSwift}
-              className="w-10 h-auto"
+              className="w-10 2xl:w-12 h-auto"
               color="#FA7343"
             />
-            <p className="text-sm font-semibold text-gray-800">Swift</p>
+            <p className="text-sm 2xl:text-lg font-semibold text-gray-800">Swift</p>
           </li>
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faFlutter}
-              className="w-10 h-auto"
+              className="w-10 2xl:w-12 h-auto"
               color="#02569B"
             />
-            <p className="text-sm font-semibold text-gray-800">Flutter</p>
+            <p className="text-sm 2xl:text-lg font-semibold text-gray-800">
+              Flutter
+            </p>
           </li>
           <li>
             <FontAwesomeIcon
               icon={faDocker}
-              className="w-10 h-auto"
+              className="w-10 2xl:w-12 h-auto"
               color="#0db7ed"
             />
-            <p className="text-sm font-semibold text-gray-800">Docker</p>
+            <p className="text-sm 2xl:text-lg font-semibold text-gray-800">
+              Docker
+            </p>
           </li>
         </ul>
       }

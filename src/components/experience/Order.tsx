@@ -18,7 +18,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
   }
 
   return (
-    <div className=" flex gap-2 justify-start items-center w-[80%] lg:w-[25%]">
+    <div className=" flex gap-2 justify-start items-center w-[80%] lg:w-[25%] 2xl:w-[10%]">
       <button
         onClick={() => setOpen(!open)}
         className={clsx(
@@ -57,7 +57,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
         <li>
           <button
             onClick={() => handleCharger("latest")}
-            className="hover:text-orange-500"
+            className="hover:text-orange-500 2xl:text-lg"
           >
             {t("Recientes")}
           </button>
@@ -65,7 +65,7 @@ export const Order = ({ onOrderChange }: OrderProps) => {
         <li>
           <button
             onClick={() => handleCharger("oldest")}
-            className="hover:text-orange-500"
+            className="hover:text-orange-500 2xl:text-lg"
           >
             {t("Antiguos")}
           </button>

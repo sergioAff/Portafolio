@@ -71,7 +71,7 @@ export const PortfolioBox = ({ data }: PortfolioBoxProps) => {
           }
         )}
       >
-        <h3 className="font-semibold text-2xl text-center tracking-wider text-orange-600 select-none">
+        <h3 className="font-semibold text-2xl 2xl:text-3xl text-center tracking-wider text-orange-600 select-none">
           {nombre}
         </h3>
         {image ? (

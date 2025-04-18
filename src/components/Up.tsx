@@ -4,10 +4,8 @@ import { ArrowUpIcon } from "@heroicons/react/24/outline";
 export const Up = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Manejar el evento de scroll
   useEffect(() => {
     const handleScroll = () => {
-      // Mostrar el botón si se ha hecho scroll hacia abajo más de 300px
       if (window.scrollY > 300) {
         setIsVisible(true);
       } else {
@@ -15,7 +13,6 @@ export const Up = () => {
       }
     };
 
-    // Añadir el listener al evento de scroll
     window.addEventListener("scroll", handleScroll);
 
     // Eliminar el listener al desmontar el componente
@@ -37,9 +34,9 @@ export const Up = () => {
       {isVisible && (
         <div
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 w-10 h-10 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 transition-all duration-150 ease-in-out active:scale-95 cursor-pointer"
+          className="fixed bottom-5 right-5 w-10 h-10 2xl:w-16 2xl:h-16 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 transition-all duration-150 ease-in-out active:scale-95 cursor-pointer"
         >
-          <ArrowUpIcon className="w-6 h-6 text-white" />
+          <ArrowUpIcon className="w-6 h-6 2xl:w-8 2xl:h-8 text-white" />
         </div>
       )}
     </>

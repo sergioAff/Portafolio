@@ -15,9 +15,9 @@ export default function Page() {
   );
 
   return (
-    <div className="relative animate-fadeBottom-for-contacts flex flex-col md:flex-row justify-center gap-5 xl:gap-0 md:px-5 m-10">
+    <div className="relative animate-fadeBottom-for-contacts flex flex-col md:flex-row justify-center gap-5 xl:gap-0 md:px-5 m-10 xl:pb-24 2xl:mb-32">
       <Filter onFilterChange={setSelectedTecnologies} />
-      <ul className="grid gap-6 mx-auto sm:grid-cols-2 xl:gap-10">
+      <ul className="grid gap-6 mx-auto sm:grid-cols-2 2xl:grid-cols-3 2xl:gap-6 xl:gap-10">
         {filteredProyectos.map((proyecto) => (
           <PortfolioBox key={proyecto.id} data={proyecto} />
         ))}

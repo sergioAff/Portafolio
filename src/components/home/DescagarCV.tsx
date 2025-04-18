@@ -22,7 +22,7 @@ export const DescargarCv = () => {
         )}
       >
         <BlurButtons proyect={false} />
-        <p className=" flex gap-1">
+        <p className=" flex gap-1 text-lg xl:text-xl">
           {t("Descargar")} CV
           <span>
             <DocumentArrowDownIcon className="w-6" />

@@ -52,10 +52,10 @@ export default function Page() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.2 }}
     >
-      <div className="flex flex-col justify-center gap-3 mx-5 py-8 mb-12 items-center sm:max-w-[80%] md:max-w-[80%]">
+      <div className="flex flex-col justify-center gap-3 mx-5 py-8 mb-12 items-center sm:max-w-[80%] 2xl:max-w-[60%]">
         <button
           onClick={() => toggleAllSections(!allOpen)}
-          className="self-start relative px-2 py-1 rounded-lg hover:bg-transparent hover:ring-2 outline-none hover:ring-orange-500 shadow-lg shadow-orange-600/50 transition-all ease-in duration-100 hover:text-gray-700 active:scale-95 font-semibold bg-orange-500 text-gray-100"
+          className="self-start 2xl:text-xl relative px-2 py-1 rounded-lg hover:bg-transparent hover:ring-2 outline-none hover:ring-orange-500 shadow-lg shadow-orange-600/50 transition-all ease-in duration-100 hover:text-gray-700 active:scale-95 font-semibold bg-orange-500 text-gray-100"
         >
           <BlurButtons proyect={false} />
           {allOpen ? (
