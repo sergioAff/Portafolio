@@ -38,7 +38,7 @@ export const TimeLine = ({
             >
               <p className="absolute hidden lg:inline-block left-5 text-xl text-black"></p>
               <div className="relative py-6 pl-8 md:pl-32">
-                <h3 className="text-2xl 2xl:text-3xl font-semibold text-orange-700 group-hover:text-orange-500 transition-colors">
+                <h3 className="text-2xl font-semibold text-orange-700 group-hover:text-orange-500 transition-colors">
                   {experience.trabajo}
                 </h3>
                 <div className="flex flex-col md:flex-row mb-1 group-last:before:hidden before:absolute before:left-2 md:before:left-0 before:h-[110%] before:px-px before:bg-orange-600 before:rounded-xl md:before:ml-[6.5rem] before:self-start before:-translate-x-1/2 before:translate-y-1 after:absolute after:left-2 md:after:left-0 after:w-2 after:h-2 after:bg-transparent after:border-4 after:box-content after:border-orange-600 after:rounded-full md:after:ml-[6.5rem] after:translate-x-1/2 after:translate-y-1.5">
@@ -82,7 +82,7 @@ export const TimeLine = ({
                         </div>
                       </div>
                     </div>
-                    <p className="max-w-md lg:max-w-2xl 2xl:max-w-3xl text-lg 2xl:text-xl text-gray-700 md:p-1 leading-relaxed">
+                    <p className="max-w-md lg:max-w-2xl text-gray-700 md:p-1 leading-relaxed">
                       {experience.descripcion}
                     </p>
                   </div>

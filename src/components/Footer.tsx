@@ -25,13 +25,13 @@ export function Footer() {
           </ul>
         </nav>
         <ul className="md:justify-center md:items-center md:h-16 h-6 md:w-[50dvw] flex justify-start items-start">
-          <li className="font-semibold text-sm sm:text-lg 2xl:text-2xl flex md:flex-col z-30 ">
+          <li className="font-semibold text-sm sm:text-lg flex md:flex-col z-30 ">
             {t("autor")}
             <div className="ml-2 inline-block hover:scale-110 duration-75">
               <Links
                 direccion="https://linkedin.com/in/sergio-adrian-fernández"
                 nombre="Sergio Fernández"
-                estilos="text-orange-800 2xl:text-3xl"
+                estilos="text-orange-800"
                 target="_blank"
               />
             </div>
@@ -39,7 +39,7 @@ export function Footer() {
         </ul>
       </div>
       <div className="mt-5 md:mx-[10dvw] lg:mx-[20dvw] mx-10 cursor-default border-t-2 border-orange-900 items-center flex justify-center text-center ">
-        <h3 className="font-semibold text-sm sm:text-lg 2xl:text-2xl z-30">
+        <h3 className="font-semibold text-sm sm:text-lg z-30">
           &copy; {currentYear} S@ff. {t("derechos")}
         </h3>
       </div>

@@ -32,7 +32,7 @@ export function SectionAbout({
           <span className="w-7 text-orange-600 hidden sm:inline-block overflow-hidden">
             {icon}
           </span>
-          <h3 className="font-semibold text-3xl 2xl:text-4xl tracking-wide text-orange-600">
+          <h3 className="font-semibold text-3xl tracking-wide text-orange-600">
             {title}
           </h3>
         </div>
@@ -48,7 +48,7 @@ export function SectionAbout({
       </div>
       <p
         className={clsx(
-          "text-base text-gray-700 font-semibold lg:text-lg 2xl:text-2xl transition-all ease-in-out duration-200 overflow-hidden",
+          "text-base text-gray-700 font-semibold lg:text-lg transition-all ease-in-out duration-200 overflow-hidden",
           {
             "max-h-screen": isOpen,
             "max-h-0": !isOpen,

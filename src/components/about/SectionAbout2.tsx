@@ -32,7 +32,7 @@ export function SectionAbout2({
           <span className="w-7 text-orange-600 hidden sm:inline-block">
             {icon}
           </span>
-          <h3 className=" font-semibold text-3xl 2xl:text-4xl tracking-wide text-orange-600">
+          <h3 className=" font-semibold text-3xl tracking-wide text-orange-600">
             {title}
           </h3>
         </div>

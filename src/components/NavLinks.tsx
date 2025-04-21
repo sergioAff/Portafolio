@@ -18,7 +18,7 @@ export default function NavLinks() {
               direccion={link.enlace}
               nombre={link.nombre}
               estilos={clsx(
-                "flex item-center justify-center w-full text-sm sm:text-base 2xl:text-2xl transition-all ease-in duration-75 rounded-xl px-2 sm:px-3 py-1 sm:py-0.5 font-semibold",
+                "flex item-center justify-center w-full text-sm sm:text-base transition-all ease-in duration-75 rounded-xl px-2 sm:px-3 py-1 sm:py-0.5 font-semibold",
                 {
                   "bg-gradient-to-b from-orange-secondary via-orange-500 to-orange-500 text-white font-semibold":
                     pathname === link.enlace,

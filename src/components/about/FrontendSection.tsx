@@ -23,12 +23,10 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
           <li className="flex flex-col items-center ">
             <FontAwesomeIcon
               icon={faHtml5}
-              className="w-10 2xl:w-12 h-auto"
+              className="w-10 h-auto"
               color="#E34F26"
             />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              HTML
-            </p>
+            <p className=" text-sm font-semibold text-gray-800">HTML</p>
           </li>
           <li className="flex flex-col items-center">
             <FontAwesomeIcon
@@ -36,15 +34,11 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
               className="w-10 h-auto"
               color="#1572B6"
             />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              CSS
-            </p>
+            <p className=" text-sm font-semibold text-gray-800">CSS</p>
           </li>
           <li className="flex flex-col items-center  ">
-            <SiTailwindcss className="w-10 2xl:w-12 h-auto" color="#06B6D4" />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              TailwindCSS
-            </p>
+            <SiTailwindcss className="w-10 h-auto" color="#06B6D4" />
+            <p className=" text-sm font-semibold text-gray-800">TailwindCSS</p>
           </li>
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
@@ -52,41 +46,31 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
               className="w-10 h-auto"
               color="#F7DF1E"
             />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              JavaScript
-            </p>
+            <p className=" text-sm font-semibold text-gray-800">JavaScript</p>
           </li>
           <li className="flex flex-col items-center ">
-            <SiTypescript className="w-10 2xl:w-12 h-auto" color="#007ACC" />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              TypeScript
-            </p>
+            <SiTypescript className="w-10 h-auto" color="#007ACC" />
+            <p className=" text-sm font-semibold text-gray-800">TypeScript</p>
           </li>
           <li className="flex flex-col items-center ">
             <FontAwesomeIcon
               icon={faReact}
-              className="w-10 2xl:w-12 h-auto"
+              className="w-10 h-auto"
               color="#61DAFB"
             />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              React
-            </p>
+            <p className=" text-sm font-semibold text-gray-800">React</p>
           </li>
           <li className="flex flex-col items-center ">
             <FontAwesomeIcon
               icon={faAngular}
-              className="w-10 2xl:w-12 h-auto"
+              className="w-10 h-auto"
               color="red"
             />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              Angular
-            </p>
+            <p className=" text-sm font-semibold text-gray-800">Angular</p>
           </li>
           <li className="flex flex-col items-center ">
-            <SiNextdotjs className="w-10 2xl:w-12 h-auto" color="black" />
-            <p className=" text-sm 2xl:text-lg font-semibold text-gray-800">
-              Next.js
-            </p>
+            <SiNextdotjs className="w-10 h-auto" color="black" />
+            <p className=" text-sm font-semibold text-gray-800">Next.js</p>
           </li>
         </ul>
       }

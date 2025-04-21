@@ -20,7 +20,7 @@ export default function Contact() {
       <BlurButtons proyect={false} />
       <Links
         estilos={clsx(
-          `px-3 py-2 rounded-lg hover:bg-transparent hover:ring-4 hover:outline-none hover:ring-orange-500 shadow-lg text-lg 2xl:text-2xl shadow-orange-600/50 transition-all ease-in duration-75 hover:bg-orange-50  hover:text-gray-700 font-semibold`,
+          `px-3 py-2 rounded-lg hover:bg-transparent hover:ring-4 hover:outline-none hover:ring-orange-500 shadow-lg text-lg shadow-orange-600/50 transition-all ease-in duration-75 hover:bg-orange-50  hover:text-gray-700 font-semibold`,
           {
             "bg-opacity-0 ring-2 ring-orange-500 ":
               pathname === linkContact.enlace,

@@ -35,14 +35,14 @@ export const ModalDescription = ({
   return (
     <>
       <motion.div
-        className="absolute flex flex-col gap-1 md:gap-5 lg:gap-2 inset-x-0 inset-y-auto z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] 2xl:max-w-[800px] max-h-auto"
+        className="absolute flex flex-col gap-1 md:gap-5 lg:gap-2 inset-x-0 inset-y-auto z-50 bg-claro ring ring-orange-500 mx-auto p-3 rounded-md max-w-[340px] sm:max-w-[600px] md:max-w-[700px] max-h-auto"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -20 }}
         transition={{ duration: 0.3 }}
       >
         <div className="flex justify-between items-center border-b-2 border-orange-500">
-          <h3 className="text-orange-500 text-3xl 2xl:text-4xl font-semibold tracking-wide">
+          <h3 className="text-orange-500 text-3xl font-semibold tracking-wide">
             {title}
           </h3>
           <button
@@ -54,7 +54,7 @@ export const ModalDescription = ({
             <XMarkIcon className="w-8 text-gray-900 rounded-full transition-all duration-150 ease-in-out hover:rotate-90" />
           </button>
         </div>
-        <p className="text-lg 2xl:text-2xl font-semibold text-gray-800 mb-3">
+        <p className="text-lg font-semibold text-gray-800 mb-3">
           {description}
         </p>{" "}
         <ul className="flex flex-wrap justify-evenly">

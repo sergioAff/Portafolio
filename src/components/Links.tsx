@@ -33,7 +33,7 @@ export const Links = ({ direccion, nombre, estilos, target }: PropLink) => {
           alt="Link image"
           width={35}
           height={12}
-          className=" min-w-8 2xl:min-w-12 h-auto "
+          className=" min-w-8 sm:w-35 h-auto "
         />
       ) : isStaticImport(nombre) ? (
         <Image
@@ -41,7 +41,7 @@ export const Links = ({ direccion, nombre, estilos, target }: PropLink) => {
           alt="Link image"
           width={35}
           height={12}
-          className=" min-w-8 h-auto"
+          className=" min-w-8 sm:w-35 h-auto"
         />
       ) : (
         nombre

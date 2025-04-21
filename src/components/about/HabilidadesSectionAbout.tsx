@@ -30,7 +30,7 @@ export function HabilidadesSection({
                   <span className="w-1 h-1 rounded-full bg-orange-600"></span>
                 </div>
                 <Link
-                  className="ml-3 cursor-pointer text-base text-gray-700 font-semibold lg:text-lg 2xl:text-2xl transition-colors ease-in-out duration-200 hover:text-orange-500"
+                  className="ml-3 cursor-pointer text-base text-gray-700 font-semibold lg:text-lg transition-colors ease-in-out duration-200 hover:text-orange-500"
                   href={`https://www.google.com/search?q=${encodeURIComponent(
                     habilidad
                   )}`}
