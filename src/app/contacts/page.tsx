@@ -15,7 +15,7 @@ export default function ContactPage() {
   ]);
 
   return (
-    <div className="flex flex-col pt-5 w-full animate-fadeBottom-for-contacts">
+    <div className="flex flex-col pt-5 w-full animate-fadeBottom-for-contacts mb-36">
       <h3 className="text-4xl text-center text-gray-900">{t("Contactos")}</h3>
 
       <ul className="mt-[3vh] grid grid-cols-1 gap-8 pb-32 md:grid-cols-2 md:px-10 w-full">

@@ -19,7 +19,7 @@ export default function Page() {
 
   return (
     <motion.div
-      className="flex flex-col px-5 py-5 mb-10 relative"
+      className="flex flex-col px-5 py-5 mb-64 relative"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
