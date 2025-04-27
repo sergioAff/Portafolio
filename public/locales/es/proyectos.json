@@ -71,5 +71,9 @@
   "17": {
     "title": "Mindful",
     "description": "App desarrollada en Flutter para la gestión de hábitos y rutinas de mindfulness. Permite a los usuarios registrar y seguir sus rutinas de mindfulness, así como monitorear su progreso y obtener recomendaciones personalizadas."
+  },
+  "18":{
+    "title": "GitHub Finder",
+    "description": "Applicarión desarrollada en Swift 6 y SwiftUI para la interfaz de usuario. Permite a los usuarios buscar perfiles de GitHub y obtener información detallada sobre ellos, como contactos, biografia, sus nombres. Actualmente me encuentro trabajando en la aplicación para agregarle más funcionalidades y mejorar la interfaz de usuario."
   }
 }

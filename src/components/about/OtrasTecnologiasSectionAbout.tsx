@@ -20,7 +20,15 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
     <SectionAbout3
       title={t("tecnologias.otras")}
       body={
-        <ul className="flex flex-wrap gap-10 items-center justify-center px-5 py-1">
+        <ul className="flex flex-wrap gap-10 items-center justify-around px-5 py-1">
+                    <li className="flex flex-col items-center  ">
+            <FontAwesomeIcon
+              icon={faSwift}
+              className="w-10 h-auto"
+              color="#FA7343"
+            />
+            <p className="text-sm font-semibold text-gray-800">Swift</p>
+          </li>
           <li className="flex flex-col items-center  ">
             <FontAwesomeIcon
               icon={faGit}
@@ -38,22 +46,7 @@ export function OtrasTecnologías({ up }: OtrasSectionInterface) {
             />
             <p className="text-sm font-semibold text-gray-800">GitHub</p>
           </li>
-          <li className="flex flex-col items-center  ">
-            <FontAwesomeIcon
-              icon={faSwift}
-              className="w-10 h-auto"
-              color="#FA7343"
-            />
-            <p className="text-sm font-semibold text-gray-800">Swift</p>
-          </li>
-          <li className="flex flex-col items-center  ">
-            <FontAwesomeIcon
-              icon={faFlutter}
-              className="w-10 h-auto"
-              color="#02569B"
-            />
-            <p className="text-sm font-semibold text-gray-800">Flutter</p>
-          </li>
+
           <li>
             <FontAwesomeIcon
               icon={faDocker}

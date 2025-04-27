@@ -71,5 +71,9 @@
   "17": {
     "title": "Mindful",
     "description": "Mindful is a Flutter app developed for the management of habits and mindfulness routines. It allows users to register and follow their mindfulness routines, monitor their progress, and receive personalized recommendations."
+  },
+  "18":{
+    "title": "GitHub Finder",
+    "description": "Application developed in Swift 6 and SwiftUI for the user interface. Allows users to search for GitHub profiles and obtain detailed information about them, such as contacts, biography, names. Currently, I am working on the application to add more features and improve the user interface."
   }
 }
