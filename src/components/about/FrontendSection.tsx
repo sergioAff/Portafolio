@@ -8,7 +8,7 @@ import {
   faReact,
   faAngular,
 } from "@fortawesome/free-brands-svg-icons";
-import { SiNextdotjs, SiTypescript, SiTailwindcss } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiAstro } from "react-icons/si";
 
 interface FrontendSectionInterface {
   up: ReactNode;
@@ -51,6 +51,10 @@ export function FrontendSection({ up }: FrontendSectionInterface) {
           <li className="flex flex-col items-center ">
             <SiTypescript className="w-10 h-auto" color="#007ACC" />
             <p className=" text-sm font-semibold text-gray-800">TypeScript</p>
+          </li>
+          <li className="flex flex-col items-center ">
+            <SiAstro className="w-10 h-auto" color="#000000" />
+            <p className=" text-sm font-semibold text-gray-800">Astro.js</p>
           </li>
           <li className="flex flex-col items-center ">
             <FontAwesomeIcon

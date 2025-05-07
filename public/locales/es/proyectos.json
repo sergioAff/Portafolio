@@ -75,5 +75,9 @@
   "18":{
     "title": "GitHub Finder",
     "description": "Applicarión desarrollada en Swift 6 y SwiftUI para la interfaz de usuario. Permite a los usuarios buscar perfiles de GitHub y obtener información detallada sobre ellos, como contactos, biografia, sus nombres. Actualmente me encuentro trabajando en la aplicación para agregarle más funcionalidades y mejorar la interfaz de usuario."
+  },
+  "19":{
+    "title": "Mente Sana",
+    "description": "Página principal para una clínica desarrollada en Astro.js, Tailwind CSS y TypeScript. Es una aplicación web simple y intuitiva para que la clínica muestre sus servicios y se contacten con ellos. Tiene un carrusel de imágenes y un formulario para contactar con la clínica."
   }
 }

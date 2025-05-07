@@ -75,5 +75,9 @@
   "18":{
     "title": "GitHub Finder",
     "description": "Application developed in Swift 6 and SwiftUI for the user interface. Allows users to search for GitHub profiles and obtain detailed information about them, such as contacts, biography, names. Currently, I am working on the application to add more features and improve the user interface."
+  },
+  "19":{
+    "title": "Mente Sana",
+    "description": "Home page for a clinic developed in Astro.js, Tailwind CSS and TypeScript. It is a simple and intuitive web app for the clinic to show their services and contact them. It has a carousel of images and a form to contact the clinic."
   }
 }

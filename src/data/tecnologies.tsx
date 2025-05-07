@@ -16,6 +16,7 @@ import {
   SiSwift,
   SiAngular,
   SiMysql,
+  SiAstro,
 } from "react-icons/si";
 
 import { faJava } from "@fortawesome/free-brands-svg-icons";
@@ -29,6 +30,7 @@ export const tecnologies = {
   ),
   js: <SiJavascript className="w-8 h-auto" color="#F7DF1E" key={"js"} />,
   ts: <SiTypescript className="w-8 h-auto" color="#007ACC" key={"ts"} />,
+  astro: <SiAstro className="w-8 h-auto" color="#000000" key={"astro"} />,
   react: <SiReact className="w-8 h-auto" color="#61DAFB" key={"react"} />,
   nextjs: <SiNextdotjs className="w-8 h-auto" color="black" key={"nextjs"} />,
   angular: <SiAngular className="w-8 h-auto" color="#DD0031" key={"angular"} />,
@@ -59,6 +61,7 @@ export const tecnologiesArray = [
   <SiTailwindcss key="tailwind" className="w-6 h-auto" color="#06B6D4" />,
   <SiJavascript key="js" className="w-6 h-auto" color="#F7DF1E" />,
   <SiTypescript key="ts" className="w-6 h-auto" color="#007ACC" />,
+  <SiAstro key="astro" className="w-6 h-auto" color="#000000" />,
   <SiReact key="react" className="w-6 h-auto" color="#61DAFB" />,
   <SiNextdotjs key="nextjs" className="w-6 h-auto" color="black" />,
   <SiAngular key="angular" className="w-6 h-auto" color="#DD0031" />,
