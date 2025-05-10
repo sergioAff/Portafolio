@@ -82,7 +82,7 @@ export const Proyectos = () => {
       id: 19,
       nombre: t("19.title"),
       link: "https://github.com/sergioAff/clinica-landing-astro",
-      visitar: "https://clinica-landing-tau.vercel.app/",
+      visitar: "https://mentesana.vercel.app/",
       descripcion: t("19.description"),
       image: "/Proyectos/clinica-landing/2.jpg",
       imagesCarrusel: [
