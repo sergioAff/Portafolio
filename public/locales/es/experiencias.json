@@ -34,6 +34,13 @@
       "companyLink": "https://sofka.com.co/index.html",
       "description": "Desarrollé aplicaciones web de alto impacto utilizando Java, Spring Boot, Angular, MySQL, patrones de diseño avanzados y DDD. Me adapté rápidamente a nuevas metodologías, dominando estas tecnologías para ofrecer soluciones robustas y escalables que optimizaron los procesos tanto de backend como de frontend, asegurando, en última instancia, una experiencia de usuario excepcional. Diseñé e implementé estrategias de desarrollo innovadoras que mejoraron significativamente el rendimiento del sistema y realzaron la experiencia global del usuario. Mi enfoque proactivo en el aprendizaje y la resolución de problemas me permitió alcanzar objetivos concretos del proyecto y entregar funcionalidades críticas antes de lo previsto. Mantuve un fuerte énfasis en la integración de código de alta calidad y en la aplicación de rigurosas prácticas de testing. Este compromiso no solo agilizó el proceso de desarrollo, sino que también reforzó el papel de la aplicación como un activo estratégico para impulsar las iniciativas digitales de la organización.",
       "place": "Remoto"
+    },
+    "9": {
+      "title": "Desarrollador Backend",
+      "company": "Topaz",
+      "companyLink": "",
+      "description": "Diseñé y optimicé procedimientos almacenados SQL complejos y vistas de bases de datos en entornos Oracle para respaldar operaciones bancarias críticas, incluyendo el cumplimiento contra el lavado de dinero y el monitoreo de transacciones. Mediante la implementación de estrategias eficientes de mapeo de datos y operaciones JOIN robustas en tablas financieras interconectadas, aseguré la integridad de los datos y habilité capacidades de reportes en tiempo real que fortalecieron la postura regulatoria de la organización. Contribuí al desarrollo y mantenimiento de aplicaciones Java de nivel empresarial integradas con backends Oracle PL/SQL, soportando el procesamiento de transacciones financieras de alto volumen y flujos de trabajo de prevención de fraude. Mi atención meticulosa a los estándares de despliegue y la calidad del código, combinada con un profundo conocimiento de los requisitos del dominio bancario, me permitió entregar soluciones confiables y listas para auditoría, alineadas tanto con los objetivos de negocio como con los mandatos de cumplimiento.",
+      "place": "Híbrido"
     }
   }
 }

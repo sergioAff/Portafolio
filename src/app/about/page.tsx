@@ -55,17 +55,17 @@ export default function Page() {
       <div className="flex flex-col justify-center gap-3 mx-5 py-8 mb-12 items-center sm:max-w-[80%] md:max-w-[80%]">
         <button
           onClick={() => toggleAllSections(!allOpen)}
-          className="self-start relative px-2 py-1 rounded-lg hover:bg-transparent hover:ring-2 outline-none hover:ring-orange-500 shadow-lg shadow-orange-600/50 transition-all ease-in duration-100 hover:text-gray-700 active:scale-95 font-semibold bg-orange-500 text-gray-100"
+          className="self-start relative px-3 py-1.5 rounded-xl font-semibold transition-all ease-out duration-300 active:scale-95 bg-gradient-to-r from-orange-500 to-orange-tertiary text-white shadow-orange-glow hover:shadow-orange-glow-lg hover:scale-105"
         >
-          <BlurButtons proyect={false} />
           {allOpen ? (
-            <div className=" flex items-center justify-center">
-              <ChevronUpIcon className="w-5 h-5 mr-1" />
+            <div className="flex items-center justify-center gap-1">
+              <ChevronUpIcon className="w-5 h-5" />
               {t("Recoger")}
             </div>
           ) : (
-            <div className=" flex items-center justify-center">
-              <ChevronDownIcon className="w-5 h-5 mr-1" /> {t("Desplegar")}
+            <div className="flex items-center justify-center gap-1">
+              <ChevronDownIcon className="w-5 h-5" />
+              {t("Desplegar")}
             </div>
           )}
         </button>

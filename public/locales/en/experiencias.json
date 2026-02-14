@@ -28,13 +28,19 @@
       "description": "Developed a web application for managing university student enrollments at an educational institution in Cienfuegos. Designed and implemented a comprehensive solution that significantly optimized enrollment processing times by over 50%. Improved logistics and the experience for both students and administrative staff. Facilitated data management, enabling fast and efficient access to necessary information, resulting in a more agile and organized workflow.",
       "place": "Cienfuegos, Cuba"
     },
-
     "8": {
       "title": "Software Developer",
       "company": "Sofka Technologies",
       "companyLink": "https://sofka.com.co/index.html",
-      "description": " I developed high-impact web applications using Java, Spring Boot, Angular, MySQL, advanced design patterns and DDD. I quickly adapted to new methodologies, mastering these technologies to deliver robust, scalable solutions that streamlined both backend and frontend processes, ultimately ensuring an exceptional user experience. I designed and implemented innovative development strategies that significantly improved system performance and enhanced the overall user experience. My proactive approach to learning and problem-solving allowed me to achieve concrete project objectives and deliver critical features ahead of schedule. I maintained a strong focus on integrating high-quality code and rigorous testing practices. This commitment not only streamlined the development process but also reinforced the application’s role as a strategic asset in advancing the organization's digital initiatives.",
+      "description": " I developed high-impact web applications using Java, Spring Boot, Angular, MySQL, advanced design patterns and DDD. I quickly adapted to new methodologies, mastering these technologies to deliver robust, scalable solutions that streamlined both backend and frontend processes, ultimately ensuring an exceptional user experience. I designed and implemented innovative development strategies that significantly improved system performance and enhanced the overall user experience. My proactive approach to learning and problem-solving allowed me to achieve concrete project objectives and deliver critical features ahead of schedule. I maintained a strong focus on integrating high-quality code and rigorous testing practices. This commitment not only streamlined the development process but also reinforced the application's role as a strategic asset in advancing the organization's digital initiatives.",
       "place": "Remote"
+    },
+    "9": {
+      "title": "Backend Developer",
+      "company": "Topaz",
+      "companyLink": "",
+      "description": "I engineered and optimized complex SQL stored procedures and database views within Oracle environments to support critical banking operations, including anti-money laundering compliance and transaction monitoring. By implementing efficient data mapping strategies and robust JOIN operations across interconnected financial tables, I ensured data integrity and enabled real-time reporting capabilities that strengthened the organization's regulatory posture. I contributed to the development and maintenance of enterprise-level Java applications integrated with Oracle PL/SQL backends, supporting high-volume financial transaction processing and fraud prevention workflows. My meticulous attention to deployment standards and code quality, combined with a deep understanding of banking domain requirements, allowed me to deliver reliable, audit-ready solutions that aligned with both business objectives and compliance mandates.",
+      "place": "Hybrid"
     }
   }
 }

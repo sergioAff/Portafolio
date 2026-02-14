@@ -4,6 +4,7 @@
 
 html {
   scrollbar-gutter: stable;
+  scroll-behavior: smooth;
 }
 
 body,
@@ -13,12 +14,13 @@ body,
   background-size: cover;
 }
 
+/* ──── Scrollbar ──── */
 ::-webkit-scrollbar {
-  width: 0.5px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(0, 0, 0, 0.2);
+  background: linear-gradient(180deg, rgba(251, 155, 80, 0.6), rgba(249, 115, 22, 0.4));
   border-radius: 10px;
 }
 
@@ -26,65 +28,46 @@ body,
   background-color: transparent;
 }
 
-.fade-enter {
-  opacity: 0;
-}
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 500ms ease-in;
-}
-.fade-exit {
-  opacity: 1;
-}
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 500ms ease-out;
+/* ──── Glassmorphism Utilities ──── */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-.animate-fadeIn {
-  animation: fadeIn 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+.glass-strong {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.45);
 }
 
-.animate-fadeRight {
-  animation: fadeRight 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+.glass-subtle {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.animate-fadeLeft {
-  animation: fadeLeft 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+/* ──── Animated Gradient Text ──── */
+.gradient-text {
+  background: linear-gradient(
+    135deg,
+    #f97316 0%,
+    #fb923c 25%,
+    #f59e0b 50%,
+    #fb923c 75%,
+    #f97316 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient-shift 4s ease-in-out infinite;
 }
 
-.animate-fadeTop {
-  animation: fadeTop 0.9s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.animate-fadeTop-for-contact {
-  animation: fadeTop 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.animate-fadeBottom {
-  animation: fadeBottom 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.animate-fadeBottomForCV {
-  animation: fadeBottom 1.2s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.animate-fadeBottomForCV {
-  animation: fadeBottom 1.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.animate-fadeBottom-for-contacts {
-  animation: fadeBottom-for-contacts 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.animate-fadeIn {
-  animation: fadeIn 0.75s ease-in-out;
-}
-
-.animate-fadeOut {
-  animation: fadeOut 1s forwards;
-}
-
+/* ──── Scroll-To-Top, Hide Scrollbar ──── */
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
@@ -92,22 +75,6 @@ body,
 .scrollbar-hide {
   -ms-overflow-style: none;
   scrollbar-width: none;
-}
-
-.loader {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: 5px solid #646363;
-  border-top: 5px solid #ffb68d;
-  -webkit-animation: 1s loader linear infinite;
-  animation: 1s loader linear infinite;
-}
-
-.animate-bounce {
-  animation: bounce 1s ease-in-out forwards;
-  animation-iteration-count: 2.5;
 }
 
 .ocultar-scroll {
@@ -119,16 +86,116 @@ body,
   display: none;
 }
 
+/* ──── Loader ──── */
+.loader {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 5px solid #646363;
+  border-top: 5px solid #ffb68d;
+  animation: 1s loader linear infinite;
+}
+
+/* ──── Shimmer Effect ──── */
+.shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+/* ──── Glow Ring ──── */
+.glow-ring {
+  box-shadow:
+    0 0 15px rgba(251, 155, 80, 0.4),
+    0 0 30px rgba(251, 155, 80, 0.2),
+    0 0 45px rgba(251, 155, 80, 0.1);
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+/* ──── Timeline Dot Pulse ──── */
+.timeline-dot-pulse::after {
+  animation: dot-pulse 2s ease-in-out infinite;
+}
+
+/* ──── Keyframes ──── */
+
 @keyframes loader {
   to {
     transform: rotate(360deg);
   }
 }
 
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% center;
+  }
+  50% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 15px rgba(251, 155, 80, 0.4),
+      0 0 30px rgba(251, 155, 80, 0.2),
+      0 0 45px rgba(251, 155, 80, 0.1);
+  }
+  50% {
+    box-shadow:
+      0 0 25px rgba(251, 155, 80, 0.6),
+      0 0 50px rgba(251, 155, 80, 0.3),
+      0 0 75px rgba(251, 155, 80, 0.15);
+  }
+}
+
+@keyframes dot-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(234, 88, 12, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(234, 88, 12, 0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(150px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
@@ -139,7 +206,7 @@ body,
 @keyframes fadeRight {
   from {
     opacity: 0;
-    transform: translateX(150px);
+    transform: translateX(40px);
   }
   to {
     opacity: 1;
@@ -150,7 +217,7 @@ body,
 @keyframes fadeLeft {
   from {
     opacity: 0;
-    transform: translateX(-150px);
+    transform: translateX(-40px);
   }
   to {
     opacity: 1;
@@ -165,47 +232,25 @@ body,
   }
   to {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeTo-for-contact {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeBottom {
   from {
     opacity: 0;
-    transform: translateY(200px);
+    transform: translateY(40px);
   }
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 @keyframes fadeBottom-for-contacts {
   from {
     opacity: 0;
-    transform: translateY(100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(150px);
+    transform: translateY(30px);
   }
   to {
     opacity: 1;
@@ -220,4 +265,75 @@ body,
   to {
     opacity: 0;
   }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25%);
+  }
+}
+
+/* ──── Animation Utility Classes ──── */
+.animate-fadeIn {
+  animation: fadeIn 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeRight {
+  animation: fadeRight 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeLeft {
+  animation: fadeLeft 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeTop {
+  animation: fadeTop 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeTop-for-contact {
+  animation: fadeTop 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeBottom {
+  animation: fadeBottom 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeBottomForCV {
+  animation: fadeBottom 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeBottom-for-contacts {
+  animation: fadeBottom-for-contacts 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.animate-fadeOut {
+  animation: fadeOut 1s forwards;
+}
+
+.animate-bounce {
+  animation: bounce 1s ease-in-out forwards;
+  animation-iteration-count: 2.5;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* ──── Fade Transitions ──── */
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-out;
 }

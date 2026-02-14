@@ -4,6 +4,17 @@ export const Experiencia = () => {
   const { t } = useTranslation(["experiencias"]);
   return [
     {
+      trabajo: t("experiencias.9.title"),
+      descripcion: t("experiencias.9.description"),
+      lugar: t("experiencias.9.place"),
+      company: t("experiencias.9.company"),
+      companyLink: t("experiencias.9.companyLink"),
+      fechas: {
+        inicio: new Date(2025, 7),
+        fin: new Date(new Date().getFullYear(), new Date().getMonth()),
+      },
+    },
+    {
       trabajo: t("experiencias.8.title"),
       descripcion: t("experiencias.8.description"),
       lugar: t("experiencias.8.place"),
@@ -11,7 +22,7 @@ export const Experiencia = () => {
       companyLink: t("experiencias.8.companyLink"),
       fechas: {
         inicio: new Date(2024, 11),
-        fin: new Date(new Date().getFullYear(), new Date().getMonth()),
+        fin: new Date(2025, 7),
       },
     },
     {

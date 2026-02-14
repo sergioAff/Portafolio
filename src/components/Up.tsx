@@ -1,47 +1,42 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import { ArrowUpIcon } from "@heroicons/react/24/outline";
+import { motion, AnimatePresence } from "framer-motion";
 
 export const Up = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Manejar el evento de scroll
   useEffect(() => {
     const handleScroll = () => {
-      // Mostrar el botón si se ha hecho scroll hacia abajo más de 300px
-      if (window.scrollY > 300) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      setIsVisible(window.scrollY > 300);
     };
-
-    // Añadir el listener al evento de scroll
-    window.addEventListener("scroll", handleScroll);
-
-    // Eliminar el listener al desmontar el componente
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Función para manejar el clic y hacer scroll hacia arriba
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth", // Añadir una animación suave
+      behavior: "smooth",
     });
   };
 
   return (
-    <>
+    <AnimatePresence>
       {isVisible && (
-        <div
+        <motion.button
+          initial={{ opacity: 0, scale: 0.8, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          exit={{ opacity: 0, scale: 0.8, y: 20 }}
+          transition={{ duration: 0.3, ease: [0.22, 1, 0.36, 1] }}
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 w-10 h-10 flex items-center justify-center rounded-full bg-orange-500 hover:bg-orange-600 transition-all duration-150 ease-in-out active:scale-95 cursor-pointer"
+          className="fixed bottom-5 right-5 z-40 w-11 h-11 flex items-center justify-center rounded-full glass-strong shadow-glass hover:shadow-orange-glow bg-gradient-to-br from-orange-500 to-orange-tertiary text-white hover:scale-110 active:scale-95 transition-all duration-200 ease-out"
+          aria-label="Scroll to top"
         >
-          <ArrowUpIcon className="w-6 h-6 text-white" />
-        </div>
+          <ArrowUpIcon className="w-5 h-5" />
+        </motion.button>
       )}
-    </>
+    </AnimatePresence>
   );
 };

@@ -1,5 +1,7 @@
 import { ReactNode, useEffect, useState } from "react";
 import clsx from "clsx";
+import { ChevronUpIcon } from "@heroicons/react/24/outline";
+
 interface SectionAboutInterface {
   icon: ReactNode;
   text: string;
@@ -14,7 +16,6 @@ export function SectionAbout({
   text,
   title,
   estilos,
-  up,
   allOpen,
 }: SectionAboutInterface) {
   const [isOpen, setIsOpen] = useState<boolean>(true);
@@ -25,38 +26,41 @@ export function SectionAbout({
 
   return (
     <div
-      className={`${estilos} text-gray-900 hover:ring hover:ring-offset-2 transition-all duration-100 ease-in-out ring-orange-tertiary p-3 rounded-xl bg-white/30 shadow-md`}
+      className={`${estilos} text-gray-900 glass rounded-2xl shadow-glass hover:shadow-glass-hover transition-all duration-300 ease-out p-4`}
     >
       <div className="flex w-full justify-between items-center pb-2">
         <div className="flex justify-between items-center gap-2">
-          <span className="w-7 text-orange-600 hidden sm:inline-block overflow-hidden">
+          <span className="w-7 text-orange-500 hidden sm:inline-block overflow-hidden">
             {icon}
           </span>
-          <h3 className="font-semibold text-3xl tracking-wide text-orange-600">
+          <h3 className="font-semibold text-2xl sm:text-3xl tracking-wide gradient-text">
             {title}
           </h3>
         </div>
         <button
           className={clsx(
-            "ring-2 rounded-full p-0.5 ring-transparent hover:text-orange-00 hover:ring-orange-tertiary ring-offset-0 hover:ring-offset-2 transition-all ease-in-out duration-200",
+            "p-1 rounded-full hover:bg-orange-50 transition-all ease-out duration-300",
             { "rotate-0": isOpen, "rotate-180": !isOpen }
           )}
           onClick={() => setIsOpen(!isOpen)}
+          aria-label={isOpen ? "Collapse section" : "Expand section"}
         >
-          {up}
+          <ChevronUpIcon className="w-5 h-5 text-gray-500 hover:text-orange-500 transition-colors duration-200" />
         </button>
       </div>
-      <p
+      <div
         className={clsx(
-          "text-base text-gray-700 font-semibold lg:text-lg transition-all ease-in-out duration-200 overflow-hidden",
+          "transition-all ease-out duration-300 overflow-hidden",
           {
-            "max-h-screen": isOpen,
-            "max-h-0": !isOpen,
+            "max-h-[800px] opacity-100": isOpen,
+            "max-h-0 opacity-0": !isOpen,
           }
         )}
       >
-        {text}
-      </p>
+        <p className="text-base text-gray-700 font-semibold lg:text-lg leading-relaxed">
+          {text}
+        </p>
+      </div>
     </div>
   );
 }
